@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<AudioParam version="1.0">
+  <ParamTree>
+    <Param path="RCV" param_id="0"/>
+    <Param path="HS" param_id="1"/>
+    <Param path="HP" param_id="1"/>
+    <Param path="SPK" param_id="2"/>
+    <Param path="HS5POLE" param_id="1"/>
+    <Param path="USB" param_id="1"/>
+    <Param path="HEARING_AID" param_id="3"/>
+  </ParamTree>
+  <ParamUnitPool>
+    <ParamUnit param_id="0">
+      <Param name="ringback_gain" value="40,37,35,33,31,29,27,25,23,21,19"/>
+    </ParamUnit>
+    <ParamUnit param_id="1">
+      <Param name="ringback_gain" value="27,25,23,21,19,18,17,15,12,10,9"/>
+    </ParamUnit>
+    <ParamUnit param_id="2">
+      <Param name="ringback_gain" value="22,20,19,18,16,15,13,11,10,7,4"/>
+    </ParamUnit>
+    <ParamUnit param_id="3">
+      <Param name="ringback_gain" value="48,45,40,38,35,33,25,19,13,6,0"/>
+    </ParamUnit>
+  </ParamUnitPool>
+</AudioParam>
