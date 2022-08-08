@@ -6,7 +6,6 @@ PRODUCT_SOONG_NAMESPACES += \
     vendor/redmi/rosemary
 
 PRODUCT_COPY_FILES += \
-    vendor/redmi/rosemary/proprietary/app/SoterService/SoterService.apk:$(TARGET_COPY_OUT_SYSTEM)/app/SoterService/SoterService.apk \
     vendor/redmi/rosemary/proprietary/bin/kpoc_charger:$(TARGET_COPY_OUT_SYSTEM)/bin/kpoc_charger \
     vendor/redmi/rosemary/proprietary/bin/vtservice:$(TARGET_COPY_OUT_SYSTEM)/bin/vtservice \
     vendor/redmi/rosemary/proprietary/etc/a2dp_audio_policy_configuration.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/a2dp_audio_policy_configuration.xml \
@@ -28,8 +27,6 @@ PRODUCT_COPY_FILES += \
     vendor/redmi/rosemary/proprietary/etc/r_submix_audio_policy_configuration.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/r_submix_audio_policy_configuration.xml \
     vendor/redmi/rosemary/proprietary/etc/seccomp_policy/mediacodec.policy:$(TARGET_COPY_OUT_SYSTEM)/etc/seccomp_policy/mediacodec.policy \
     vendor/redmi/rosemary/proprietary/etc/usb_audio_policy_configuration.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/usb_audio_policy_configuration.xml \
-    vendor/redmi/rosemary/proprietary/framework/mediatek-ims-legacy.jar:$(TARGET_COPY_OUT_SYSTEM)/framework/mediatek-ims-legacy.jar \
-    vendor/redmi/rosemary/proprietary/framework/mediatek-wfo-legacy.jar:$(TARGET_COPY_OUT_SYSTEM)/framework/mediatek-wfo-legacy.jar \
     vendor/redmi/rosemary/proprietary/lib/libcomutils.so:$(TARGET_COPY_OUT_SYSTEM)/lib/libcomutils.so \
     vendor/redmi/rosemary/proprietary/lib/libem_support_jni.so:$(TARGET_COPY_OUT_SYSTEM)/lib/libem_support_jni.so \
     vendor/redmi/rosemary/proprietary/lib/libem_usb_jni.so:$(TARGET_COPY_OUT_SYSTEM)/lib/libem_usb_jni.so \
@@ -83,27 +80,12 @@ PRODUCT_COPY_FILES += \
     vendor/redmi/rosemary/proprietary/odm/etc/build_maltose.prop:$(TARGET_COPY_OUT_ODM)/etc/build_maltose.prop \
     vendor/redmi/rosemary/proprietary/odm/etc/build_rosemary.prop:$(TARGET_COPY_OUT_ODM)/etc/build_rosemary.prop \
     vendor/redmi/rosemary/proprietary/odm/etc/build_secret.prop:$(TARGET_COPY_OUT_ODM)/etc/build_secret.prop \
-    vendor/redmi/rosemary/proprietary/odm/etc/vintf/manifest_dsds.xml:$(TARGET_COPY_OUT_ODM)/etc/vintf/manifest_dsds.xml \
-    vendor/redmi/rosemary/proprietary/odm/etc/vintf/manifest_dsds_se.xml:$(TARGET_COPY_OUT_ODM)/etc/vintf/manifest_dsds_se.xml \
-    vendor/redmi/rosemary/proprietary/odm/etc/vintf/manifest_qsqs.xml:$(TARGET_COPY_OUT_ODM)/etc/vintf/manifest_qsqs.xml \
-    vendor/redmi/rosemary/proprietary/odm/etc/vintf/manifest_ss.xml:$(TARGET_COPY_OUT_ODM)/etc/vintf/manifest_ss.xml \
-    vendor/redmi/rosemary/proprietary/odm/etc/vintf/manifest_ss_se.xml:$(TARGET_COPY_OUT_ODM)/etc/vintf/manifest_ss_se.xml \
-    vendor/redmi/rosemary/proprietary/odm/etc/vintf/manifest_tsts.xml:$(TARGET_COPY_OUT_ODM)/etc/vintf/manifest_tsts.xml \
     vendor/redmi/rosemary/proprietary/system_ext/lib/vendor.mediatek.hardware.gpu@1.0.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib/vendor.mediatek.hardware.gpu@1.0.so \
     vendor/redmi/rosemary/proprietary/system_ext/lib/vendor.mediatek.hardware.mtkradioex@1.0.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib/vendor.mediatek.hardware.mtkradioex@1.0.so \
     vendor/redmi/rosemary/proprietary/system_ext/lib/vendor.mediatek.hardware.videotelephony@1.0.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib/vendor.mediatek.hardware.videotelephony@1.0.so \
     vendor/redmi/rosemary/proprietary/system_ext/lib64/vendor.mediatek.hardware.gpu@1.0.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/vendor.mediatek.hardware.gpu@1.0.so \
     vendor/redmi/rosemary/proprietary/system_ext/lib64/vendor.mediatek.hardware.mtkradioex@1.0.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/vendor.mediatek.hardware.mtkradioex@1.0.so \
     vendor/redmi/rosemary/proprietary/system_ext/lib64/vendor.mediatek.hardware.videotelephony@1.0.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/vendor.mediatek.hardware.videotelephony@1.0.so \
-    vendor/redmi/rosemary/proprietary/vendor/app/EmCamera/EmCamera.apk:$(TARGET_COPY_OUT_VENDOR)/app/EmCamera/EmCamera.apk \
-    vendor/redmi/rosemary/proprietary/vendor/app/GoogleNetworkStackResOverlay/GoogleNetworkStackResOverlay.apk:$(TARGET_COPY_OUT_VENDOR)/app/GoogleNetworkStackResOverlay/GoogleNetworkStackResOverlay.apk \
-    vendor/redmi/rosemary/proprietary/vendor/app/GoogleTetheringResOverlay/GoogleTetheringResOverlay.apk:$(TARGET_COPY_OUT_VENDOR)/app/GoogleTetheringResOverlay/GoogleTetheringResOverlay.apk \
-    vendor/redmi/rosemary/proprietary/vendor/app/IconShapeOverlay/IconShapeOverlay.apk:$(TARGET_COPY_OUT_VENDOR)/app/IconShapeOverlay/IconShapeOverlay.apk \
-    vendor/redmi/rosemary/proprietary/vendor/app/InProcessTetheringResOverlay/InProcessTetheringResOverlay.apk:$(TARGET_COPY_OUT_VENDOR)/app/InProcessTetheringResOverlay/InProcessTetheringResOverlay.apk \
-    vendor/redmi/rosemary/proprietary/vendor/app/NetworkStackInProcessResOverlay/NetworkStackInProcessResOverlay.apk:$(TARGET_COPY_OUT_VENDOR)/app/NetworkStackInProcessResOverlay/NetworkStackInProcessResOverlay.apk \
-    vendor/redmi/rosemary/proprietary/vendor/app/NetworkStackResOverlay/NetworkStackResOverlay.apk:$(TARGET_COPY_OUT_VENDOR)/app/NetworkStackResOverlay/NetworkStackResOverlay.apk \
-    vendor/redmi/rosemary/proprietary/vendor/app/NotchOverlay/NotchOverlay.apk:$(TARGET_COPY_OUT_VENDOR)/app/NotchOverlay/NotchOverlay.apk \
-    vendor/redmi/rosemary/proprietary/vendor/app/TetheringResOverlay/TetheringResOverlay.apk:$(TARGET_COPY_OUT_VENDOR)/app/TetheringResOverlay/TetheringResOverlay.apk \
     vendor/redmi/rosemary/proprietary/vendor/bin/STFlashTool:$(TARGET_COPY_OUT_VENDOR)/bin/STFlashTool \
     vendor/redmi/rosemary/proprietary/vendor/bin/SoterProvisioningTool:$(TARGET_COPY_OUT_VENDOR)/bin/SoterProvisioningTool \
     vendor/redmi/rosemary/proprietary/vendor/bin/aee_aedv:$(TARGET_COPY_OUT_VENDOR)/bin/aee_aedv \
@@ -276,9 +258,6 @@ PRODUCT_COPY_FILES += \
     vendor/redmi/rosemary/proprietary/vendor/build_maltose.prop:$(TARGET_COPY_OUT_VENDOR)/build_maltose.prop \
     vendor/redmi/rosemary/proprietary/vendor/build_rosemary.prop:$(TARGET_COPY_OUT_VENDOR)/build_rosemary.prop \
     vendor/redmi/rosemary/proprietary/vendor/build_secret.prop:$(TARGET_COPY_OUT_VENDOR)/build_secret.prop \
-    vendor/redmi/rosemary/proprietary/vendor/data-app/GlobalFashiongallery/GlobalFashiongallery.apk:$(TARGET_COPY_OUT_VENDOR)/data-app/GlobalFashiongallery/GlobalFashiongallery.apk \
-    vendor/redmi/rosemary/proprietary/vendor/data-app/XMRemoteController/XMRemoteController.apk:$(TARGET_COPY_OUT_VENDOR)/data-app/XMRemoteController/XMRemoteController.apk \
-    vendor/redmi/rosemary/proprietary/vendor/data-app/wps_lite/wps_lite.apk:$(TARGET_COPY_OUT_VENDOR)/data-app/wps_lite/wps_lite.apk \
     vendor/redmi/rosemary/proprietary/vendor/data/misc/ProjectConfig.mk:$(TARGET_COPY_OUT_VENDOR)/data/misc/ProjectConfig.mk \
     vendor/redmi/rosemary/proprietary/vendor/data/misc/pdc.txt:$(TARGET_COPY_OUT_VENDOR)/data/misc/pdc.txt \
     vendor/redmi/rosemary/proprietary/vendor/etc/.tp/.ht120.mtc:$(TARGET_COPY_OUT_VENDOR)/etc/.tp/.ht120.mtc \
@@ -768,7 +747,6 @@ PRODUCT_COPY_FILES += \
     vendor/redmi/rosemary/proprietary/vendor/etc/power_app_cfg.xml:$(TARGET_COPY_OUT_VENDOR)/etc/power_app_cfg.xml \
     vendor/redmi/rosemary/proprietary/vendor/etc/powercontable.xml:$(TARGET_COPY_OUT_VENDOR)/etc/powercontable.xml \
     vendor/redmi/rosemary/proprietary/vendor/etc/powerscntbl.xml:$(TARGET_COPY_OUT_VENDOR)/etc/powerscntbl.xml \
-    vendor/redmi/rosemary/proprietary/vendor/etc/public.libraries.txt:$(TARGET_COPY_OUT_VENDOR)/etc/public.libraries.txt \
     vendor/redmi/rosemary/proprietary/vendor/etc/qc_Global_1.xml:$(TARGET_COPY_OUT_VENDOR)/etc/qc_Global_1.xml \
     vendor/redmi/rosemary/proprietary/vendor/etc/qc_Global_2.xml:$(TARGET_COPY_OUT_VENDOR)/etc/qc_Global_2.xml \
     vendor/redmi/rosemary/proprietary/vendor/etc/qc_Global_3.xml:$(TARGET_COPY_OUT_VENDOR)/etc/qc_Global_3.xml \
@@ -976,33 +954,6 @@ PRODUCT_COPY_FILES += \
     vendor/redmi/rosemary/proprietary/vendor/etc/usb_audio_accessory_only_policy_configuration.xml:$(TARGET_COPY_OUT_VENDOR)/etc/usb_audio_accessory_only_policy_configuration.xml \
     vendor/redmi/rosemary/proprietary/vendor/etc/usb_audio_policy_configuration.xml:$(TARGET_COPY_OUT_VENDOR)/etc/usb_audio_policy_configuration.xml \
     vendor/redmi/rosemary/proprietary/vendor/etc/vendor-apns-conf.xml:$(TARGET_COPY_OUT_VENDOR)/etc/vendor-apns-conf.xml \
-    vendor/redmi/rosemary/proprietary/vendor/etc/vintf/manifest/android.hardware.biometrics.fingerprint@2.1-service.xml:$(TARGET_COPY_OUT_VENDOR)/etc/vintf/manifest/android.hardware.biometrics.fingerprint@2.1-service.xml \
-    vendor/redmi/rosemary/proprietary/vendor/etc/vintf/manifest/android.hardware.boot@1.1.xml:$(TARGET_COPY_OUT_VENDOR)/etc/vintf/manifest/android.hardware.boot@1.1.xml \
-    vendor/redmi/rosemary/proprietary/vendor/etc/vintf/manifest/android.hardware.cas@1.2-service.xml:$(TARGET_COPY_OUT_VENDOR)/etc/vintf/manifest/android.hardware.cas@1.2-service.xml \
-    vendor/redmi/rosemary/proprietary/vendor/etc/vintf/manifest/android.hardware.gpu@1.0-service.xml:$(TARGET_COPY_OUT_VENDOR)/etc/vintf/manifest/android.hardware.gpu@1.0-service.xml \
-    vendor/redmi/rosemary/proprietary/vendor/etc/vintf/manifest/android.hardware.health@2.1.xml:$(TARGET_COPY_OUT_VENDOR)/etc/vintf/manifest/android.hardware.health@2.1.xml \
-    vendor/redmi/rosemary/proprietary/vendor/etc/vintf/manifest/android.hardware.neuralnetworks@1.3-service-mtk-dsp-gpu.xml:$(TARGET_COPY_OUT_VENDOR)/etc/vintf/manifest/android.hardware.neuralnetworks@1.3-service-mtk-dsp-gpu.xml \
-    vendor/redmi/rosemary/proprietary/vendor/etc/vintf/manifest/android.hardware.wifi.hostapd.xml:$(TARGET_COPY_OUT_VENDOR)/etc/vintf/manifest/android.hardware.wifi.hostapd.xml \
-    vendor/redmi/rosemary/proprietary/vendor/etc/vintf/manifest/android.hardware.wifi@1.0-service.xml:$(TARGET_COPY_OUT_VENDOR)/etc/vintf/manifest/android.hardware.wifi@1.0-service.xml \
-    vendor/redmi/rosemary/proprietary/vendor/etc/vintf/manifest/lights-mtk-default.xml:$(TARGET_COPY_OUT_VENDOR)/etc/vintf/manifest/lights-mtk-default.xml \
-    vendor/redmi/rosemary/proprietary/vendor/etc/vintf/manifest/manifest.xml:$(TARGET_COPY_OUT_VENDOR)/etc/vintf/manifest/manifest.xml \
-    vendor/redmi/rosemary/proprietary/vendor/etc/vintf/manifest/manifest_android.hardware.drm@1.3-service.clearkey.xml:$(TARGET_COPY_OUT_VENDOR)/etc/vintf/manifest/manifest_android.hardware.drm@1.3-service.clearkey.xml \
-    vendor/redmi/rosemary/proprietary/vendor/etc/vintf/manifest/manifest_android.hardware.drm@1.3-service.widevine.xml:$(TARGET_COPY_OUT_VENDOR)/etc/vintf/manifest/manifest_android.hardware.drm@1.3-service.widevine.xml \
-    vendor/redmi/rosemary/proprietary/vendor/etc/vintf/manifest/manifest_vendor.xiaomi.hardware.mfidoca.xml:$(TARGET_COPY_OUT_VENDOR)/etc/vintf/manifest/manifest_vendor.xiaomi.hardware.mfidoca.xml \
-    vendor/redmi/rosemary/proprietary/vendor/etc/vintf/manifest/manifest_vendor.xiaomi.hardware.mlipay.xml:$(TARGET_COPY_OUT_VENDOR)/etc/vintf/manifest/manifest_vendor.xiaomi.hardware.mlipay.xml \
-    vendor/redmi/rosemary/proprietary/vendor/etc/vintf/manifest/manifest_vendor.xiaomi.hardware.mtdservice.xml:$(TARGET_COPY_OUT_VENDOR)/etc/vintf/manifest/manifest_vendor.xiaomi.hardware.mtdservice.xml \
-    vendor/redmi/rosemary/proprietary/vendor/etc/vintf/manifest/manifest_vendor.xiaomi.hardware.tidaservice.xml:$(TARGET_COPY_OUT_VENDOR)/etc/vintf/manifest/manifest_vendor.xiaomi.hardware.tidaservice.xml \
-    vendor/redmi/rosemary/proprietary/vendor/etc/vintf/manifest/manifest_vendor.xiaomi.hardware.vsimapp.xml:$(TARGET_COPY_OUT_VENDOR)/etc/vintf/manifest/manifest_vendor.xiaomi.hardware.vsimapp.xml \
-    vendor/redmi/rosemary/proprietary/vendor/etc/vintf/manifest/power-default.xml:$(TARGET_COPY_OUT_VENDOR)/etc/vintf/manifest/power-default.xml \
-    vendor/redmi/rosemary/proprietary/vendor/etc/vintf/manifest/vendor.mediatek.hardware.dplanner@2.0-service.xml:$(TARGET_COPY_OUT_VENDOR)/etc/vintf/manifest/vendor.mediatek.hardware.dplanner@2.0-service.xml \
-    vendor/redmi/rosemary/proprietary/vendor/etc/vintf/manifest/vendor.xiaomi.hardware.micharge@1.0.xml:$(TARGET_COPY_OUT_VENDOR)/etc/vintf/manifest/vendor.xiaomi.hardware.micharge@1.0.xml \
-    vendor/redmi/rosemary/proprietary/vendor/etc/vintf/manifest/vendor.xiaomi.hardware.misys@1.0.xml:$(TARGET_COPY_OUT_VENDOR)/etc/vintf/manifest/vendor.xiaomi.hardware.misys@1.0.xml \
-    vendor/redmi/rosemary/proprietary/vendor/etc/vintf/manifest/vendor.xiaomi.hardware.misys@2.0.xml:$(TARGET_COPY_OUT_VENDOR)/etc/vintf/manifest/vendor.xiaomi.hardware.misys@2.0.xml \
-    vendor/redmi/rosemary/proprietary/vendor/etc/vintf/manifest/vendor.xiaomi.hardware.misys@3.0.xml:$(TARGET_COPY_OUT_VENDOR)/etc/vintf/manifest/vendor.xiaomi.hardware.misys@3.0.xml \
-    vendor/redmi/rosemary/proprietary/vendor/etc/vintf/manifest/vibrator-mtk-default.xml:$(TARGET_COPY_OUT_VENDOR)/etc/vintf/manifest/vibrator-mtk-default.xml \
-    vendor/redmi/rosemary/proprietary/vendor/etc/vintf/manifest_maltose.xml:$(TARGET_COPY_OUT_VENDOR)/etc/vintf/manifest_maltose.xml \
-    vendor/redmi/rosemary/proprietary/vendor/etc/vintf/manifest_rosemary.xml:$(TARGET_COPY_OUT_VENDOR)/etc/vintf/manifest_rosemary.xml \
-    vendor/redmi/rosemary/proprietary/vendor/etc/vintf/manifest_secret.xml:$(TARGET_COPY_OUT_VENDOR)/etc/vintf/manifest_secret.xml \
     vendor/redmi/rosemary/proprietary/vendor/etc/virtual-spn-conf-by-efgid1.xml:$(TARGET_COPY_OUT_VENDOR)/etc/virtual-spn-conf-by-efgid1.xml \
     vendor/redmi/rosemary/proprietary/vendor/etc/virtual-spn-conf-by-efpnn.xml:$(TARGET_COPY_OUT_VENDOR)/etc/virtual-spn-conf-by-efpnn.xml \
     vendor/redmi/rosemary/proprietary/vendor/etc/virtual-spn-conf-by-efspn.xml:$(TARGET_COPY_OUT_VENDOR)/etc/virtual-spn-conf-by-efspn.xml \
@@ -1565,7 +1516,6 @@ PRODUCT_COPY_FILES += \
     vendor/redmi/rosemary/proprietary/vendor/firmware/soc3_0_ram_mcu_1a_1_hdr.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/soc3_0_ram_mcu_1a_1_hdr.bin \
     vendor/redmi/rosemary/proprietary/vendor/firmware/soc3_0_ram_mcu_e1_hdr.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/soc3_0_ram_mcu_e1_hdr.bin \
     vendor/redmi/rosemary/proprietary/vendor/firmware/st21nfc_fw7.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/st21nfc_fw7.bin \
-    vendor/redmi/rosemary/proprietary/vendor/framework/com.fingerprints.extension.jar:$(TARGET_COPY_OUT_VENDOR)/framework/com.fingerprints.extension.jar \
     vendor/redmi/rosemary/proprietary/vendor/fstab.enableswap:$(TARGET_COPY_OUT_VENDOR)/fstab.enableswap \
     vendor/redmi/rosemary/proprietary/vendor/lib/AVCSecureVdecCA.so:$(TARGET_COPY_OUT_VENDOR)/lib/AVCSecureVdecCA.so \
     vendor/redmi/rosemary/proprietary/vendor/lib/VP9SecureVdecCA.so:$(TARGET_COPY_OUT_VENDOR)/lib/VP9SecureVdecCA.so \
@@ -3462,12 +3412,6 @@ PRODUCT_COPY_FILES += \
     vendor/redmi/rosemary/proprietary/vendor/odm/etc/build_maltose.prop:$(TARGET_COPY_OUT_ODM)/odm/etc/build_maltose.prop \
     vendor/redmi/rosemary/proprietary/vendor/odm/etc/build_rosemary.prop:$(TARGET_COPY_OUT_ODM)/odm/etc/build_rosemary.prop \
     vendor/redmi/rosemary/proprietary/vendor/odm/etc/build_secret.prop:$(TARGET_COPY_OUT_ODM)/odm/etc/build_secret.prop \
-    vendor/redmi/rosemary/proprietary/vendor/odm/etc/vintf/manifest_dsds.xml:$(TARGET_COPY_OUT_ODM)/odm/etc/vintf/manifest_dsds.xml \
-    vendor/redmi/rosemary/proprietary/vendor/odm/etc/vintf/manifest_dsds_se.xml:$(TARGET_COPY_OUT_ODM)/odm/etc/vintf/manifest_dsds_se.xml \
-    vendor/redmi/rosemary/proprietary/vendor/odm/etc/vintf/manifest_qsqs.xml:$(TARGET_COPY_OUT_ODM)/odm/etc/vintf/manifest_qsqs.xml \
-    vendor/redmi/rosemary/proprietary/vendor/odm/etc/vintf/manifest_ss.xml:$(TARGET_COPY_OUT_ODM)/odm/etc/vintf/manifest_ss.xml \
-    vendor/redmi/rosemary/proprietary/vendor/odm/etc/vintf/manifest_ss_se.xml:$(TARGET_COPY_OUT_ODM)/odm/etc/vintf/manifest_ss_se.xml \
-    vendor/redmi/rosemary/proprietary/vendor/odm/etc/vintf/manifest_tsts.xml:$(TARGET_COPY_OUT_ODM)/odm/etc/vintf/manifest_tsts.xml \
     vendor/redmi/rosemary/proprietary/vendor/res/images/lcd_test_00.png:$(TARGET_COPY_OUT_VENDOR)/res/images/lcd_test_00.png \
     vendor/redmi/rosemary/proprietary/vendor/res/images/lcd_test_01.png:$(TARGET_COPY_OUT_VENDOR)/res/images/lcd_test_01.png \
     vendor/redmi/rosemary/proprietary/vendor/res/images/lcd_test_02.png:$(TARGET_COPY_OUT_VENDOR)/res/images/lcd_test_02.png \
@@ -3506,11 +3450,56 @@ PRODUCT_COPY_FILES += \
     vendor/redmi/rosemary/proprietary/vendor/xbin/dc_cal:$(TARGET_COPY_OUT_VENDOR)/xbin/dc_cal
 
 PRODUCT_PACKAGES += \
+    SoterService \
     ImsService \
+    EmCamera \
+    GoogleNetworkStackResOverlay \
+    GoogleTetheringResOverlay \
+    InProcessTetheringResOverlay \
+    NetworkStackInProcessResOverlay \
+    NetworkStackResOverlay \
+    NotchOverlay \
+    TetheringResOverlay \
     mediatek-common \
     mediatek-framework \
     mediatek-ims-base \
     mediatek-ims-common \
+    mediatek-ims-legacy \
     mediatek-telecom-common \
     mediatek-telephony-base \
-    mediatek-telephony-common
+    mediatek-telephony-common \
+    mediatek-wfo-legacy \
+    com.fingerprints.extension \
+    android.hardware.biometrics.fingerprint@2.1-service \
+    android.hardware.boot@1.1 \
+    android.hardware.cas@1.2-service \
+    android.hardware.gpu@1.0-service \
+    android.hardware.health@2.1 \
+    android.hardware.neuralnetworks@1.3-service-mtk-dsp-gpu \
+    android.hardware.wifi.hostapd \
+    android.hardware.wifi@1.0-service \
+    lights-mtk-default \
+    manifest \
+    manifest_android.hardware.drm@1.3-service.clearkey \
+    manifest_android.hardware.drm@1.3-service.widevine \
+    manifest_vendor.xiaomi.hardware.mfidoca \
+    manifest_vendor.xiaomi.hardware.mlipay \
+    manifest_vendor.xiaomi.hardware.mtdservice \
+    manifest_vendor.xiaomi.hardware.tidaservice \
+    manifest_vendor.xiaomi.hardware.vsimapp \
+    power-default \
+    vendor.mediatek.hardware.dplanner@2.0-service \
+    vendor.xiaomi.hardware.micharge@1.0 \
+    vendor.xiaomi.hardware.misys@1.0 \
+    vendor.xiaomi.hardware.misys@2.0 \
+    vendor.xiaomi.hardware.misys@3.0 \
+    vibrator-mtk-default \
+    manifest_maltose \
+    manifest_rosemary \
+    manifest_secret \
+    manifest_dsds \
+    manifest_dsds_se \
+    manifest_qsqs \
+    manifest_ss \
+    manifest_ss_se \
+    manifest_tsts

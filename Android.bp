@@ -6,6 +6,16 @@ soong_namespace {
 }
 
 android_app_import {
+	name: "SoterService",
+	owner: "redmi",
+	apk: "proprietary/app/SoterService/SoterService.apk",
+	certificate: "platform",
+	dex_preopt: {
+		enabled: false,
+	},
+}
+
+android_app_import {
 	name: "ImsService",
 	owner: "redmi",
 	apk: "proprietary/priv-app/ImsService/ImsService.apk",
@@ -14,6 +24,94 @@ android_app_import {
 		enabled: false,
 	},
 	privileged: true,
+}
+
+android_app_import {
+	name: "EmCamera",
+	owner: "redmi",
+	apk: "proprietary/vendor/app/EmCamera/EmCamera.apk",
+	certificate: "platform",
+	dex_preopt: {
+		enabled: false,
+	},
+	soc_specific: true,
+}
+
+android_app_import {
+	name: "GoogleNetworkStackResOverlay",
+	owner: "redmi",
+	apk: "proprietary/vendor/app/GoogleNetworkStackResOverlay/GoogleNetworkStackResOverlay.apk",
+	certificate: "platform",
+	dex_preopt: {
+		enabled: false,
+	},
+	soc_specific: true,
+}
+
+android_app_import {
+	name: "GoogleTetheringResOverlay",
+	owner: "redmi",
+	apk: "proprietary/vendor/app/GoogleTetheringResOverlay/GoogleTetheringResOverlay.apk",
+	certificate: "platform",
+	dex_preopt: {
+		enabled: false,
+	},
+	soc_specific: true,
+}
+
+android_app_import {
+	name: "InProcessTetheringResOverlay",
+	owner: "redmi",
+	apk: "proprietary/vendor/app/InProcessTetheringResOverlay/InProcessTetheringResOverlay.apk",
+	certificate: "platform",
+	dex_preopt: {
+		enabled: false,
+	},
+	soc_specific: true,
+}
+
+android_app_import {
+	name: "NetworkStackInProcessResOverlay",
+	owner: "redmi",
+	apk: "proprietary/vendor/app/NetworkStackInProcessResOverlay/NetworkStackInProcessResOverlay.apk",
+	certificate: "platform",
+	dex_preopt: {
+		enabled: false,
+	},
+	soc_specific: true,
+}
+
+android_app_import {
+	name: "NetworkStackResOverlay",
+	owner: "redmi",
+	apk: "proprietary/vendor/app/NetworkStackResOverlay/NetworkStackResOverlay.apk",
+	certificate: "platform",
+	dex_preopt: {
+		enabled: false,
+	},
+	soc_specific: true,
+}
+
+android_app_import {
+	name: "NotchOverlay",
+	owner: "redmi",
+	apk: "proprietary/vendor/app/NotchOverlay/NotchOverlay.apk",
+	certificate: "platform",
+	dex_preopt: {
+		enabled: false,
+	},
+	soc_specific: true,
+}
+
+android_app_import {
+	name: "TetheringResOverlay",
+	owner: "redmi",
+	apk: "proprietary/vendor/app/TetheringResOverlay/TetheringResOverlay.apk",
+	certificate: "platform",
+	dex_preopt: {
+		enabled: false,
+	},
+	soc_specific: true,
 }
 
 dex_import {
@@ -41,6 +139,12 @@ dex_import {
 }
 
 dex_import {
+	name: "mediatek-ims-legacy",
+	owner: "redmi",
+	jars: ["proprietary/framework/mediatek-ims-legacy.jar"],
+}
+
+dex_import {
 	name: "mediatek-telecom-common",
 	owner: "redmi",
 	jars: ["proprietary/framework/mediatek-telecom-common.jar"],
@@ -56,5 +160,315 @@ dex_import {
 	name: "mediatek-telephony-common",
 	owner: "redmi",
 	jars: ["proprietary/framework/mediatek-telephony-common.jar"],
+}
+
+dex_import {
+	name: "mediatek-wfo-legacy",
+	owner: "redmi",
+	jars: ["proprietary/framework/mediatek-wfo-legacy.jar"],
+}
+
+dex_import {
+	name: "com.fingerprints.extension",
+	owner: "redmi",
+	jars: ["proprietary/vendor/framework/com.fingerprints.extension.jar"],
+	soc_specific: true,
+}
+
+prebuilt_etc_xml {
+	name: "android.hardware.biometrics.fingerprint@2.1-service",
+	owner: "redmi",
+	src: "proprietary/vendor/etc/vintf/manifest/android.hardware.biometrics.fingerprint@2.1-service.xml",
+	filename_from_src: true,
+	sub_dir: "vintf/manifest",
+	soc_specific: true,
+}
+
+prebuilt_etc_xml {
+	name: "android.hardware.boot@1.1",
+	owner: "redmi",
+	src: "proprietary/vendor/etc/vintf/manifest/android.hardware.boot@1.1.xml",
+	filename_from_src: true,
+	sub_dir: "vintf/manifest",
+	soc_specific: true,
+}
+
+prebuilt_etc_xml {
+	name: "android.hardware.cas@1.2-service",
+	owner: "redmi",
+	src: "proprietary/vendor/etc/vintf/manifest/android.hardware.cas@1.2-service.xml",
+	filename_from_src: true,
+	sub_dir: "vintf/manifest",
+	soc_specific: true,
+}
+
+prebuilt_etc_xml {
+	name: "android.hardware.gpu@1.0-service",
+	owner: "redmi",
+	src: "proprietary/vendor/etc/vintf/manifest/android.hardware.gpu@1.0-service.xml",
+	filename_from_src: true,
+	sub_dir: "vintf/manifest",
+	soc_specific: true,
+}
+
+prebuilt_etc_xml {
+	name: "android.hardware.health@2.1",
+	owner: "redmi",
+	src: "proprietary/vendor/etc/vintf/manifest/android.hardware.health@2.1.xml",
+	filename_from_src: true,
+	sub_dir: "vintf/manifest",
+	soc_specific: true,
+}
+
+prebuilt_etc_xml {
+	name: "android.hardware.neuralnetworks@1.3-service-mtk-dsp-gpu",
+	owner: "redmi",
+	src: "proprietary/vendor/etc/vintf/manifest/android.hardware.neuralnetworks@1.3-service-mtk-dsp-gpu.xml",
+	filename_from_src: true,
+	sub_dir: "vintf/manifest",
+	soc_specific: true,
+}
+
+prebuilt_etc_xml {
+	name: "android.hardware.wifi.hostapd",
+	owner: "redmi",
+	src: "proprietary/vendor/etc/vintf/manifest/android.hardware.wifi.hostapd.xml",
+	filename_from_src: true,
+	sub_dir: "vintf/manifest",
+	soc_specific: true,
+}
+
+prebuilt_etc_xml {
+	name: "android.hardware.wifi@1.0-service",
+	owner: "redmi",
+	src: "proprietary/vendor/etc/vintf/manifest/android.hardware.wifi@1.0-service.xml",
+	filename_from_src: true,
+	sub_dir: "vintf/manifest",
+	soc_specific: true,
+}
+
+prebuilt_etc_xml {
+	name: "lights-mtk-default",
+	owner: "redmi",
+	src: "proprietary/vendor/etc/vintf/manifest/lights-mtk-default.xml",
+	filename_from_src: true,
+	sub_dir: "vintf/manifest",
+	soc_specific: true,
+}
+
+prebuilt_etc_xml {
+	name: "manifest",
+	owner: "redmi",
+	src: "proprietary/vendor/etc/vintf/manifest/manifest.xml",
+	filename_from_src: true,
+	sub_dir: "vintf/manifest",
+	soc_specific: true,
+}
+
+prebuilt_etc_xml {
+	name: "manifest_android.hardware.drm@1.3-service.clearkey",
+	owner: "redmi",
+	src: "proprietary/vendor/etc/vintf/manifest/manifest_android.hardware.drm@1.3-service.clearkey.xml",
+	filename_from_src: true,
+	sub_dir: "vintf/manifest",
+	soc_specific: true,
+}
+
+prebuilt_etc_xml {
+	name: "manifest_android.hardware.drm@1.3-service.widevine",
+	owner: "redmi",
+	src: "proprietary/vendor/etc/vintf/manifest/manifest_android.hardware.drm@1.3-service.widevine.xml",
+	filename_from_src: true,
+	sub_dir: "vintf/manifest",
+	soc_specific: true,
+}
+
+prebuilt_etc_xml {
+	name: "manifest_vendor.xiaomi.hardware.mfidoca",
+	owner: "redmi",
+	src: "proprietary/vendor/etc/vintf/manifest/manifest_vendor.xiaomi.hardware.mfidoca.xml",
+	filename_from_src: true,
+	sub_dir: "vintf/manifest",
+	soc_specific: true,
+}
+
+prebuilt_etc_xml {
+	name: "manifest_vendor.xiaomi.hardware.mlipay",
+	owner: "redmi",
+	src: "proprietary/vendor/etc/vintf/manifest/manifest_vendor.xiaomi.hardware.mlipay.xml",
+	filename_from_src: true,
+	sub_dir: "vintf/manifest",
+	soc_specific: true,
+}
+
+prebuilt_etc_xml {
+	name: "manifest_vendor.xiaomi.hardware.mtdservice",
+	owner: "redmi",
+	src: "proprietary/vendor/etc/vintf/manifest/manifest_vendor.xiaomi.hardware.mtdservice.xml",
+	filename_from_src: true,
+	sub_dir: "vintf/manifest",
+	soc_specific: true,
+}
+
+prebuilt_etc_xml {
+	name: "manifest_vendor.xiaomi.hardware.tidaservice",
+	owner: "redmi",
+	src: "proprietary/vendor/etc/vintf/manifest/manifest_vendor.xiaomi.hardware.tidaservice.xml",
+	filename_from_src: true,
+	sub_dir: "vintf/manifest",
+	soc_specific: true,
+}
+
+prebuilt_etc_xml {
+	name: "manifest_vendor.xiaomi.hardware.vsimapp",
+	owner: "redmi",
+	src: "proprietary/vendor/etc/vintf/manifest/manifest_vendor.xiaomi.hardware.vsimapp.xml",
+	filename_from_src: true,
+	sub_dir: "vintf/manifest",
+	soc_specific: true,
+}
+
+prebuilt_etc_xml {
+	name: "power-default",
+	owner: "redmi",
+	src: "proprietary/vendor/etc/vintf/manifest/power-default.xml",
+	filename_from_src: true,
+	sub_dir: "vintf/manifest",
+	soc_specific: true,
+}
+
+prebuilt_etc_xml {
+	name: "vendor.mediatek.hardware.dplanner@2.0-service",
+	owner: "redmi",
+	src: "proprietary/vendor/etc/vintf/manifest/vendor.mediatek.hardware.dplanner@2.0-service.xml",
+	filename_from_src: true,
+	sub_dir: "vintf/manifest",
+	soc_specific: true,
+}
+
+prebuilt_etc_xml {
+	name: "vendor.xiaomi.hardware.micharge@1.0",
+	owner: "redmi",
+	src: "proprietary/vendor/etc/vintf/manifest/vendor.xiaomi.hardware.micharge@1.0.xml",
+	filename_from_src: true,
+	sub_dir: "vintf/manifest",
+	soc_specific: true,
+}
+
+prebuilt_etc_xml {
+	name: "vendor.xiaomi.hardware.misys@1.0",
+	owner: "redmi",
+	src: "proprietary/vendor/etc/vintf/manifest/vendor.xiaomi.hardware.misys@1.0.xml",
+	filename_from_src: true,
+	sub_dir: "vintf/manifest",
+	soc_specific: true,
+}
+
+prebuilt_etc_xml {
+	name: "vendor.xiaomi.hardware.misys@2.0",
+	owner: "redmi",
+	src: "proprietary/vendor/etc/vintf/manifest/vendor.xiaomi.hardware.misys@2.0.xml",
+	filename_from_src: true,
+	sub_dir: "vintf/manifest",
+	soc_specific: true,
+}
+
+prebuilt_etc_xml {
+	name: "vendor.xiaomi.hardware.misys@3.0",
+	owner: "redmi",
+	src: "proprietary/vendor/etc/vintf/manifest/vendor.xiaomi.hardware.misys@3.0.xml",
+	filename_from_src: true,
+	sub_dir: "vintf/manifest",
+	soc_specific: true,
+}
+
+prebuilt_etc_xml {
+	name: "vibrator-mtk-default",
+	owner: "redmi",
+	src: "proprietary/vendor/etc/vintf/manifest/vibrator-mtk-default.xml",
+	filename_from_src: true,
+	sub_dir: "vintf/manifest",
+	soc_specific: true,
+}
+
+prebuilt_etc_xml {
+	name: "manifest_maltose",
+	owner: "redmi",
+	src: "proprietary/vendor/etc/vintf/manifest_maltose.xml",
+	filename_from_src: true,
+	sub_dir: "vintf",
+	soc_specific: true,
+}
+
+prebuilt_etc_xml {
+	name: "manifest_rosemary",
+	owner: "redmi",
+	src: "proprietary/vendor/etc/vintf/manifest_rosemary.xml",
+	filename_from_src: true,
+	sub_dir: "vintf",
+	soc_specific: true,
+}
+
+prebuilt_etc_xml {
+	name: "manifest_secret",
+	owner: "redmi",
+	src: "proprietary/vendor/etc/vintf/manifest_secret.xml",
+	filename_from_src: true,
+	sub_dir: "vintf",
+	soc_specific: true,
+}
+
+prebuilt_etc_xml {
+	name: "manifest_dsds",
+	owner: "redmi",
+	src: "proprietary/odm/etc/vintf/manifest_dsds.xml",
+	filename_from_src: true,
+	sub_dir: "vintf",
+	device_specific: true,
+}
+
+prebuilt_etc_xml {
+	name: "manifest_dsds_se",
+	owner: "redmi",
+	src: "proprietary/odm/etc/vintf/manifest_dsds_se.xml",
+	filename_from_src: true,
+	sub_dir: "vintf",
+	device_specific: true,
+}
+
+prebuilt_etc_xml {
+	name: "manifest_qsqs",
+	owner: "redmi",
+	src: "proprietary/odm/etc/vintf/manifest_qsqs.xml",
+	filename_from_src: true,
+	sub_dir: "vintf",
+	device_specific: true,
+}
+
+prebuilt_etc_xml {
+	name: "manifest_ss",
+	owner: "redmi",
+	src: "proprietary/odm/etc/vintf/manifest_ss.xml",
+	filename_from_src: true,
+	sub_dir: "vintf",
+	device_specific: true,
+}
+
+prebuilt_etc_xml {
+	name: "manifest_ss_se",
+	owner: "redmi",
+	src: "proprietary/odm/etc/vintf/manifest_ss_se.xml",
+	filename_from_src: true,
+	sub_dir: "vintf",
+	device_specific: true,
+}
+
+prebuilt_etc_xml {
+	name: "manifest_tsts",
+	owner: "redmi",
+	src: "proprietary/odm/etc/vintf/manifest_tsts.xml",
+	filename_from_src: true,
+	sub_dir: "vintf",
+	device_specific: true,
 }
 
