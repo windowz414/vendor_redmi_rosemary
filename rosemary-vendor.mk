@@ -2188,7 +2188,6 @@ PRODUCT_COPY_FILES += \
     vendor/redmi/rosemary/proprietary/vendor/lib/libfeatureiodrv_mem.so:$(TARGET_COPY_OUT_VENDOR)/lib/libfeatureiodrv_mem.so \
     vendor/redmi/rosemary/proprietary/vendor/lib/libfgauge_gm30.so:$(TARGET_COPY_OUT_VENDOR)/lib/libfgauge_gm30.so \
     vendor/redmi/rosemary/proprietary/vendor/lib/libfile_op.so:$(TARGET_COPY_OUT_VENDOR)/lib/libfile_op.so \
-    vendor/redmi/rosemary/proprietary/vendor/lib/libfmq.so:$(TARGET_COPY_OUT_VENDOR)/lib/libfmq.so \
     vendor/redmi/rosemary/proprietary/vendor/lib/libfpspolicy.so:$(TARGET_COPY_OUT_VENDOR)/lib/libfpspolicy.so \
     vendor/redmi/rosemary/proprietary/vendor/lib/libfvaudio.so:$(TARGET_COPY_OUT_VENDOR)/lib/libfvaudio.so \
     vendor/redmi/rosemary/proprietary/vendor/lib/libged.so:$(TARGET_COPY_OUT_VENDOR)/lib/libged.so \
@@ -3136,7 +3135,6 @@ PRODUCT_COPY_FILES += \
     vendor/redmi/rosemary/proprietary/vendor/lib64/libfeatureiodrv_mem.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libfeatureiodrv_mem.so \
     vendor/redmi/rosemary/proprietary/vendor/lib64/libfft_vendor.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libfft_vendor.so \
     vendor/redmi/rosemary/proprietary/vendor/lib64/libfile_op.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libfile_op.so \
-    vendor/redmi/rosemary/proprietary/vendor/lib64/libfmq.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libfmq.so \
     vendor/redmi/rosemary/proprietary/vendor/lib64/libforkexecwrap.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libforkexecwrap.so \
     vendor/redmi/rosemary/proprietary/vendor/lib64/libfpspolicy.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libfpspolicy.so \
     vendor/redmi/rosemary/proprietary/vendor/lib64/libfvaudio.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libfvaudio.so \
