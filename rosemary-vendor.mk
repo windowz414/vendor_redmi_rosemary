@@ -2465,7 +2465,6 @@ PRODUCT_COPY_FILES += \
     vendor/redmi/rosemary/proprietary/vendor/lib64/hw/android.hardware.thermal@1.0-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/android.hardware.thermal@1.0-impl.so \
     vendor/redmi/rosemary/proprietary/vendor/lib64/hw/android.hardware.thermal@2.0-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/android.hardware.thermal@2.0-impl.so \
     vendor/redmi/rosemary/proprietary/vendor/lib64/hw/audio.bluetooth.default.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/audio.bluetooth.default.so \
-    vendor/redmi/rosemary/proprietary/vendor/lib64/hw/audio.primary.default.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/audio.primary.default.so \
     vendor/redmi/rosemary/proprietary/vendor/lib64/hw/audio.primary.mt6785.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/audio.primary.mt6785.so \
     vendor/redmi/rosemary/proprietary/vendor/lib64/hw/audio.r_submix.default.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/audio.r_submix.default.so \
     vendor/redmi/rosemary/proprietary/vendor/lib64/hw/audio.r_submix.mt6785.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/audio.r_submix.mt6785.so \
