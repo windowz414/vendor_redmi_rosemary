@@ -6,155 +6,72 @@ PRODUCT_SOONG_NAMESPACES += \
     vendor/redmi/rosemary
 
 PRODUCT_COPY_FILES += \
-    vendor/redmi/rosemary/proprietary/bin/kpoc_charger:$(TARGET_COPY_OUT_SYSTEM)/bin/kpoc_charger \
+    vendor/redmi/rosemary/proprietary/bin/chargeonlymode:$(TARGET_COPY_OUT_SYSTEM)/bin/chargeonlymode \
     vendor/redmi/rosemary/proprietary/bin/vtservice:$(TARGET_COPY_OUT_SYSTEM)/bin/vtservice \
-    vendor/redmi/rosemary/proprietary/etc/a2dp_audio_policy_configuration.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/a2dp_audio_policy_configuration.xml \
-    vendor/redmi/rosemary/proprietary/etc/a2dp_in_audio_policy_configuration.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/a2dp_in_audio_policy_configuration.xml \
-    vendor/redmi/rosemary/proprietary/etc/audio_effects.conf:$(TARGET_COPY_OUT_SYSTEM)/etc/audio_effects.conf \
-    vendor/redmi/rosemary/proprietary/etc/audio_policy_configuration.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/audio_policy_configuration.xml \
-    vendor/redmi/rosemary/proprietary/etc/audio_policy_configuration_bluetooth_legacy_hal.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/audio_policy_configuration_bluetooth_legacy_hal.xml \
-    vendor/redmi/rosemary/proprietary/etc/audio_policy_configuration_stub.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/audio_policy_configuration_stub.xml \
-    vendor/redmi/rosemary/proprietary/etc/audio_policy_engine_configuration.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/audio_policy_engine_configuration.xml \
-    vendor/redmi/rosemary/proprietary/etc/audio_policy_engine_default_stream_volumes.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/audio_policy_engine_default_stream_volumes.xml \
-    vendor/redmi/rosemary/proprietary/etc/audio_policy_engine_product_strategies.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/audio_policy_engine_product_strategies.xml \
-    vendor/redmi/rosemary/proprietary/etc/audio_policy_engine_stream_volumes.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/audio_policy_engine_stream_volumes.xml \
-    vendor/redmi/rosemary/proprietary/etc/audio_policy_volumes.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/audio_policy_volumes.xml \
-    vendor/redmi/rosemary/proprietary/etc/bluetooth_audio_policy_configuration.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/bluetooth_audio_policy_configuration.xml \
-    vendor/redmi/rosemary/proprietary/etc/default_volume_tables.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/default_volume_tables.xml \
-    vendor/redmi/rosemary/proprietary/etc/hearing_aid_audio_policy_configuration.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/hearing_aid_audio_policy_configuration.xml \
     vendor/redmi/rosemary/proprietary/etc/init/init.vtservice.rc:$(TARGET_COPY_OUT_SYSTEM)/etc/init/init.vtservice.rc \
-    vendor/redmi/rosemary/proprietary/etc/init/kpoc_charger.rc:$(TARGET_COPY_OUT_SYSTEM)/etc/init/kpoc_charger.rc \
-    vendor/redmi/rosemary/proprietary/etc/r_submix_audio_policy_configuration.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/r_submix_audio_policy_configuration.xml \
-    vendor/redmi/rosemary/proprietary/etc/seccomp_policy/mediacodec.policy:$(TARGET_COPY_OUT_SYSTEM)/etc/seccomp_policy/mediacodec.policy \
-    vendor/redmi/rosemary/proprietary/etc/usb_audio_policy_configuration.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/usb_audio_policy_configuration.xml \
     vendor/redmi/rosemary/proprietary/lib/libcomutils.so:$(TARGET_COPY_OUT_SYSTEM)/lib/libcomutils.so \
-    vendor/redmi/rosemary/proprietary/lib/libem_support_jni.so:$(TARGET_COPY_OUT_SYSTEM)/lib/libem_support_jni.so \
-    vendor/redmi/rosemary/proprietary/lib/libem_usb_jni.so:$(TARGET_COPY_OUT_SYSTEM)/lib/libem_usb_jni.so \
-    vendor/redmi/rosemary/proprietary/lib/libem_wifi_jni.so:$(TARGET_COPY_OUT_SYSTEM)/lib/libem_wifi_jni.so \
     vendor/redmi/rosemary/proprietary/lib/libimsma.so:$(TARGET_COPY_OUT_SYSTEM)/lib/libimsma.so \
     vendor/redmi/rosemary/proprietary/lib/libimsma_adapt.so:$(TARGET_COPY_OUT_SYSTEM)/lib/libimsma_adapt.so \
     vendor/redmi/rosemary/proprietary/lib/libimsma_rtp.so:$(TARGET_COPY_OUT_SYSTEM)/lib/libimsma_rtp.so \
     vendor/redmi/rosemary/proprietary/lib/libimsma_socketwrapper.so:$(TARGET_COPY_OUT_SYSTEM)/lib/libimsma_socketwrapper.so \
-    vendor/redmi/rosemary/proprietary/lib/libldacBT_abr.so:$(TARGET_COPY_OUT_SYSTEM)/lib/libldacBT_abr.so \
-    vendor/redmi/rosemary/proprietary/lib/libldacBT_enc.so:$(TARGET_COPY_OUT_SYSTEM)/lib/libldacBT_enc.so \
-    vendor/redmi/rosemary/proprietary/lib/libmedia_codeclist.so:$(TARGET_COPY_OUT_SYSTEM)/lib/libmedia_codeclist.so \
     vendor/redmi/rosemary/proprietary/lib/libmtk_vt_service.so:$(TARGET_COPY_OUT_SYSTEM)/lib/libmtk_vt_service.so \
     vendor/redmi/rosemary/proprietary/lib/libmtk_vt_wrapper.so:$(TARGET_COPY_OUT_SYSTEM)/lib/libmtk_vt_wrapper.so \
     vendor/redmi/rosemary/proprietary/lib/libmtkavenhancements.so:$(TARGET_COPY_OUT_SYSTEM)/lib/libmtkavenhancements.so \
     vendor/redmi/rosemary/proprietary/lib/libmtkperf_client.so:$(TARGET_COPY_OUT_SYSTEM)/lib/libmtkperf_client.so \
-    vendor/redmi/rosemary/proprietary/lib/libshowlogo.so:$(TARGET_COPY_OUT_SYSTEM)/lib/libshowlogo.so \
     vendor/redmi/rosemary/proprietary/lib/libsignal.so:$(TARGET_COPY_OUT_SYSTEM)/lib/libsignal.so \
     vendor/redmi/rosemary/proprietary/lib/libsink.so:$(TARGET_COPY_OUT_SYSTEM)/lib/libsink.so \
     vendor/redmi/rosemary/proprietary/lib/libsource.so:$(TARGET_COPY_OUT_SYSTEM)/lib/libsource.so \
-    vendor/redmi/rosemary/proprietary/lib/libstagefright_bufferpool@2.0.1.so:$(TARGET_COPY_OUT_SYSTEM)/lib/libstagefright_bufferpool@2.0.1.so \
-    vendor/redmi/rosemary/proprietary/lib/libstagefright_codecbase.so:$(TARGET_COPY_OUT_SYSTEM)/lib/libstagefright_codecbase.so \
-    vendor/redmi/rosemary/proprietary/lib/libstagefright_framecapture_utils.so:$(TARGET_COPY_OUT_SYSTEM)/lib/libstagefright_framecapture_utils.so \
     vendor/redmi/rosemary/proprietary/lib/libstagefright_wfd_mtk.so:$(TARGET_COPY_OUT_SYSTEM)/lib/libstagefright_wfd_mtk.so \
-    vendor/redmi/rosemary/proprietary/lib/libsysenv_system.so:$(TARGET_COPY_OUT_SYSTEM)/lib/libsysenv_system.so \
     vendor/redmi/rosemary/proprietary/lib/libvcodec_cap.so:$(TARGET_COPY_OUT_SYSTEM)/lib/libvcodec_cap.so \
     vendor/redmi/rosemary/proprietary/lib/libvcodec_capenc.so:$(TARGET_COPY_OUT_SYSTEM)/lib/libvcodec_capenc.so \
     vendor/redmi/rosemary/proprietary/lib/libvt_avsync.so:$(TARGET_COPY_OUT_SYSTEM)/lib/libvt_avsync.so \
-    vendor/redmi/rosemary/proprietary/lib/vendor.xiaomi.hardware.displayfeature@1.0.so:$(TARGET_COPY_OUT_SYSTEM)/lib/vendor.xiaomi.hardware.displayfeature@1.0.so \
-    vendor/redmi/rosemary/proprietary/lib/vendor.xiaomi.hardware.micharge@1.0.so:$(TARGET_COPY_OUT_SYSTEM)/lib/vendor.xiaomi.hardware.micharge@1.0.so \
-    vendor/redmi/rosemary/proprietary/lib/vendor.xiaomi.hardware.touchfeature@1.0.so:$(TARGET_COPY_OUT_SYSTEM)/lib/vendor.xiaomi.hardware.touchfeature@1.0.so \
-    vendor/redmi/rosemary/proprietary/lib/vendor.xiaomi.hardware.vibratorfeature@1.0.so:$(TARGET_COPY_OUT_SYSTEM)/lib/vendor.xiaomi.hardware.vibratorfeature@1.0.so \
-    vendor/redmi/rosemary/proprietary/lib64/libem_support_jni.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/libem_support_jni.so \
-    vendor/redmi/rosemary/proprietary/lib64/libem_usb_jni.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/libem_usb_jni.so \
-    vendor/redmi/rosemary/proprietary/lib64/libem_wifi_jni.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/libem_wifi_jni.so \
-    vendor/redmi/rosemary/proprietary/lib64/libldacBT_abr.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/libldacBT_abr.so \
-    vendor/redmi/rosemary/proprietary/lib64/libldacBT_enc.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/libldacBT_enc.so \
-    vendor/redmi/rosemary/proprietary/lib64/libmedia_codeclist.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/libmedia_codeclist.so \
     vendor/redmi/rosemary/proprietary/lib64/libmtk_vt_wrapper.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/libmtk_vt_wrapper.so \
     vendor/redmi/rosemary/proprietary/lib64/libmtkavenhancements.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/libmtkavenhancements.so \
     vendor/redmi/rosemary/proprietary/lib64/libmtkperf_client.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/libmtkperf_client.so \
-    vendor/redmi/rosemary/proprietary/lib64/libstagefright_bufferpool@2.0.1.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/libstagefright_bufferpool@2.0.1.so \
-    vendor/redmi/rosemary/proprietary/lib64/libstagefright_codecbase.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/libstagefright_codecbase.so \
-    vendor/redmi/rosemary/proprietary/lib64/libstagefright_framecapture_utils.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/libstagefright_framecapture_utils.so \
-    vendor/redmi/rosemary/proprietary/lib64/libsysenv_system.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/libsysenv_system.so \
     vendor/redmi/rosemary/proprietary/lib64/libvcodec_cap.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/libvcodec_cap.so \
     vendor/redmi/rosemary/proprietary/lib64/libvcodec_capenc.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/libvcodec_capenc.so \
-    vendor/redmi/rosemary/proprietary/lib64/vendor.xiaomi.hardware.displayfeature@1.0.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/vendor.xiaomi.hardware.displayfeature@1.0.so \
-    vendor/redmi/rosemary/proprietary/lib64/vendor.xiaomi.hardware.micharge@1.0.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/vendor.xiaomi.hardware.micharge@1.0.so \
-    vendor/redmi/rosemary/proprietary/lib64/vendor.xiaomi.hardware.touchfeature@1.0.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/vendor.xiaomi.hardware.touchfeature@1.0.so \
-    vendor/redmi/rosemary/proprietary/lib64/vendor.xiaomi.hardware.vibratorfeature@1.0.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/vendor.xiaomi.hardware.vibratorfeature@1.0.so \
-    vendor/redmi/rosemary/proprietary/system_ext/lib/vendor.mediatek.hardware.gpu@1.0.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib/vendor.mediatek.hardware.gpu@1.0.so \
-    vendor/redmi/rosemary/proprietary/system_ext/lib/vendor.mediatek.hardware.mtkradioex@1.0.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib/vendor.mediatek.hardware.mtkradioex@1.0.so \
     vendor/redmi/rosemary/proprietary/system_ext/lib/vendor.mediatek.hardware.videotelephony@1.0.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib/vendor.mediatek.hardware.videotelephony@1.0.so \
-    vendor/redmi/rosemary/proprietary/system_ext/lib64/vendor.mediatek.hardware.gpu@1.0.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/vendor.mediatek.hardware.gpu@1.0.so \
-    vendor/redmi/rosemary/proprietary/system_ext/lib64/vendor.mediatek.hardware.mtkradioex@1.0.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/vendor.mediatek.hardware.mtkradioex@1.0.so \
     vendor/redmi/rosemary/proprietary/system_ext/lib64/vendor.mediatek.hardware.videotelephony@1.0.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/vendor.mediatek.hardware.videotelephony@1.0.so \
     vendor/redmi/rosemary/proprietary/vendor/bin/STFlashTool:$(TARGET_COPY_OUT_VENDOR)/bin/STFlashTool \
     vendor/redmi/rosemary/proprietary/vendor/bin/SoterProvisioningTool:$(TARGET_COPY_OUT_VENDOR)/bin/SoterProvisioningTool \
-    vendor/redmi/rosemary/proprietary/vendor/bin/aee_aedv:$(TARGET_COPY_OUT_VENDOR)/bin/aee_aedv \
-    vendor/redmi/rosemary/proprietary/vendor/bin/aee_aedv64:$(TARGET_COPY_OUT_VENDOR)/bin/aee_aedv64 \
-    vendor/redmi/rosemary/proprietary/vendor/bin/aee_dumpstatev:$(TARGET_COPY_OUT_VENDOR)/bin/aee_dumpstatev \
-    vendor/redmi/rosemary/proprietary/vendor/bin/aeev:$(TARGET_COPY_OUT_VENDOR)/bin/aeev \
-    vendor/redmi/rosemary/proprietary/vendor/bin/applypatch:$(TARGET_COPY_OUT_VENDOR)/bin/applypatch \
     vendor/redmi/rosemary/proprietary/vendor/bin/atcid:$(TARGET_COPY_OUT_VENDOR)/bin/atcid \
     vendor/redmi/rosemary/proprietary/vendor/bin/audiocmdservice_atci:$(TARGET_COPY_OUT_VENDOR)/bin/audiocmdservice_atci \
     vendor/redmi/rosemary/proprietary/vendor/bin/autobt:$(TARGET_COPY_OUT_VENDOR)/bin/autobt \
     vendor/redmi/rosemary/proprietary/vendor/bin/batterysecret:$(TARGET_COPY_OUT_VENDOR)/bin/batterysecret \
     vendor/redmi/rosemary/proprietary/vendor/bin/bip:$(TARGET_COPY_OUT_VENDOR)/bin/bip \
-    vendor/redmi/rosemary/proprietary/vendor/bin/boringssl_self_test32:$(TARGET_COPY_OUT_VENDOR)/bin/boringssl_self_test32 \
-    vendor/redmi/rosemary/proprietary/vendor/bin/boringssl_self_test64:$(TARGET_COPY_OUT_VENDOR)/bin/boringssl_self_test64 \
     vendor/redmi/rosemary/proprietary/vendor/bin/bp_kmsetkey_ca:$(TARGET_COPY_OUT_VENDOR)/bin/bp_kmsetkey_ca \
     vendor/redmi/rosemary/proprietary/vendor/bin/cal_tool:$(TARGET_COPY_OUT_VENDOR)/bin/cal_tool \
     vendor/redmi/rosemary/proprietary/vendor/bin/ccci_fsd:$(TARGET_COPY_OUT_VENDOR)/bin/ccci_fsd \
     vendor/redmi/rosemary/proprietary/vendor/bin/ccci_mdinit:$(TARGET_COPY_OUT_VENDOR)/bin/ccci_mdinit \
     vendor/redmi/rosemary/proprietary/vendor/bin/ccci_rpcd:$(TARGET_COPY_OUT_VENDOR)/bin/ccci_rpcd \
-    vendor/redmi/rosemary/proprietary/vendor/bin/charge_logger:$(TARGET_COPY_OUT_VENDOR)/bin/charge_logger \
     vendor/redmi/rosemary/proprietary/vendor/bin/charon:$(TARGET_COPY_OUT_VENDOR)/bin/charon \
-    vendor/redmi/rosemary/proprietary/vendor/bin/chattr:$(TARGET_COPY_OUT_VENDOR)/bin/chattr \
     vendor/redmi/rosemary/proprietary/vendor/bin/consumerird:$(TARGET_COPY_OUT_VENDOR)/bin/consumerird \
     vendor/redmi/rosemary/proprietary/vendor/bin/dconfig:$(TARGET_COPY_OUT_VENDOR)/bin/dconfig \
-    vendor/redmi/rosemary/proprietary/vendor/bin/devmem:$(TARGET_COPY_OUT_VENDOR)/bin/devmem \
     vendor/redmi/rosemary/proprietary/vendor/bin/dexecutor:$(TARGET_COPY_OUT_VENDOR)/bin/dexecutor \
     vendor/redmi/rosemary/proprietary/vendor/bin/doeapp-memtester:$(TARGET_COPY_OUT_VENDOR)/bin/doeapp-memtester \
     vendor/redmi/rosemary/proprietary/vendor/bin/doeapp-sat:$(TARGET_COPY_OUT_VENDOR)/bin/doeapp-sat \
     vendor/redmi/rosemary/proprietary/vendor/bin/dtc_vendor:$(TARGET_COPY_OUT_VENDOR)/bin/dtc_vendor \
-    vendor/redmi/rosemary/proprietary/vendor/bin/dumpsys:$(TARGET_COPY_OUT_VENDOR)/bin/dumpsys \
     vendor/redmi/rosemary/proprietary/vendor/bin/em_hidl:$(TARGET_COPY_OUT_VENDOR)/bin/em_hidl \
     vendor/redmi/rosemary/proprietary/vendor/bin/epdg_wod:$(TARGET_COPY_OUT_VENDOR)/bin/epdg_wod \
     vendor/redmi/rosemary/proprietary/vendor/bin/factory:$(TARGET_COPY_OUT_VENDOR)/bin/factory \
-    vendor/redmi/rosemary/proprietary/vendor/bin/fidoca:$(TARGET_COPY_OUT_VENDOR)/bin/fidoca \
-    vendor/redmi/rosemary/proprietary/vendor/bin/fsync:$(TARGET_COPY_OUT_VENDOR)/bin/fsync \
     vendor/redmi/rosemary/proprietary/vendor/bin/fuelgauged:$(TARGET_COPY_OUT_VENDOR)/bin/fuelgauged \
     vendor/redmi/rosemary/proprietary/vendor/bin/fuelgauged_nvram:$(TARGET_COPY_OUT_VENDOR)/bin/fuelgauged_nvram \
-    vendor/redmi/rosemary/proprietary/vendor/bin/getconf:$(TARGET_COPY_OUT_VENDOR)/bin/getconf \
-    vendor/redmi/rosemary/proprietary/vendor/bin/getgameserver:$(TARGET_COPY_OUT_VENDOR)/bin/getgameserver \
     vendor/redmi/rosemary/proprietary/vendor/bin/gsm0710muxd:$(TARGET_COPY_OUT_VENDOR)/bin/gsm0710muxd \
     vendor/redmi/rosemary/proprietary/vendor/bin/gsort:$(TARGET_COPY_OUT_VENDOR)/bin/gsort \
-    vendor/redmi/rosemary/proprietary/vendor/bin/hostapd_cli:$(TARGET_COPY_OUT_VENDOR)/bin/hostapd_cli \
     vendor/redmi/rosemary/proprietary/vendor/bin/hw/android.hardware.audio.service.mediatek:$(TARGET_COPY_OUT_VENDOR)/bin/hw/android.hardware.audio.service.mediatek \
-    vendor/redmi/rosemary/proprietary/vendor/bin/hw/android.hardware.biometrics.fingerprint@2.1-service:$(TARGET_COPY_OUT_VENDOR)/bin/hw/android.hardware.biometrics.fingerprint@2.1-service \
     vendor/redmi/rosemary/proprietary/vendor/bin/hw/android.hardware.bluetooth@1.0-service-mediatek:$(TARGET_COPY_OUT_VENDOR)/bin/hw/android.hardware.bluetooth@1.0-service-mediatek \
-    vendor/redmi/rosemary/proprietary/vendor/bin/hw/android.hardware.boot@1.1-service:$(TARGET_COPY_OUT_VENDOR)/bin/hw/android.hardware.boot@1.1-service \
-    vendor/redmi/rosemary/proprietary/vendor/bin/hw/android.hardware.cas@1.2-service:$(TARGET_COPY_OUT_VENDOR)/bin/hw/android.hardware.cas@1.2-service \
-    vendor/redmi/rosemary/proprietary/vendor/bin/hw/android.hardware.drm@1.3-service.clearkey:$(TARGET_COPY_OUT_VENDOR)/bin/hw/android.hardware.drm@1.3-service.clearkey \
     vendor/redmi/rosemary/proprietary/vendor/bin/hw/android.hardware.drm@1.3-service.widevine:$(TARGET_COPY_OUT_VENDOR)/bin/hw/android.hardware.drm@1.3-service.widevine \
-    vendor/redmi/rosemary/proprietary/vendor/bin/hw/android.hardware.gatekeeper@1.0-service:$(TARGET_COPY_OUT_VENDOR)/bin/hw/android.hardware.gatekeeper@1.0-service \
     vendor/redmi/rosemary/proprietary/vendor/bin/hw/android.hardware.gnss@2.1-service-mediatek:$(TARGET_COPY_OUT_VENDOR)/bin/hw/android.hardware.gnss@2.1-service-mediatek \
     vendor/redmi/rosemary/proprietary/vendor/bin/hw/android.hardware.graphics.allocator@4.0-service-mediatek:$(TARGET_COPY_OUT_VENDOR)/bin/hw/android.hardware.graphics.allocator@4.0-service-mediatek \
-    vendor/redmi/rosemary/proprietary/vendor/bin/hw/android.hardware.graphics.composer@2.1-service:$(TARGET_COPY_OUT_VENDOR)/bin/hw/android.hardware.graphics.composer@2.1-service \
-    vendor/redmi/rosemary/proprietary/vendor/bin/hw/android.hardware.health@2.1-service:$(TARGET_COPY_OUT_VENDOR)/bin/hw/android.hardware.health@2.1-service \
-    vendor/redmi/rosemary/proprietary/vendor/bin/hw/android.hardware.ir@1.0-service:$(TARGET_COPY_OUT_VENDOR)/bin/hw/android.hardware.ir@1.0-service \
     vendor/redmi/rosemary/proprietary/vendor/bin/hw/android.hardware.keymaster@4.0-service.beanpod:$(TARGET_COPY_OUT_VENDOR)/bin/hw/android.hardware.keymaster@4.0-service.beanpod \
-    vendor/redmi/rosemary/proprietary/vendor/bin/hw/android.hardware.media.omx@1.0-service:$(TARGET_COPY_OUT_VENDOR)/bin/hw/android.hardware.media.omx@1.0-service \
-    vendor/redmi/rosemary/proprietary/vendor/bin/hw/android.hardware.memtrack@1.0-service:$(TARGET_COPY_OUT_VENDOR)/bin/hw/android.hardware.memtrack@1.0-service \
     vendor/redmi/rosemary/proprietary/vendor/bin/hw/android.hardware.neuralnetworks@1.3-service-mtk-neuron:$(TARGET_COPY_OUT_VENDOR)/bin/hw/android.hardware.neuralnetworks@1.3-service-mtk-neuron \
-    vendor/redmi/rosemary/proprietary/vendor/bin/hw/android.hardware.nfc@1.2-service-st:$(TARGET_COPY_OUT_VENDOR)/bin/hw/android.hardware.nfc@1.2-service-st \
     vendor/redmi/rosemary/proprietary/vendor/bin/hw/android.hardware.secure_element@1.2-service-mediatek:$(TARGET_COPY_OUT_VENDOR)/bin/hw/android.hardware.secure_element@1.2-service-mediatek \
-    vendor/redmi/rosemary/proprietary/vendor/bin/hw/android.hardware.sensors@2.0-service.multihal-mediatek:$(TARGET_COPY_OUT_VENDOR)/bin/hw/android.hardware.sensors@2.0-service.multihal-mediatek \
     vendor/redmi/rosemary/proprietary/vendor/bin/hw/android.hardware.thermal@2.0-service.mtk:$(TARGET_COPY_OUT_VENDOR)/bin/hw/android.hardware.thermal@2.0-service.mtk \
     vendor/redmi/rosemary/proprietary/vendor/bin/hw/android.hardware.usb@1.1-service-mediatek:$(TARGET_COPY_OUT_VENDOR)/bin/hw/android.hardware.usb@1.1-service-mediatek \
-    vendor/redmi/rosemary/proprietary/vendor/bin/hw/android.hardware.vibrator-service.mediatek:$(TARGET_COPY_OUT_VENDOR)/bin/hw/android.hardware.vibrator-service.mediatek \
-    vendor/redmi/rosemary/proprietary/vendor/bin/hw/android.hardware.wifi@1.0-service-lazy:$(TARGET_COPY_OUT_VENDOR)/bin/hw/android.hardware.wifi@1.0-service-lazy \
     vendor/redmi/rosemary/proprietary/vendor/bin/hw/camerahalserver:$(TARGET_COPY_OUT_VENDOR)/bin/hw/camerahalserver \
-    vendor/redmi/rosemary/proprietary/vendor/bin/hw/hostapd:$(TARGET_COPY_OUT_VENDOR)/bin/hw/hostapd \
     vendor/redmi/rosemary/proprietary/vendor/bin/hw/mtkfusionrild:$(TARGET_COPY_OUT_VENDOR)/bin/hw/mtkfusionrild \
     vendor/redmi/rosemary/proprietary/vendor/bin/hw/power_native_test_v_1_0:$(TARGET_COPY_OUT_VENDOR)/bin/hw/power_native_test_v_1_0 \
     vendor/redmi/rosemary/proprietary/vendor/bin/hw/power_native_test_v_1_1:$(TARGET_COPY_OUT_VENDOR)/bin/hw/power_native_test_v_1_1 \
-    vendor/redmi/rosemary/proprietary/vendor/bin/hw/vendor.mediatek.hardware.aee@1.0-service:$(TARGET_COPY_OUT_VENDOR)/bin/hw/vendor.mediatek.hardware.aee@1.0-service \
     vendor/redmi/rosemary/proprietary/vendor/bin/hw/vendor.mediatek.hardware.dfps@1.0-service:$(TARGET_COPY_OUT_VENDOR)/bin/hw/vendor.mediatek.hardware.dfps@1.0-service \
     vendor/redmi/rosemary/proprietary/vendor/bin/hw/vendor.mediatek.hardware.dplanner@2.0-service:$(TARGET_COPY_OUT_VENDOR)/bin/hw/vendor.mediatek.hardware.dplanner@2.0-service \
     vendor/redmi/rosemary/proprietary/vendor/bin/hw/vendor.mediatek.hardware.gpu@1.0-service:$(TARGET_COPY_OUT_VENDOR)/bin/hw/vendor.mediatek.hardware.gpu@1.0-service \
@@ -167,20 +84,7 @@ PRODUCT_COPY_FILES += \
     vendor/redmi/rosemary/proprietary/vendor/bin/hw/vendor.mediatek.hardware.nwk_opt@1.0-service:$(TARGET_COPY_OUT_VENDOR)/bin/hw/vendor.mediatek.hardware.nwk_opt@1.0-service \
     vendor/redmi/rosemary/proprietary/vendor/bin/hw/vendor.mediatek.hardware.pq@2.2-service:$(TARGET_COPY_OUT_VENDOR)/bin/hw/vendor.mediatek.hardware.pq@2.2-service \
     vendor/redmi/rosemary/proprietary/vendor/bin/hw/vendor.microtrust.hardware.soter@1.0-service:$(TARGET_COPY_OUT_VENDOR)/bin/hw/vendor.microtrust.hardware.soter@1.0-service \
-    vendor/redmi/rosemary/proprietary/vendor/bin/hw/vendor.xiaomi.hardware.displayfeature@1.0-service:$(TARGET_COPY_OUT_VENDOR)/bin/hw/vendor.xiaomi.hardware.displayfeature@1.0-service \
-    vendor/redmi/rosemary/proprietary/vendor/bin/hw/vendor.xiaomi.hardware.micharge@1.0-service:$(TARGET_COPY_OUT_VENDOR)/bin/hw/vendor.xiaomi.hardware.micharge@1.0-service \
-    vendor/redmi/rosemary/proprietary/vendor/bin/hw/vendor.xiaomi.hardware.misys@1.0-service:$(TARGET_COPY_OUT_VENDOR)/bin/hw/vendor.xiaomi.hardware.misys@1.0-service \
-    vendor/redmi/rosemary/proprietary/vendor/bin/hw/vendor.xiaomi.hardware.misys@2.0-service:$(TARGET_COPY_OUT_VENDOR)/bin/hw/vendor.xiaomi.hardware.misys@2.0-service \
-    vendor/redmi/rosemary/proprietary/vendor/bin/hw/vendor.xiaomi.hardware.misys@3.0-service:$(TARGET_COPY_OUT_VENDOR)/bin/hw/vendor.xiaomi.hardware.misys@3.0-service \
-    vendor/redmi/rosemary/proprietary/vendor/bin/hw/vendor.xiaomi.hardware.touchfeature@1.0-service:$(TARGET_COPY_OUT_VENDOR)/bin/hw/vendor.xiaomi.hardware.touchfeature@1.0-service \
     vendor/redmi/rosemary/proprietary/vendor/bin/hw/vtservice_hidl:$(TARGET_COPY_OUT_VENDOR)/bin/hw/vtservice_hidl \
-    vendor/redmi/rosemary/proprietary/vendor/bin/hw/wpa_supplicant:$(TARGET_COPY_OUT_VENDOR)/bin/hw/wpa_supplicant \
-    vendor/redmi/rosemary/proprietary/vendor/bin/i2cdetect:$(TARGET_COPY_OUT_VENDOR)/bin/i2cdetect \
-    vendor/redmi/rosemary/proprietary/vendor/bin/i2cdump:$(TARGET_COPY_OUT_VENDOR)/bin/i2cdump \
-    vendor/redmi/rosemary/proprietary/vendor/bin/i2cget:$(TARGET_COPY_OUT_VENDOR)/bin/i2cget \
-    vendor/redmi/rosemary/proprietary/vendor/bin/i2cset:$(TARGET_COPY_OUT_VENDOR)/bin/i2cset \
-    vendor/redmi/rosemary/proprietary/vendor/bin/iconv:$(TARGET_COPY_OUT_VENDOR)/bin/iconv \
-    vendor/redmi/rosemary/proprietary/vendor/bin/install:$(TARGET_COPY_OUT_VENDOR)/bin/install \
     vendor/redmi/rosemary/proprietary/vendor/bin/ipsec_mon:$(TARGET_COPY_OUT_VENDOR)/bin/ipsec_mon \
     vendor/redmi/rosemary/proprietary/vendor/bin/jpegtool:$(TARGET_COPY_OUT_VENDOR)/bin/jpegtool \
     vendor/redmi/rosemary/proprietary/vendor/bin/kmsetkey:$(TARGET_COPY_OUT_VENDOR)/bin/kmsetkey \
@@ -200,7 +104,6 @@ PRODUCT_COPY_FILES += \
     vendor/redmi/rosemary/proprietary/vendor/bin/libccu_ov64b40ofilm_mipi_raw.ddr:$(TARGET_COPY_OUT_VENDOR)/bin/libccu_ov64b40ofilm_mipi_raw.ddr \
     vendor/redmi/rosemary/proprietary/vendor/bin/libccu_ov64b40semco_mipi_raw.ddr:$(TARGET_COPY_OUT_VENDOR)/bin/libccu_ov64b40semco_mipi_raw.ddr \
     vendor/redmi/rosemary/proprietary/vendor/bin/loghidlvendorservice:$(TARGET_COPY_OUT_VENDOR)/bin/loghidlvendorservice \
-    vendor/redmi/rosemary/proprietary/vendor/bin/lsattr:$(TARGET_COPY_OUT_VENDOR)/bin/lsattr \
     vendor/redmi/rosemary/proprietary/vendor/bin/md_monitor:$(TARGET_COPY_OUT_VENDOR)/bin/md_monitor \
     vendor/redmi/rosemary/proprietary/vendor/bin/md_monitor_ctrl:$(TARGET_COPY_OUT_VENDOR)/bin/md_monitor_ctrl \
     vendor/redmi/rosemary/proprietary/vendor/bin/meta_tst:$(TARGET_COPY_OUT_VENDOR)/bin/meta_tst \
@@ -208,19 +111,13 @@ PRODUCT_COPY_FILES += \
     vendor/redmi/rosemary/proprietary/vendor/bin/mlipayd@1.1:$(TARGET_COPY_OUT_VENDOR)/bin/mlipayd@1.1 \
     vendor/redmi/rosemary/proprietary/vendor/bin/mnld:$(TARGET_COPY_OUT_VENDOR)/bin/mnld \
     vendor/redmi/rosemary/proprietary/vendor/bin/mrdump_tool:$(TARGET_COPY_OUT_VENDOR)/bin/mrdump_tool \
-    vendor/redmi/rosemary/proprietary/vendor/bin/mtd@1.2:$(TARGET_COPY_OUT_VENDOR)/bin/mtd@1.2 \
     vendor/redmi/rosemary/proprietary/vendor/bin/mtk_agpsd:$(TARGET_COPY_OUT_VENDOR)/bin/mtk_agpsd \
     vendor/redmi/rosemary/proprietary/vendor/bin/muxreport:$(TARGET_COPY_OUT_VENDOR)/bin/muxreport \
-    vendor/redmi/rosemary/proprietary/vendor/bin/nc:$(TARGET_COPY_OUT_VENDOR)/bin/nc \
-    vendor/redmi/rosemary/proprietary/vendor/bin/netcat:$(TARGET_COPY_OUT_VENDOR)/bin/netcat \
     vendor/redmi/rosemary/proprietary/vendor/bin/netdagent:$(TARGET_COPY_OUT_VENDOR)/bin/netdagent \
     vendor/redmi/rosemary/proprietary/vendor/bin/netdc:$(TARGET_COPY_OUT_VENDOR)/bin/netdc \
     vendor/redmi/rosemary/proprietary/vendor/bin/nfcstackp-vendor:$(TARGET_COPY_OUT_VENDOR)/bin/nfcstackp-vendor \
-    vendor/redmi/rosemary/proprietary/vendor/bin/nproc:$(TARGET_COPY_OUT_VENDOR)/bin/nproc \
-    vendor/redmi/rosemary/proprietary/vendor/bin/nsenter:$(TARGET_COPY_OUT_VENDOR)/bin/nsenter \
     vendor/redmi/rosemary/proprietary/vendor/bin/nv_routing:$(TARGET_COPY_OUT_VENDOR)/bin/nv_routing \
     vendor/redmi/rosemary/proprietary/vendor/bin/nvram_daemon:$(TARGET_COPY_OUT_VENDOR)/bin/nvram_daemon \
-    vendor/redmi/rosemary/proprietary/vendor/bin/readelf:$(TARGET_COPY_OUT_VENDOR)/bin/readelf \
     vendor/redmi/rosemary/proprietary/vendor/bin/recordevent:$(TARGET_COPY_OUT_VENDOR)/bin/recordevent \
     vendor/redmi/rosemary/proprietary/vendor/bin/replayevent:$(TARGET_COPY_OUT_VENDOR)/bin/replayevent \
     vendor/redmi/rosemary/proprietary/vendor/bin/rttv:$(TARGET_COPY_OUT_VENDOR)/bin/rttv \
@@ -230,32 +127,20 @@ PRODUCT_COPY_FILES += \
     vendor/redmi/rosemary/proprietary/vendor/bin/stp_dump3:$(TARGET_COPY_OUT_VENDOR)/bin/stp_dump3 \
     vendor/redmi/rosemary/proprietary/vendor/bin/stroke:$(TARGET_COPY_OUT_VENDOR)/bin/stroke \
     vendor/redmi/rosemary/proprietary/vendor/bin/teei_daemon:$(TARGET_COPY_OUT_VENDOR)/bin/teei_daemon \
-    vendor/redmi/rosemary/proprietary/vendor/bin/test:$(TARGET_COPY_OUT_VENDOR)/bin/test \
-    vendor/redmi/rosemary/proprietary/vendor/bin/testgameserver:$(TARGET_COPY_OUT_VENDOR)/bin/testgameserver \
     vendor/redmi/rosemary/proprietary/vendor/bin/thermal:$(TARGET_COPY_OUT_VENDOR)/bin/thermal \
     vendor/redmi/rosemary/proprietary/vendor/bin/thermal_manager:$(TARGET_COPY_OUT_VENDOR)/bin/thermal_manager \
     vendor/redmi/rosemary/proprietary/vendor/bin/thermalloadalgod:$(TARGET_COPY_OUT_VENDOR)/bin/thermalloadalgod \
-    vendor/redmi/rosemary/proprietary/vendor/bin/tidad@1.1:$(TARGET_COPY_OUT_VENDOR)/bin/tidad@1.1 \
-    vendor/redmi/rosemary/proprietary/vendor/bin/unlink:$(TARGET_COPY_OUT_VENDOR)/bin/unlink \
-    vendor/redmi/rosemary/proprietary/vendor/bin/unshare:$(TARGET_COPY_OUT_VENDOR)/bin/unshare \
-    vendor/redmi/rosemary/proprietary/vendor/bin/uuidgen:$(TARGET_COPY_OUT_VENDOR)/bin/uuidgen \
     vendor/redmi/rosemary/proprietary/vendor/bin/volte_imcb:$(TARGET_COPY_OUT_VENDOR)/bin/volte_imcb \
     vendor/redmi/rosemary/proprietary/vendor/bin/volte_imsm_93:$(TARGET_COPY_OUT_VENDOR)/bin/volte_imsm_93 \
     vendor/redmi/rosemary/proprietary/vendor/bin/volte_md_status:$(TARGET_COPY_OUT_VENDOR)/bin/volte_md_status \
     vendor/redmi/rosemary/proprietary/vendor/bin/volte_stack:$(TARGET_COPY_OUT_VENDOR)/bin/volte_stack \
     vendor/redmi/rosemary/proprietary/vendor/bin/volte_ua:$(TARGET_COPY_OUT_VENDOR)/bin/volte_ua \
     vendor/redmi/rosemary/proprietary/vendor/bin/vpud:$(TARGET_COPY_OUT_VENDOR)/bin/vpud \
-    vendor/redmi/rosemary/proprietary/vendor/bin/vsimd:$(TARGET_COPY_OUT_VENDOR)/bin/vsimd \
-    vendor/redmi/rosemary/proprietary/vendor/bin/watch:$(TARGET_COPY_OUT_VENDOR)/bin/watch \
     vendor/redmi/rosemary/proprietary/vendor/bin/wfca:$(TARGET_COPY_OUT_VENDOR)/bin/wfca \
     vendor/redmi/rosemary/proprietary/vendor/bin/wlan_assistant:$(TARGET_COPY_OUT_VENDOR)/bin/wlan_assistant \
     vendor/redmi/rosemary/proprietary/vendor/bin/wmt_launcher:$(TARGET_COPY_OUT_VENDOR)/bin/wmt_launcher \
     vendor/redmi/rosemary/proprietary/vendor/bin/wmt_loader:$(TARGET_COPY_OUT_VENDOR)/bin/wmt_loader \
-    vendor/redmi/rosemary/proprietary/vendor/bin/wpa_cli:$(TARGET_COPY_OUT_VENDOR)/bin/wpa_cli \
     vendor/redmi/rosemary/proprietary/vendor/bin/xcap:$(TARGET_COPY_OUT_VENDOR)/bin/xcap \
-    vendor/redmi/rosemary/proprietary/vendor/build_maltose.prop:$(TARGET_COPY_OUT_VENDOR)/build_maltose.prop \
-    vendor/redmi/rosemary/proprietary/vendor/build_rosemary.prop:$(TARGET_COPY_OUT_VENDOR)/build_rosemary.prop \
-    vendor/redmi/rosemary/proprietary/vendor/build_secret.prop:$(TARGET_COPY_OUT_VENDOR)/build_secret.prop \
     vendor/redmi/rosemary/proprietary/vendor/data/misc/pdc.txt:$(TARGET_COPY_OUT_VENDOR)/data/misc/pdc.txt \
     vendor/redmi/rosemary/proprietary/vendor/etc/.tp/.ht120.mtc:$(TARGET_COPY_OUT_VENDOR)/etc/.tp/.ht120.mtc \
     vendor/redmi/rosemary/proprietary/vendor/etc/.tp/.thermal_policy_08:$(TARGET_COPY_OUT_VENDOR)/etc/.tp/.thermal_policy_08 \
@@ -283,15 +168,9 @@ PRODUCT_COPY_FILES += \
     vendor/redmi/rosemary/proprietary/vendor/etc/128_Carmen.png:$(TARGET_COPY_OUT_VENDOR)/etc/128_Carmen.png \
     vendor/redmi/rosemary/proprietary/vendor/etc/FV-SAM-MTK2.dat:$(TARGET_COPY_OUT_VENDOR)/etc/FV-SAM-MTK2.dat \
     vendor/redmi/rosemary/proprietary/vendor/etc/MNL_Config.xml:$(TARGET_COPY_OUT_VENDOR)/etc/MNL_Config.xml \
-    vendor/redmi/rosemary/proprietary/vendor/etc/a2dp_audio_policy_configuration.xml:$(TARGET_COPY_OUT_VENDOR)/etc/a2dp_audio_policy_configuration.xml \
-    vendor/redmi/rosemary/proprietary/vendor/etc/a2dp_in_audio_policy_configuration.xml:$(TARGET_COPY_OUT_VENDOR)/etc/a2dp_in_audio_policy_configuration.xml \
-    vendor/redmi/rosemary/proprietary/vendor/etc/aee-config:$(TARGET_COPY_OUT_VENDOR)/etc/aee-config \
     vendor/redmi/rosemary/proprietary/vendor/etc/apdb/APDB_MT6785_S01__W2052:$(TARGET_COPY_OUT_VENDOR)/etc/apdb/APDB_MT6785_S01__W2052 \
     vendor/redmi/rosemary/proprietary/vendor/etc/apdb/APDB_MT6785_S01__W2052_ENUM:$(TARGET_COPY_OUT_VENDOR)/etc/apdb/APDB_MT6785_S01__W2052_ENUM \
     vendor/redmi/rosemary/proprietary/vendor/etc/armnn_app.config:$(TARGET_COPY_OUT_VENDOR)/etc/armnn_app.config \
-    vendor/redmi/rosemary/proprietary/vendor/etc/audio_device.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio_device.xml \
-    vendor/redmi/rosemary/proprietary/vendor/etc/audio_effects.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio_effects.xml \
-    vendor/redmi/rosemary/proprietary/vendor/etc/audio_em.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio_em.xml \
     vendor/redmi/rosemary/proprietary/vendor/etc/audio_param/AudioParamOptions.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio_param/AudioParamOptions.xml \
     vendor/redmi/rosemary/proprietary/vendor/etc/audio_param/BtInfo_AudioParam.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio_param/BtInfo_AudioParam.xml \
     vendor/redmi/rosemary/proprietary/vendor/etc/audio_param/BtInfo_ParamUnitDesc.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio_param/BtInfo_ParamUnitDesc.xml \
@@ -392,15 +271,9 @@ PRODUCT_COPY_FILES += \
     vendor/redmi/rosemary/proprietary/vendor/etc/audio_param/VolumeGainMap_ParamUnitDesc.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio_param/VolumeGainMap_ParamUnitDesc.xml \
     vendor/redmi/rosemary/proprietary/vendor/etc/audio_param/Volume_AudioParam.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio_param/Volume_AudioParam.xml \
     vendor/redmi/rosemary/proprietary/vendor/etc/audio_param/Volume_ParamUnitDesc.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio_param/Volume_ParamUnitDesc.xml \
-    vendor/redmi/rosemary/proprietary/vendor/etc/audio_policy.conf:$(TARGET_COPY_OUT_VENDOR)/etc/audio_policy.conf \
-    vendor/redmi/rosemary/proprietary/vendor/etc/audio_policy_configuration.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio_policy_configuration.xml \
-    vendor/redmi/rosemary/proprietary/vendor/etc/audio_policy_configuration_bluetooth_legacy_hal.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio_policy_configuration_bluetooth_legacy_hal.xml \
-    vendor/redmi/rosemary/proprietary/vendor/etc/audio_policy_volumes.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio_policy_volumes.xml \
-    vendor/redmi/rosemary/proprietary/vendor/etc/aurisys_config.xml:$(TARGET_COPY_OUT_VENDOR)/etc/aurisys_config.xml \
     vendor/redmi/rosemary/proprietary/vendor/etc/aurisys_config_hifi3.xml:$(TARGET_COPY_OUT_VENDOR)/etc/aurisys_config_hifi3.xml \
     vendor/redmi/rosemary/proprietary/vendor/etc/aurisys_param/FV-SAM-MTKXX.dat:$(TARGET_COPY_OUT_VENDOR)/etc/aurisys_param/FV-SAM-MTKXX.dat \
     vendor/redmi/rosemary/proprietary/vendor/etc/aurisys_param/Speech_AudioParam.xml:$(TARGET_COPY_OUT_VENDOR)/etc/aurisys_param/Speech_AudioParam.xml \
-    vendor/redmi/rosemary/proprietary/vendor/etc/bluetooth_audio_policy_configuration.xml:$(TARGET_COPY_OUT_VENDOR)/etc/bluetooth_audio_policy_configuration.xml \
     vendor/redmi/rosemary/proprietary/vendor/etc/camera/CFR_para_48M.bin:$(TARGET_COPY_OUT_VENDOR)/etc/camera/CFR_para_48M.bin \
     vendor/redmi/rosemary/proprietary/vendor/etc/camera/CFR_para_M.bin:$(TARGET_COPY_OUT_VENDOR)/etc/camera/CFR_para_M.bin \
     vendor/redmi/rosemary/proprietary/vendor/etc/camera/CFR_para_T.bin:$(TARGET_COPY_OUT_VENDOR)/etc/camera/CFR_para_T.bin \
@@ -424,7 +297,6 @@ PRODUCT_COPY_FILES += \
     vendor/redmi/rosemary/proprietary/vendor/etc/camera/vidhance_calibration:$(TARGET_COPY_OUT_VENDOR)/etc/camera/vidhance_calibration \
     vendor/redmi/rosemary/proprietary/vendor/etc/cit_config.xml:$(TARGET_COPY_OUT_VENDOR)/etc/cit_config.xml \
     vendor/redmi/rosemary/proprietary/vendor/etc/default_pd_calibration.bin:$(TARGET_COPY_OUT_VENDOR)/etc/default_pd_calibration.bin \
-    vendor/redmi/rosemary/proprietary/vendor/etc/default_volume_tables.xml:$(TARGET_COPY_OUT_VENDOR)/etc/default_volume_tables.xml \
     vendor/redmi/rosemary/proprietary/vendor/etc/device_features/maltose.xml:$(TARGET_COPY_OUT_VENDOR)/etc/device_features/maltose.xml \
     vendor/redmi/rosemary/proprietary/vendor/etc/device_features/rosemary.xml:$(TARGET_COPY_OUT_VENDOR)/etc/device_features/rosemary.xml \
     vendor/redmi/rosemary/proprietary/vendor/etc/device_features/secret.xml:$(TARGET_COPY_OUT_VENDOR)/etc/device_features/secret.xml \
@@ -442,9 +314,6 @@ PRODUCT_COPY_FILES += \
     vendor/redmi/rosemary/proprietary/vendor/etc/ecc_list_preference.xml:$(TARGET_COPY_OUT_VENDOR)/etc/ecc_list_preference.xml \
     vendor/redmi/rosemary/proprietary/vendor/etc/elliptic_sensor.xml:$(TARGET_COPY_OUT_VENDOR)/etc/elliptic_sensor.xml \
     vendor/redmi/rosemary/proprietary/vendor/etc/factory.ini:$(TARGET_COPY_OUT_VENDOR)/etc/factory.ini \
-    vendor/redmi/rosemary/proprietary/vendor/etc/fstab.emmc:$(TARGET_COPY_OUT_VENDOR)/etc/fstab.emmc \
-    vendor/redmi/rosemary/proprietary/vendor/etc/fstab.enableswap:$(TARGET_COPY_OUT_VENDOR)/etc/fstab.enableswap \
-    vendor/redmi/rosemary/proprietary/vendor/etc/fstab.mt6785:$(TARGET_COPY_OUT_VENDOR)/etc/fstab.mt6785 \
     vendor/redmi/rosemary/proprietary/vendor/etc/fstb.cfg:$(TARGET_COPY_OUT_VENDOR)/etc/fstb.cfg \
     vendor/redmi/rosemary/proprietary/vendor/etc/gnss/agps_profiles_conf2.xml:$(TARGET_COPY_OUT_VENDOR)/etc/gnss/agps_profiles_conf2.xml \
     vendor/redmi/rosemary/proprietary/vendor/etc/gnss/carrier/agps_profiles_conf2_carrier_ATnT_Mexico.xml:$(TARGET_COPY_OUT_VENDOR)/etc/gnss/carrier/agps_profiles_conf2_carrier_ATnT_Mexico.xml \
@@ -460,51 +329,27 @@ PRODUCT_COPY_FILES += \
     vendor/redmi/rosemary/proprietary/vendor/etc/gnss/carrier/agps_profiles_conf2_carrier_Test_SIM1.xml:$(TARGET_COPY_OUT_VENDOR)/etc/gnss/carrier/agps_profiles_conf2_carrier_Test_SIM1.xml \
     vendor/redmi/rosemary/proprietary/vendor/etc/gnss/carrier/agps_profiles_conf2_carrier_Test_SIM2.xml:$(TARGET_COPY_OUT_VENDOR)/etc/gnss/carrier/agps_profiles_conf2_carrier_Test_SIM2.xml \
     vendor/redmi/rosemary/proprietary/vendor/etc/gnss/carrier/agps_profiles_conf2_carrier_Verizon_Wireless.xml:$(TARGET_COPY_OUT_VENDOR)/etc/gnss/carrier/agps_profiles_conf2_carrier_Verizon_Wireless.xml \
-    vendor/redmi/rosemary/proprietary/vendor/etc/init/aee_aedv.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/aee_aedv.rc \
-    vendor/redmi/rosemary/proprietary/vendor/etc/init/aee_aedv64.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/aee_aedv64.rc \
     vendor/redmi/rosemary/proprietary/vendor/etc/init/android.hardware.audio.service.mediatek.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.audio.service.mediatek.rc \
-    vendor/redmi/rosemary/proprietary/vendor/etc/init/android.hardware.biometrics.fingerprint@2.1-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.biometrics.fingerprint@2.1-service.rc \
     vendor/redmi/rosemary/proprietary/vendor/etc/init/android.hardware.bluetooth@1.0-service-mediatek.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.bluetooth@1.0-service-mediatek.rc \
-    vendor/redmi/rosemary/proprietary/vendor/etc/init/android.hardware.boot@1.1-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.boot@1.1-service.rc \
-    vendor/redmi/rosemary/proprietary/vendor/etc/init/android.hardware.cas@1.2-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.cas@1.2-service.rc \
-    vendor/redmi/rosemary/proprietary/vendor/etc/init/android.hardware.drm@1.3-service.clearkey.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.drm@1.3-service.clearkey.rc \
     vendor/redmi/rosemary/proprietary/vendor/etc/init/android.hardware.drm@1.3-service.widevine.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.drm@1.3-service.widevine.rc \
-    vendor/redmi/rosemary/proprietary/vendor/etc/init/android.hardware.gatekeeper@1.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.gatekeeper@1.0-service.rc \
     vendor/redmi/rosemary/proprietary/vendor/etc/init/android.hardware.gnss@2.1-service-mediatek.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.gnss@2.1-service-mediatek.rc \
     vendor/redmi/rosemary/proprietary/vendor/etc/init/android.hardware.graphics.allocator@4.0-service-mediatek.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.graphics.allocator@4.0-service-mediatek.rc \
-    vendor/redmi/rosemary/proprietary/vendor/etc/init/android.hardware.graphics.composer@2.1-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.graphics.composer@2.1-service.rc \
-    vendor/redmi/rosemary/proprietary/vendor/etc/init/android.hardware.health@2.1-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.health@2.1-service.rc \
-    vendor/redmi/rosemary/proprietary/vendor/etc/init/android.hardware.ir@1.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.ir@1.0-service.rc \
     vendor/redmi/rosemary/proprietary/vendor/etc/init/android.hardware.keymaster@4.0-service.beanpod.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.keymaster@4.0-service.beanpod.rc \
-    vendor/redmi/rosemary/proprietary/vendor/etc/init/android.hardware.media.omx@1.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.media.omx@1.0-service.rc \
-    vendor/redmi/rosemary/proprietary/vendor/etc/init/android.hardware.memtrack@1.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.memtrack@1.0-service.rc \
     vendor/redmi/rosemary/proprietary/vendor/etc/init/android.hardware.neuralnetworks@1.3-service-mtk-neuron.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.neuralnetworks@1.3-service-mtk-neuron.rc \
-    vendor/redmi/rosemary/proprietary/vendor/etc/init/android.hardware.nfc@1.2-service-st.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.nfc@1.2-service-st.rc \
     vendor/redmi/rosemary/proprietary/vendor/etc/init/android.hardware.secure_element@1.2-service-mediatek.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.secure_element@1.2-service-mediatek.rc \
-    vendor/redmi/rosemary/proprietary/vendor/etc/init/android.hardware.sensors@2.0-service.multihal-mediatek.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.sensors@2.0-service.multihal-mediatek.rc \
     vendor/redmi/rosemary/proprietary/vendor/etc/init/android.hardware.thermal@2.0-service.mtk.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.thermal@2.0-service.mtk.rc \
     vendor/redmi/rosemary/proprietary/vendor/etc/init/android.hardware.usb@1.1-service-mediatek.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.usb@1.1-service-mediatek.rc \
-    vendor/redmi/rosemary/proprietary/vendor/etc/init/android.hardware.wifi.supplicant-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.wifi.supplicant-service.rc \
-    vendor/redmi/rosemary/proprietary/vendor/etc/init/android.hardware.wifi@1.0-service-lazy.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.wifi@1.0-service-lazy.rc \
     vendor/redmi/rosemary/proprietary/vendor/etc/init/atcid.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/atcid.rc \
     vendor/redmi/rosemary/proprietary/vendor/etc/init/audiocmdservice_atci.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/audiocmdservice_atci.rc \
     vendor/redmi/rosemary/proprietary/vendor/etc/init/bootperf.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/bootperf.rc \
-    vendor/redmi/rosemary/proprietary/vendor/etc/init/boringssl_self_test.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/boringssl_self_test.rc \
     vendor/redmi/rosemary/proprietary/vendor/etc/init/camerahalserver.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/camerahalserver.rc \
     vendor/redmi/rosemary/proprietary/vendor/etc/init/em_hidl_user.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/em_hidl_user.rc \
     vendor/redmi/rosemary/proprietary/vendor/etc/init/fuelgauged_init.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/fuelgauged_init.rc \
     vendor/redmi/rosemary/proprietary/vendor/etc/init/fuelgauged_nvram_init.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/fuelgauged_nvram_init.rc \
-    vendor/redmi/rosemary/proprietary/vendor/etc/init/getgameserver.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/getgameserver.rc \
     vendor/redmi/rosemary/proprietary/vendor/etc/init/gsm0710muxd.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/gsm0710muxd.rc \
-    vendor/redmi/rosemary/proprietary/vendor/etc/init/hostapd.android.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/hostapd.android.rc \
     vendor/redmi/rosemary/proprietary/vendor/etc/init/hw/factory_init.connectivity.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/hw/factory_init.connectivity.rc \
     vendor/redmi/rosemary/proprietary/vendor/etc/init/hw/factory_init.project.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/hw/factory_init.project.rc \
     vendor/redmi/rosemary/proprietary/vendor/etc/init/hw/factory_init.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/hw/factory_init.rc \
-    vendor/redmi/rosemary/proprietary/vendor/etc/init/hw/meta_init.connectivity.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/hw/meta_init.connectivity.rc \
-    vendor/redmi/rosemary/proprietary/vendor/etc/init/hw/meta_init.modem.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/hw/meta_init.modem.rc \
-    vendor/redmi/rosemary/proprietary/vendor/etc/init/hw/meta_init.project.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/hw/meta_init.project.rc \
-    vendor/redmi/rosemary/proprietary/vendor/etc/init/hw/meta_init.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/hw/meta_init.rc \
-    vendor/redmi/rosemary/proprietary/vendor/etc/init/hw/multi_init.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/hw/multi_init.rc \
     vendor/redmi/rosemary/proprietary/vendor/etc/init/init.bip.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.bip.rc \
     vendor/redmi/rosemary/proprietary/vendor/etc/init/init.bt_drv.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.bt_drv.rc \
     vendor/redmi/rosemary/proprietary/vendor/etc/init/init.cccifsd.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.cccifsd.rc \
@@ -531,7 +376,6 @@ PRODUCT_COPY_FILES += \
     vendor/redmi/rosemary/proprietary/vendor/etc/init/init_connectivity.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init_connectivity.rc \
     vendor/redmi/rosemary/proprietary/vendor/etc/init/ipsec_mon.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/ipsec_mon.rc \
     vendor/redmi/rosemary/proprietary/vendor/etc/init/lbs_hidl_service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/lbs_hidl_service.rc \
-    vendor/redmi/rosemary/proprietary/vendor/etc/init/lights-mtk-default.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/lights-mtk-default.rc \
     vendor/redmi/rosemary/proprietary/vendor/etc/init/loghidlvendorservice.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/loghidlvendorservice.rc \
     vendor/redmi/rosemary/proprietary/vendor/etc/init/md_monitor.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/md_monitor.rc \
     vendor/redmi/rosemary/proprietary/vendor/etc/init/microtrust.bp_kmsetkey_ca.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/microtrust.bp_kmsetkey_ca.rc \
@@ -542,7 +386,6 @@ PRODUCT_COPY_FILES += \
     vendor/redmi/rosemary/proprietary/vendor/etc/init/netdagent.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/netdagent.rc \
     vendor/redmi/rosemary/proprietary/vendor/etc/init/networksetting.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/networksetting.rc \
     vendor/redmi/rosemary/proprietary/vendor/etc/init/nvram_daemon.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/nvram_daemon.rc \
-    vendor/redmi/rosemary/proprietary/vendor/etc/init/vendor.mediatek.hardware.aee@1.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.mediatek.hardware.aee@1.0-service.rc \
     vendor/redmi/rosemary/proprietary/vendor/etc/init/vendor.mediatek.hardware.dfps@1.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.mediatek.hardware.dfps@1.0-service.rc \
     vendor/redmi/rosemary/proprietary/vendor/etc/init/vendor.mediatek.hardware.dplanner@2.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.mediatek.hardware.dplanner@2.0-service.rc \
     vendor/redmi/rosemary/proprietary/vendor/etc/init/vendor.mediatek.hardware.gpu@1.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.mediatek.hardware.gpu@1.0-service.rc \
@@ -556,20 +399,7 @@ PRODUCT_COPY_FILES += \
     vendor/redmi/rosemary/proprietary/vendor/etc/init/vendor.mediatek.hardware.nwk_opt@1.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.mediatek.hardware.nwk_opt@1.0-service.rc \
     vendor/redmi/rosemary/proprietary/vendor/etc/init/vendor.mediatek.hardware.pq@2.2-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.mediatek.hardware.pq@2.2-service.rc \
     vendor/redmi/rosemary/proprietary/vendor/etc/init/vendor.microtrust.hardware.soter@1.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.microtrust.hardware.soter@1.0-service.rc \
-    vendor/redmi/rosemary/proprietary/vendor/etc/init/vendor.xiaomi.hardware.displayfeature@1.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.xiaomi.hardware.displayfeature@1.0-service.rc \
-    vendor/redmi/rosemary/proprietary/vendor/etc/init/vendor.xiaomi.hardware.mfidoca@1.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.xiaomi.hardware.mfidoca@1.0-service.rc \
-    vendor/redmi/rosemary/proprietary/vendor/etc/init/vendor.xiaomi.hardware.micharge@1.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.xiaomi.hardware.micharge@1.0-service.rc \
-    vendor/redmi/rosemary/proprietary/vendor/etc/init/vendor.xiaomi.hardware.misys@1.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.xiaomi.hardware.misys@1.0-service.rc \
-    vendor/redmi/rosemary/proprietary/vendor/etc/init/vendor.xiaomi.hardware.misys@2.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.xiaomi.hardware.misys@2.0-service.rc \
-    vendor/redmi/rosemary/proprietary/vendor/etc/init/vendor.xiaomi.hardware.misys@3.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.xiaomi.hardware.misys@3.0-service.rc \
     vendor/redmi/rosemary/proprietary/vendor/etc/init/vendor.xiaomi.hardware.mlipay@1.1-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.xiaomi.hardware.mlipay@1.1-service.rc \
-    vendor/redmi/rosemary/proprietary/vendor/etc/init/vendor.xiaomi.hardware.mtdservice@1.2-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.xiaomi.hardware.mtdservice@1.2-service.rc \
-    vendor/redmi/rosemary/proprietary/vendor/etc/init/vendor.xiaomi.hardware.tidaservice@1.1-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.xiaomi.hardware.tidaservice@1.1-service.rc \
-    vendor/redmi/rosemary/proprietary/vendor/etc/init/vendor.xiaomi.hardware.touchfeature@1.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.xiaomi.hardware.touchfeature@1.0-service.rc \
-    vendor/redmi/rosemary/proprietary/vendor/etc/init/vendor.xiaomi.hardware.vsimapp@1.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.xiaomi.hardware.vsimapp@1.0-service.rc \
-    vendor/redmi/rosemary/proprietary/vendor/etc/init/vendor_flash_recovery.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor_flash_recovery.rc \
-    vendor/redmi/rosemary/proprietary/vendor/etc/init/vibrator-mtk-default.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vibrator-mtk-default.rc \
-    vendor/redmi/rosemary/proprietary/vendor/etc/init/vndservicemanager.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vndservicemanager.rc \
     vendor/redmi/rosemary/proprietary/vendor/etc/init/vpud.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vpud.rc \
     vendor/redmi/rosemary/proprietary/vendor/etc/init/wlan_assistant.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/wlan_assistant.rc \
     vendor/redmi/rosemary/proprietary/vendor/etc/ipsec/ipsec.conf:$(TARGET_COPY_OUT_VENDOR)/etc/ipsec/ipsec.conf \
@@ -742,9 +572,6 @@ PRODUCT_COPY_FILES += \
     vendor/redmi/rosemary/proprietary/vendor/etc/media_codecs_performance.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_codecs_performance.xml \
     vendor/redmi/rosemary/proprietary/vendor/etc/media_profiles_V1_0.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_profiles_V1_0.xml \
     vendor/redmi/rosemary/proprietary/vendor/etc/meow.cfg:$(TARGET_COPY_OUT_VENDOR)/etc/meow.cfg \
-    vendor/redmi/rosemary/proprietary/vendor/etc/misound_res_headphone.bin:$(TARGET_COPY_OUT_VENDOR)/etc/misound_res_headphone.bin \
-    vendor/redmi/rosemary/proprietary/vendor/etc/misound_res_spk.bin:$(TARGET_COPY_OUT_VENDOR)/etc/misound_res_spk.bin \
-    vendor/redmi/rosemary/proprietary/vendor/etc/mkshrc:$(TARGET_COPY_OUT_VENDOR)/etc/mkshrc \
     vendor/redmi/rosemary/proprietary/vendor/etc/mpe.conf:$(TARGET_COPY_OUT_VENDOR)/etc/mpe.conf \
     vendor/redmi/rosemary/proprietary/vendor/etc/mtk_omx_core.cfg:$(TARGET_COPY_OUT_VENDOR)/etc/mtk_omx_core.cfg \
     vendor/redmi/rosemary/proprietary/vendor/etc/nhw:$(TARGET_COPY_OUT_VENDOR)/etc/nhw \
@@ -757,18 +584,7 @@ PRODUCT_COPY_FILES += \
     vendor/redmi/rosemary/proprietary/vendor/etc/qc_Global_3.xml:$(TARGET_COPY_OUT_VENDOR)/etc/qc_Global_3.xml \
     vendor/redmi/rosemary/proprietary/vendor/etc/qc_India_1.xml:$(TARGET_COPY_OUT_VENDOR)/etc/qc_India_1.xml \
     vendor/redmi/rosemary/proprietary/vendor/etc/qc_Japan_1.xml:$(TARGET_COPY_OUT_VENDOR)/etc/qc_Japan_1.xml \
-    vendor/redmi/rosemary/proprietary/vendor/etc/r_submix_audio_policy_configuration.xml:$(TARGET_COPY_OUT_VENDOR)/etc/r_submix_audio_policy_configuration.xml \
     vendor/redmi/rosemary/proprietary/vendor/etc/rcv_pb.wav:$(TARGET_COPY_OUT_VENDOR)/etc/rcv_pb.wav \
-    vendor/redmi/rosemary/proprietary/vendor/etc/rsc/cn/ro.prop:$(TARGET_COPY_OUT_VENDOR)/etc/rsc/cn/ro.prop \
-    vendor/redmi/rosemary/proprietary/vendor/etc/rsc/cn/rw.prop:$(TARGET_COPY_OUT_VENDOR)/etc/rsc/cn/rw.prop \
-    vendor/redmi/rosemary/proprietary/vendor/etc/rsc/default/ro.prop:$(TARGET_COPY_OUT_VENDOR)/etc/rsc/default/ro.prop \
-    vendor/redmi/rosemary/proprietary/vendor/etc/rsc/default/rw.prop:$(TARGET_COPY_OUT_VENDOR)/etc/rsc/default/rw.prop \
-    vendor/redmi/rosemary/proprietary/vendor/etc/rsc/global/ro.prop:$(TARGET_COPY_OUT_VENDOR)/etc/rsc/global/ro.prop \
-    vendor/redmi/rosemary/proprietary/vendor/etc/rsc/global/rw.prop:$(TARGET_COPY_OUT_VENDOR)/etc/rsc/global/rw.prop \
-    vendor/redmi/rosemary/proprietary/vendor/etc/rsc/india/ro.prop:$(TARGET_COPY_OUT_VENDOR)/etc/rsc/india/ro.prop \
-    vendor/redmi/rosemary/proprietary/vendor/etc/rsc/india/rw.prop:$(TARGET_COPY_OUT_VENDOR)/etc/rsc/india/rw.prop \
-    vendor/redmi/rosemary/proprietary/vendor/etc/rsc/japan/ro.prop:$(TARGET_COPY_OUT_VENDOR)/etc/rsc/japan/ro.prop \
-    vendor/redmi/rosemary/proprietary/vendor/etc/rsc/japan/rw.prop:$(TARGET_COPY_OUT_VENDOR)/etc/rsc/japan/rw.prop \
     vendor/redmi/rosemary/proprietary/vendor/etc/screen_light.xml:$(TARGET_COPY_OUT_VENDOR)/etc/screen_light.xml \
     vendor/redmi/rosemary/proprietary/vendor/etc/seccomp_policy/mediacodec.policy:$(TARGET_COPY_OUT_VENDOR)/etc/seccomp_policy/mediacodec.policy \
     vendor/redmi/rosemary/proprietary/vendor/etc/seccomp_policy/mediaextractor.policy:$(TARGET_COPY_OUT_VENDOR)/etc/seccomp_policy/mediaextractor.policy \
@@ -955,486 +771,12 @@ PRODUCT_COPY_FILES += \
     vendor/redmi/rosemary/proprietary/vendor/etc/thermal-youtube.conf:$(TARGET_COPY_OUT_VENDOR)/etc/thermal-youtube.conf \
     vendor/redmi/rosemary/proprietary/vendor/etc/thermald-devices.conf:$(TARGET_COPY_OUT_VENDOR)/etc/thermald-devices.conf \
     vendor/redmi/rosemary/proprietary/vendor/etc/throttle.sh:$(TARGET_COPY_OUT_VENDOR)/etc/throttle.sh \
-    vendor/redmi/rosemary/proprietary/vendor/etc/ultrasound.wav:$(TARGET_COPY_OUT_VENDOR)/etc/ultrasound.wav \
     vendor/redmi/rosemary/proprietary/vendor/etc/usb_audio_accessory_only_policy_configuration.xml:$(TARGET_COPY_OUT_VENDOR)/etc/usb_audio_accessory_only_policy_configuration.xml \
-    vendor/redmi/rosemary/proprietary/vendor/etc/usb_audio_policy_configuration.xml:$(TARGET_COPY_OUT_VENDOR)/etc/usb_audio_policy_configuration.xml \
     vendor/redmi/rosemary/proprietary/vendor/etc/vendor-apns-conf.xml:$(TARGET_COPY_OUT_VENDOR)/etc/vendor-apns-conf.xml \
     vendor/redmi/rosemary/proprietary/vendor/etc/virtual-spn-conf-by-efgid1.xml:$(TARGET_COPY_OUT_VENDOR)/etc/virtual-spn-conf-by-efgid1.xml \
     vendor/redmi/rosemary/proprietary/vendor/etc/virtual-spn-conf-by-efpnn.xml:$(TARGET_COPY_OUT_VENDOR)/etc/virtual-spn-conf-by-efpnn.xml \
     vendor/redmi/rosemary/proprietary/vendor/etc/virtual-spn-conf-by-efspn.xml:$(TARGET_COPY_OUT_VENDOR)/etc/virtual-spn-conf-by-efspn.xml \
     vendor/redmi/rosemary/proprietary/vendor/etc/virtual-spn-conf-by-imsi.xml:$(TARGET_COPY_OUT_VENDOR)/etc/virtual-spn-conf-by-imsi.xml \
-    vendor/redmi/rosemary/proprietary/vendor/etc/voicecommand/training/ubmfile/keyword03/de-DE/keyphrase.xml:$(TARGET_COPY_OUT_VENDOR)/etc/voicecommand/training/ubmfile/keyword03/de-DE/keyphrase.xml \
-    vendor/redmi/rosemary/proprietary/vendor/etc/voicecommand/training/ubmfile/keyword03/de-DE/p2.3/128.dat:$(TARGET_COPY_OUT_VENDOR)/etc/voicecommand/training/ubmfile/keyword03/de-DE/p2.3/128.dat \
-    vendor/redmi/rosemary/proprietary/vendor/etc/voicecommand/training/ubmfile/keyword03/de-DE/p2.3/64.dat:$(TARGET_COPY_OUT_VENDOR)/etc/voicecommand/training/ubmfile/keyword03/de-DE/p2.3/64.dat \
-    vendor/redmi/rosemary/proprietary/vendor/etc/voicecommand/training/ubmfile/keyword03/de-DE/p2.3/antiCmds/Model1.bin:$(TARGET_COPY_OUT_VENDOR)/etc/voicecommand/training/ubmfile/keyword03/de-DE/p2.3/antiCmds/Model1.bin \
-    vendor/redmi/rosemary/proprietary/vendor/etc/voicecommand/training/ubmfile/keyword03/de-DE/p2.3/antiCmds/Model4.bin:$(TARGET_COPY_OUT_VENDOR)/etc/voicecommand/training/ubmfile/keyword03/de-DE/p2.3/antiCmds/Model4.bin \
-    vendor/redmi/rosemary/proprietary/vendor/etc/voicecommand/training/ubmfile/keyword03/de-DE/p2.3/antiCmds/c_e_dic.bin.f:$(TARGET_COPY_OUT_VENDOR)/etc/voicecommand/training/ubmfile/keyword03/de-DE/p2.3/antiCmds/c_e_dic.bin.f \
-    vendor/redmi/rosemary/proprietary/vendor/etc/voicecommand/training/ubmfile/keyword03/de-DE/p2.3/antiCmds/c_e_dic.bin.gen:$(TARGET_COPY_OUT_VENDOR)/etc/voicecommand/training/ubmfile/keyword03/de-DE/p2.3/antiCmds/c_e_dic.bin.gen \
-    vendor/redmi/rosemary/proprietary/vendor/etc/voicecommand/training/ubmfile/keyword03/de-DE/p2.3/antiCmds/c_e_dic.bin.l:$(TARGET_COPY_OUT_VENDOR)/etc/voicecommand/training/ubmfile/keyword03/de-DE/p2.3/antiCmds/c_e_dic.bin.l \
-    vendor/redmi/rosemary/proprietary/vendor/etc/voicecommand/training/ubmfile/keyword03/de-DE/p2.3/antiCmds/c_e_dic.bin.p:$(TARGET_COPY_OUT_VENDOR)/etc/voicecommand/training/ubmfile/keyword03/de-DE/p2.3/antiCmds/c_e_dic.bin.p \
-    vendor/redmi/rosemary/proprietary/vendor/etc/voicecommand/training/ubmfile/keyword03/de-DE/p2.3/antiCmds/c_e_dic.bin.t:$(TARGET_COPY_OUT_VENDOR)/etc/voicecommand/training/ubmfile/keyword03/de-DE/p2.3/antiCmds/c_e_dic.bin.t \
-    vendor/redmi/rosemary/proprietary/vendor/etc/voicecommand/training/ubmfile/keyword03/de-DE/p2.3/antiCmds/commandfilr3.dic:$(TARGET_COPY_OUT_VENDOR)/etc/voicecommand/training/ubmfile/keyword03/de-DE/p2.3/antiCmds/commandfilr3.dic \
-    vendor/redmi/rosemary/proprietary/vendor/etc/voicecommand/training/ubmfile/keyword03/de-DE/p2.3/p0:$(TARGET_COPY_OUT_VENDOR)/etc/voicecommand/training/ubmfile/keyword03/de-DE/p2.3/p0 \
-    vendor/redmi/rosemary/proprietary/vendor/etc/voicecommand/training/ubmfile/keyword03/de-DE/p2.3/ubmModel0.bin:$(TARGET_COPY_OUT_VENDOR)/etc/voicecommand/training/ubmfile/keyword03/de-DE/p2.3/ubmModel0.bin \
-    vendor/redmi/rosemary/proprietary/vendor/etc/voicecommand/training/ubmfile/keyword03/de-DE/p2.3/ubmModel1.bin:$(TARGET_COPY_OUT_VENDOR)/etc/voicecommand/training/ubmfile/keyword03/de-DE/p2.3/ubmModel1.bin \
-    vendor/redmi/rosemary/proprietary/vendor/etc/voicecommand/training/ubmfile/keyword03/de-DE/p2.3/ubmModel10.bin:$(TARGET_COPY_OUT_VENDOR)/etc/voicecommand/training/ubmfile/keyword03/de-DE/p2.3/ubmModel10.bin \
-    vendor/redmi/rosemary/proprietary/vendor/etc/voicecommand/training/ubmfile/keyword03/de-DE/p2.3/ubmModel2.bin:$(TARGET_COPY_OUT_VENDOR)/etc/voicecommand/training/ubmfile/keyword03/de-DE/p2.3/ubmModel2.bin \
-    vendor/redmi/rosemary/proprietary/vendor/etc/voicecommand/training/ubmfile/keyword03/de-DE/p2.3/ubmModel3.bin:$(TARGET_COPY_OUT_VENDOR)/etc/voicecommand/training/ubmfile/keyword03/de-DE/p2.3/ubmModel3.bin \
-    vendor/redmi/rosemary/proprietary/vendor/etc/voicecommand/training/ubmfile/keyword03/de-DE/p2.3/ubmModel4.bin:$(TARGET_COPY_OUT_VENDOR)/etc/voicecommand/training/ubmfile/keyword03/de-DE/p2.3/ubmModel4.bin \
-    vendor/redmi/rosemary/proprietary/vendor/etc/voicecommand/training/ubmfile/keyword03/de-DE/p2.5/n0:$(TARGET_COPY_OUT_VENDOR)/etc/voicecommand/training/ubmfile/keyword03/de-DE/p2.5/n0 \
-    vendor/redmi/rosemary/proprietary/vendor/etc/voicecommand/training/ubmfile/keyword03/de-DE/p2.5/n1:$(TARGET_COPY_OUT_VENDOR)/etc/voicecommand/training/ubmfile/keyword03/de-DE/p2.5/n1 \
-    vendor/redmi/rosemary/proprietary/vendor/etc/voicecommand/training/ubmfile/keyword03/de-DE/p2.5/n2:$(TARGET_COPY_OUT_VENDOR)/etc/voicecommand/training/ubmfile/keyword03/de-DE/p2.5/n2 \
-    vendor/redmi/rosemary/proprietary/vendor/etc/voicecommand/training/ubmfile/keyword03/de-DE/p2.5/p0:$(TARGET_COPY_OUT_VENDOR)/etc/voicecommand/training/ubmfile/keyword03/de-DE/p2.5/p0 \
-    vendor/redmi/rosemary/proprietary/vendor/etc/voicecommand/training/ubmfile/keyword03/de-DE/p2.5/p1:$(TARGET_COPY_OUT_VENDOR)/etc/voicecommand/training/ubmfile/keyword03/de-DE/p2.5/p1 \
-    vendor/redmi/rosemary/proprietary/vendor/etc/voicecommand/training/ubmfile/keyword03/de-DE/p2.5/pn1:$(TARGET_COPY_OUT_VENDOR)/etc/voicecommand/training/ubmfile/keyword03/de-DE/p2.5/pn1 \
-    vendor/redmi/rosemary/proprietary/vendor/etc/voicecommand/training/ubmfile/keyword03/de-DE/p2.5/ubmModel0.bin:$(TARGET_COPY_OUT_VENDOR)/etc/voicecommand/training/ubmfile/keyword03/de-DE/p2.5/ubmModel0.bin \
-    vendor/redmi/rosemary/proprietary/vendor/etc/voicecommand/training/ubmfile/keyword03/de-DE/p2.5/ubmModel10.bin:$(TARGET_COPY_OUT_VENDOR)/etc/voicecommand/training/ubmfile/keyword03/de-DE/p2.5/ubmModel10.bin \
-    vendor/redmi/rosemary/proprietary/vendor/etc/voicecommand/training/ubmfile/keyword03/de-DE/p2.5/ubmModel3.bin:$(TARGET_COPY_OUT_VENDOR)/etc/voicecommand/training/ubmfile/keyword03/de-DE/p2.5/ubmModel3.bin \
-    vendor/redmi/rosemary/proprietary/vendor/etc/voicecommand/training/ubmfile/keyword03/de-DE/p2.5/ubmModel4.bin:$(TARGET_COPY_OUT_VENDOR)/etc/voicecommand/training/ubmfile/keyword03/de-DE/p2.5/ubmModel4.bin \
-    vendor/redmi/rosemary/proprietary/vendor/etc/voicecommand/training/ubmfile/keyword03/de-DE/p2/128.dat:$(TARGET_COPY_OUT_VENDOR)/etc/voicecommand/training/ubmfile/keyword03/de-DE/p2/128.dat \
-    vendor/redmi/rosemary/proprietary/vendor/etc/voicecommand/training/ubmfile/keyword03/de-DE/p2/64.dat:$(TARGET_COPY_OUT_VENDOR)/etc/voicecommand/training/ubmfile/keyword03/de-DE/p2/64.dat \
-    vendor/redmi/rosemary/proprietary/vendor/etc/voicecommand/training/ubmfile/keyword03/de-DE/p2/antiCmds/Model1.bin:$(TARGET_COPY_OUT_VENDOR)/etc/voicecommand/training/ubmfile/keyword03/de-DE/p2/antiCmds/Model1.bin \
-    vendor/redmi/rosemary/proprietary/vendor/etc/voicecommand/training/ubmfile/keyword03/de-DE/p2/antiCmds/Model4.bin:$(TARGET_COPY_OUT_VENDOR)/etc/voicecommand/training/ubmfile/keyword03/de-DE/p2/antiCmds/Model4.bin \
-    vendor/redmi/rosemary/proprietary/vendor/etc/voicecommand/training/ubmfile/keyword03/de-DE/p2/antiCmds/c_e_dic.bin.f:$(TARGET_COPY_OUT_VENDOR)/etc/voicecommand/training/ubmfile/keyword03/de-DE/p2/antiCmds/c_e_dic.bin.f \
-    vendor/redmi/rosemary/proprietary/vendor/etc/voicecommand/training/ubmfile/keyword03/de-DE/p2/antiCmds/c_e_dic.bin.gen:$(TARGET_COPY_OUT_VENDOR)/etc/voicecommand/training/ubmfile/keyword03/de-DE/p2/antiCmds/c_e_dic.bin.gen \
-    vendor/redmi/rosemary/proprietary/vendor/etc/voicecommand/training/ubmfile/keyword03/de-DE/p2/antiCmds/c_e_dic.bin.l:$(TARGET_COPY_OUT_VENDOR)/etc/voicecommand/training/ubmfile/keyword03/de-DE/p2/antiCmds/c_e_dic.bin.l \
-    vendor/redmi/rosemary/proprietary/vendor/etc/voicecommand/training/ubmfile/keyword03/de-DE/p2/antiCmds/c_e_dic.bin.p:$(TARGET_COPY_OUT_VENDOR)/etc/voicecommand/training/ubmfile/keyword03/de-DE/p2/antiCmds/c_e_dic.bin.p \
-    vendor/redmi/rosemary/proprietary/vendor/etc/voicecommand/training/ubmfile/keyword03/de-DE/p2/antiCmds/c_e_dic.bin.t:$(TARGET_COPY_OUT_VENDOR)/etc/voicecommand/training/ubmfile/keyword03/de-DE/p2/antiCmds/c_e_dic.bin.t \
-    vendor/redmi/rosemary/proprietary/vendor/etc/voicecommand/training/ubmfile/keyword03/de-DE/p2/antiCmds/commandfilr3.dic:$(TARGET_COPY_OUT_VENDOR)/etc/voicecommand/training/ubmfile/keyword03/de-DE/p2/antiCmds/commandfilr3.dic \
-    vendor/redmi/rosemary/proprietary/vendor/etc/voicecommand/training/ubmfile/keyword03/de-DE/p2/p0:$(TARGET_COPY_OUT_VENDOR)/etc/voicecommand/training/ubmfile/keyword03/de-DE/p2/p0 \
-    vendor/redmi/rosemary/proprietary/vendor/etc/voicecommand/training/ubmfile/keyword03/de-DE/p2/ubmModel0.bin:$(TARGET_COPY_OUT_VENDOR)/etc/voicecommand/training/ubmfile/keyword03/de-DE/p2/ubmModel0.bin \
-    vendor/redmi/rosemary/proprietary/vendor/etc/voicecommand/training/ubmfile/keyword03/de-DE/p2/ubmModel1.bin:$(TARGET_COPY_OUT_VENDOR)/etc/voicecommand/training/ubmfile/keyword03/de-DE/p2/ubmModel1.bin \
-    vendor/redmi/rosemary/proprietary/vendor/etc/voicecommand/training/ubmfile/keyword03/de-DE/p2/ubmModel10.bin:$(TARGET_COPY_OUT_VENDOR)/etc/voicecommand/training/ubmfile/keyword03/de-DE/p2/ubmModel10.bin \
-    vendor/redmi/rosemary/proprietary/vendor/etc/voicecommand/training/ubmfile/keyword03/de-DE/p2/ubmModel2.bin:$(TARGET_COPY_OUT_VENDOR)/etc/voicecommand/training/ubmfile/keyword03/de-DE/p2/ubmModel2.bin \
-    vendor/redmi/rosemary/proprietary/vendor/etc/voicecommand/training/ubmfile/keyword03/de-DE/p2/ubmModel3.bin:$(TARGET_COPY_OUT_VENDOR)/etc/voicecommand/training/ubmfile/keyword03/de-DE/p2/ubmModel3.bin \
-    vendor/redmi/rosemary/proprietary/vendor/etc/voicecommand/training/ubmfile/keyword03/de-DE/p2/ubmModel4.bin:$(TARGET_COPY_OUT_VENDOR)/etc/voicecommand/training/ubmfile/keyword03/de-DE/p2/ubmModel4.bin \
-    vendor/redmi/rosemary/proprietary/vendor/etc/voicecommand/training/ubmfile/keyword03/de-DE/supplement/1:$(TARGET_COPY_OUT_VENDOR)/etc/voicecommand/training/ubmfile/keyword03/de-DE/supplement/1 \
-    vendor/redmi/rosemary/proprietary/vendor/etc/voicecommand/training/ubmfile/keyword03/de-DE/supplement/10:$(TARGET_COPY_OUT_VENDOR)/etc/voicecommand/training/ubmfile/keyword03/de-DE/supplement/10 \
-    vendor/redmi/rosemary/proprietary/vendor/etc/voicecommand/training/ubmfile/keyword03/de-DE/supplement/11:$(TARGET_COPY_OUT_VENDOR)/etc/voicecommand/training/ubmfile/keyword03/de-DE/supplement/11 \
-    vendor/redmi/rosemary/proprietary/vendor/etc/voicecommand/training/ubmfile/keyword03/de-DE/supplement/12:$(TARGET_COPY_OUT_VENDOR)/etc/voicecommand/training/ubmfile/keyword03/de-DE/supplement/12 \
-    vendor/redmi/rosemary/proprietary/vendor/etc/voicecommand/training/ubmfile/keyword03/de-DE/supplement/13:$(TARGET_COPY_OUT_VENDOR)/etc/voicecommand/training/ubmfile/keyword03/de-DE/supplement/13 \
-    vendor/redmi/rosemary/proprietary/vendor/etc/voicecommand/training/ubmfile/keyword03/de-DE/supplement/2:$(TARGET_COPY_OUT_VENDOR)/etc/voicecommand/training/ubmfile/keyword03/de-DE/supplement/2 \
-    vendor/redmi/rosemary/proprietary/vendor/etc/voicecommand/training/ubmfile/keyword03/de-DE/supplement/3:$(TARGET_COPY_OUT_VENDOR)/etc/voicecommand/training/ubmfile/keyword03/de-DE/supplement/3 \
-    vendor/redmi/rosemary/proprietary/vendor/etc/voicecommand/training/ubmfile/keyword03/de-DE/supplement/4:$(TARGET_COPY_OUT_VENDOR)/etc/voicecommand/training/ubmfile/keyword03/de-DE/supplement/4 \
-    vendor/redmi/rosemary/proprietary/vendor/etc/voicecommand/training/ubmfile/keyword03/de-DE/supplement/5:$(TARGET_COPY_OUT_VENDOR)/etc/voicecommand/training/ubmfile/keyword03/de-DE/supplement/5 \
-    vendor/redmi/rosemary/proprietary/vendor/etc/voicecommand/training/ubmfile/keyword03/de-DE/supplement/6:$(TARGET_COPY_OUT_VENDOR)/etc/voicecommand/training/ubmfile/keyword03/de-DE/supplement/6 \
-    vendor/redmi/rosemary/proprietary/vendor/etc/voicecommand/training/ubmfile/keyword03/de-DE/supplement/7:$(TARGET_COPY_OUT_VENDOR)/etc/voicecommand/training/ubmfile/keyword03/de-DE/supplement/7 \
-    vendor/redmi/rosemary/proprietary/vendor/etc/voicecommand/training/ubmfile/keyword03/de-DE/supplement/8:$(TARGET_COPY_OUT_VENDOR)/etc/voicecommand/training/ubmfile/keyword03/de-DE/supplement/8 \
-    vendor/redmi/rosemary/proprietary/vendor/etc/voicecommand/training/ubmfile/keyword03/de-DE/supplement/9:$(TARGET_COPY_OUT_VENDOR)/etc/voicecommand/training/ubmfile/keyword03/de-DE/supplement/9 \
-    vendor/redmi/rosemary/proprietary/vendor/etc/voicecommand/training/ubmfile/keyword03/de-DE/supplement/b:$(TARGET_COPY_OUT_VENDOR)/etc/voicecommand/training/ubmfile/keyword03/de-DE/supplement/b \
-    vendor/redmi/rosemary/proprietary/vendor/etc/voicecommand/training/ubmfile/keyword03/en-GB/keyphrase.xml:$(TARGET_COPY_OUT_VENDOR)/etc/voicecommand/training/ubmfile/keyword03/en-GB/keyphrase.xml \
-    vendor/redmi/rosemary/proprietary/vendor/etc/voicecommand/training/ubmfile/keyword03/en-GB/p2.3/128.dat:$(TARGET_COPY_OUT_VENDOR)/etc/voicecommand/training/ubmfile/keyword03/en-GB/p2.3/128.dat \
-    vendor/redmi/rosemary/proprietary/vendor/etc/voicecommand/training/ubmfile/keyword03/en-GB/p2.3/64.dat:$(TARGET_COPY_OUT_VENDOR)/etc/voicecommand/training/ubmfile/keyword03/en-GB/p2.3/64.dat \
-    vendor/redmi/rosemary/proprietary/vendor/etc/voicecommand/training/ubmfile/keyword03/en-GB/p2.3/antiCmds/Model1.bin:$(TARGET_COPY_OUT_VENDOR)/etc/voicecommand/training/ubmfile/keyword03/en-GB/p2.3/antiCmds/Model1.bin \
-    vendor/redmi/rosemary/proprietary/vendor/etc/voicecommand/training/ubmfile/keyword03/en-GB/p2.3/antiCmds/Model4.bin:$(TARGET_COPY_OUT_VENDOR)/etc/voicecommand/training/ubmfile/keyword03/en-GB/p2.3/antiCmds/Model4.bin \
-    vendor/redmi/rosemary/proprietary/vendor/etc/voicecommand/training/ubmfile/keyword03/en-GB/p2.3/antiCmds/c_e_dic.bin.f:$(TARGET_COPY_OUT_VENDOR)/etc/voicecommand/training/ubmfile/keyword03/en-GB/p2.3/antiCmds/c_e_dic.bin.f \
-    vendor/redmi/rosemary/proprietary/vendor/etc/voicecommand/training/ubmfile/keyword03/en-GB/p2.3/antiCmds/c_e_dic.bin.gen:$(TARGET_COPY_OUT_VENDOR)/etc/voicecommand/training/ubmfile/keyword03/en-GB/p2.3/antiCmds/c_e_dic.bin.gen \
-    vendor/redmi/rosemary/proprietary/vendor/etc/voicecommand/training/ubmfile/keyword03/en-GB/p2.3/antiCmds/c_e_dic.bin.l:$(TARGET_COPY_OUT_VENDOR)/etc/voicecommand/training/ubmfile/keyword03/en-GB/p2.3/antiCmds/c_e_dic.bin.l \
-    vendor/redmi/rosemary/proprietary/vendor/etc/voicecommand/training/ubmfile/keyword03/en-GB/p2.3/antiCmds/c_e_dic.bin.p:$(TARGET_COPY_OUT_VENDOR)/etc/voicecommand/training/ubmfile/keyword03/en-GB/p2.3/antiCmds/c_e_dic.bin.p \
-    vendor/redmi/rosemary/proprietary/vendor/etc/voicecommand/training/ubmfile/keyword03/en-GB/p2.3/antiCmds/c_e_dic.bin.t:$(TARGET_COPY_OUT_VENDOR)/etc/voicecommand/training/ubmfile/keyword03/en-GB/p2.3/antiCmds/c_e_dic.bin.t \
-    vendor/redmi/rosemary/proprietary/vendor/etc/voicecommand/training/ubmfile/keyword03/en-GB/p2.3/antiCmds/commandfilr3.dic:$(TARGET_COPY_OUT_VENDOR)/etc/voicecommand/training/ubmfile/keyword03/en-GB/p2.3/antiCmds/commandfilr3.dic \
-    vendor/redmi/rosemary/proprietary/vendor/etc/voicecommand/training/ubmfile/keyword03/en-GB/p2.3/p0:$(TARGET_COPY_OUT_VENDOR)/etc/voicecommand/training/ubmfile/keyword03/en-GB/p2.3/p0 \
-    vendor/redmi/rosemary/proprietary/vendor/etc/voicecommand/training/ubmfile/keyword03/en-GB/p2.3/ubmModel0.bin:$(TARGET_COPY_OUT_VENDOR)/etc/voicecommand/training/ubmfile/keyword03/en-GB/p2.3/ubmModel0.bin \
-    vendor/redmi/rosemary/proprietary/vendor/etc/voicecommand/training/ubmfile/keyword03/en-GB/p2.3/ubmModel1.bin:$(TARGET_COPY_OUT_VENDOR)/etc/voicecommand/training/ubmfile/keyword03/en-GB/p2.3/ubmModel1.bin \
-    vendor/redmi/rosemary/proprietary/vendor/etc/voicecommand/training/ubmfile/keyword03/en-GB/p2.3/ubmModel10.bin:$(TARGET_COPY_OUT_VENDOR)/etc/voicecommand/training/ubmfile/keyword03/en-GB/p2.3/ubmModel10.bin \
-    vendor/redmi/rosemary/proprietary/vendor/etc/voicecommand/training/ubmfile/keyword03/en-GB/p2.3/ubmModel2.bin:$(TARGET_COPY_OUT_VENDOR)/etc/voicecommand/training/ubmfile/keyword03/en-GB/p2.3/ubmModel2.bin \
-    vendor/redmi/rosemary/proprietary/vendor/etc/voicecommand/training/ubmfile/keyword03/en-GB/p2.3/ubmModel3.bin:$(TARGET_COPY_OUT_VENDOR)/etc/voicecommand/training/ubmfile/keyword03/en-GB/p2.3/ubmModel3.bin \
-    vendor/redmi/rosemary/proprietary/vendor/etc/voicecommand/training/ubmfile/keyword03/en-GB/p2.3/ubmModel4.bin:$(TARGET_COPY_OUT_VENDOR)/etc/voicecommand/training/ubmfile/keyword03/en-GB/p2.3/ubmModel4.bin \
-    vendor/redmi/rosemary/proprietary/vendor/etc/voicecommand/training/ubmfile/keyword03/en-GB/p2.5/n0:$(TARGET_COPY_OUT_VENDOR)/etc/voicecommand/training/ubmfile/keyword03/en-GB/p2.5/n0 \
-    vendor/redmi/rosemary/proprietary/vendor/etc/voicecommand/training/ubmfile/keyword03/en-GB/p2.5/n1:$(TARGET_COPY_OUT_VENDOR)/etc/voicecommand/training/ubmfile/keyword03/en-GB/p2.5/n1 \
-    vendor/redmi/rosemary/proprietary/vendor/etc/voicecommand/training/ubmfile/keyword03/en-GB/p2.5/n2:$(TARGET_COPY_OUT_VENDOR)/etc/voicecommand/training/ubmfile/keyword03/en-GB/p2.5/n2 \
-    vendor/redmi/rosemary/proprietary/vendor/etc/voicecommand/training/ubmfile/keyword03/en-GB/p2.5/p0:$(TARGET_COPY_OUT_VENDOR)/etc/voicecommand/training/ubmfile/keyword03/en-GB/p2.5/p0 \
-    vendor/redmi/rosemary/proprietary/vendor/etc/voicecommand/training/ubmfile/keyword03/en-GB/p2.5/p1:$(TARGET_COPY_OUT_VENDOR)/etc/voicecommand/training/ubmfile/keyword03/en-GB/p2.5/p1 \
-    vendor/redmi/rosemary/proprietary/vendor/etc/voicecommand/training/ubmfile/keyword03/en-GB/p2.5/pn1:$(TARGET_COPY_OUT_VENDOR)/etc/voicecommand/training/ubmfile/keyword03/en-GB/p2.5/pn1 \
-    vendor/redmi/rosemary/proprietary/vendor/etc/voicecommand/training/ubmfile/keyword03/en-GB/p2.5/ubmModel0.bin:$(TARGET_COPY_OUT_VENDOR)/etc/voicecommand/training/ubmfile/keyword03/en-GB/p2.5/ubmModel0.bin \
-    vendor/redmi/rosemary/proprietary/vendor/etc/voicecommand/training/ubmfile/keyword03/en-GB/p2.5/ubmModel10.bin:$(TARGET_COPY_OUT_VENDOR)/etc/voicecommand/training/ubmfile/keyword03/en-GB/p2.5/ubmModel10.bin \
-    vendor/redmi/rosemary/proprietary/vendor/etc/voicecommand/training/ubmfile/keyword03/en-GB/p2.5/ubmModel3.bin:$(TARGET_COPY_OUT_VENDOR)/etc/voicecommand/training/ubmfile/keyword03/en-GB/p2.5/ubmModel3.bin \
-    vendor/redmi/rosemary/proprietary/vendor/etc/voicecommand/training/ubmfile/keyword03/en-GB/p2.5/ubmModel4.bin:$(TARGET_COPY_OUT_VENDOR)/etc/voicecommand/training/ubmfile/keyword03/en-GB/p2.5/ubmModel4.bin \
-    vendor/redmi/rosemary/proprietary/vendor/etc/voicecommand/training/ubmfile/keyword03/en-GB/p2/128.dat:$(TARGET_COPY_OUT_VENDOR)/etc/voicecommand/training/ubmfile/keyword03/en-GB/p2/128.dat \
-    vendor/redmi/rosemary/proprietary/vendor/etc/voicecommand/training/ubmfile/keyword03/en-GB/p2/64.dat:$(TARGET_COPY_OUT_VENDOR)/etc/voicecommand/training/ubmfile/keyword03/en-GB/p2/64.dat \
-    vendor/redmi/rosemary/proprietary/vendor/etc/voicecommand/training/ubmfile/keyword03/en-GB/p2/antiCmds/Model1.bin:$(TARGET_COPY_OUT_VENDOR)/etc/voicecommand/training/ubmfile/keyword03/en-GB/p2/antiCmds/Model1.bin \
-    vendor/redmi/rosemary/proprietary/vendor/etc/voicecommand/training/ubmfile/keyword03/en-GB/p2/antiCmds/Model4.bin:$(TARGET_COPY_OUT_VENDOR)/etc/voicecommand/training/ubmfile/keyword03/en-GB/p2/antiCmds/Model4.bin \
-    vendor/redmi/rosemary/proprietary/vendor/etc/voicecommand/training/ubmfile/keyword03/en-GB/p2/antiCmds/c_e_dic.bin.f:$(TARGET_COPY_OUT_VENDOR)/etc/voicecommand/training/ubmfile/keyword03/en-GB/p2/antiCmds/c_e_dic.bin.f \
-    vendor/redmi/rosemary/proprietary/vendor/etc/voicecommand/training/ubmfile/keyword03/en-GB/p2/antiCmds/c_e_dic.bin.gen:$(TARGET_COPY_OUT_VENDOR)/etc/voicecommand/training/ubmfile/keyword03/en-GB/p2/antiCmds/c_e_dic.bin.gen \
-    vendor/redmi/rosemary/proprietary/vendor/etc/voicecommand/training/ubmfile/keyword03/en-GB/p2/antiCmds/c_e_dic.bin.l:$(TARGET_COPY_OUT_VENDOR)/etc/voicecommand/training/ubmfile/keyword03/en-GB/p2/antiCmds/c_e_dic.bin.l \
-    vendor/redmi/rosemary/proprietary/vendor/etc/voicecommand/training/ubmfile/keyword03/en-GB/p2/antiCmds/c_e_dic.bin.p:$(TARGET_COPY_OUT_VENDOR)/etc/voicecommand/training/ubmfile/keyword03/en-GB/p2/antiCmds/c_e_dic.bin.p \
-    vendor/redmi/rosemary/proprietary/vendor/etc/voicecommand/training/ubmfile/keyword03/en-GB/p2/antiCmds/c_e_dic.bin.t:$(TARGET_COPY_OUT_VENDOR)/etc/voicecommand/training/ubmfile/keyword03/en-GB/p2/antiCmds/c_e_dic.bin.t \
-    vendor/redmi/rosemary/proprietary/vendor/etc/voicecommand/training/ubmfile/keyword03/en-GB/p2/antiCmds/commandfilr3.dic:$(TARGET_COPY_OUT_VENDOR)/etc/voicecommand/training/ubmfile/keyword03/en-GB/p2/antiCmds/commandfilr3.dic \
-    vendor/redmi/rosemary/proprietary/vendor/etc/voicecommand/training/ubmfile/keyword03/en-GB/p2/p0:$(TARGET_COPY_OUT_VENDOR)/etc/voicecommand/training/ubmfile/keyword03/en-GB/p2/p0 \
-    vendor/redmi/rosemary/proprietary/vendor/etc/voicecommand/training/ubmfile/keyword03/en-GB/p2/ubmModel0.bin:$(TARGET_COPY_OUT_VENDOR)/etc/voicecommand/training/ubmfile/keyword03/en-GB/p2/ubmModel0.bin \
-    vendor/redmi/rosemary/proprietary/vendor/etc/voicecommand/training/ubmfile/keyword03/en-GB/p2/ubmModel1.bin:$(TARGET_COPY_OUT_VENDOR)/etc/voicecommand/training/ubmfile/keyword03/en-GB/p2/ubmModel1.bin \
-    vendor/redmi/rosemary/proprietary/vendor/etc/voicecommand/training/ubmfile/keyword03/en-GB/p2/ubmModel10.bin:$(TARGET_COPY_OUT_VENDOR)/etc/voicecommand/training/ubmfile/keyword03/en-GB/p2/ubmModel10.bin \
-    vendor/redmi/rosemary/proprietary/vendor/etc/voicecommand/training/ubmfile/keyword03/en-GB/p2/ubmModel2.bin:$(TARGET_COPY_OUT_VENDOR)/etc/voicecommand/training/ubmfile/keyword03/en-GB/p2/ubmModel2.bin \
-    vendor/redmi/rosemary/proprietary/vendor/etc/voicecommand/training/ubmfile/keyword03/en-GB/p2/ubmModel3.bin:$(TARGET_COPY_OUT_VENDOR)/etc/voicecommand/training/ubmfile/keyword03/en-GB/p2/ubmModel3.bin \
-    vendor/redmi/rosemary/proprietary/vendor/etc/voicecommand/training/ubmfile/keyword03/en-GB/p2/ubmModel4.bin:$(TARGET_COPY_OUT_VENDOR)/etc/voicecommand/training/ubmfile/keyword03/en-GB/p2/ubmModel4.bin \
-    vendor/redmi/rosemary/proprietary/vendor/etc/voicecommand/training/ubmfile/keyword03/en-GB/supplement/1:$(TARGET_COPY_OUT_VENDOR)/etc/voicecommand/training/ubmfile/keyword03/en-GB/supplement/1 \
-    vendor/redmi/rosemary/proprietary/vendor/etc/voicecommand/training/ubmfile/keyword03/en-GB/supplement/10:$(TARGET_COPY_OUT_VENDOR)/etc/voicecommand/training/ubmfile/keyword03/en-GB/supplement/10 \
-    vendor/redmi/rosemary/proprietary/vendor/etc/voicecommand/training/ubmfile/keyword03/en-GB/supplement/11:$(TARGET_COPY_OUT_VENDOR)/etc/voicecommand/training/ubmfile/keyword03/en-GB/supplement/11 \
-    vendor/redmi/rosemary/proprietary/vendor/etc/voicecommand/training/ubmfile/keyword03/en-GB/supplement/12:$(TARGET_COPY_OUT_VENDOR)/etc/voicecommand/training/ubmfile/keyword03/en-GB/supplement/12 \
-    vendor/redmi/rosemary/proprietary/vendor/etc/voicecommand/training/ubmfile/keyword03/en-GB/supplement/13:$(TARGET_COPY_OUT_VENDOR)/etc/voicecommand/training/ubmfile/keyword03/en-GB/supplement/13 \
-    vendor/redmi/rosemary/proprietary/vendor/etc/voicecommand/training/ubmfile/keyword03/en-GB/supplement/2:$(TARGET_COPY_OUT_VENDOR)/etc/voicecommand/training/ubmfile/keyword03/en-GB/supplement/2 \
-    vendor/redmi/rosemary/proprietary/vendor/etc/voicecommand/training/ubmfile/keyword03/en-GB/supplement/3:$(TARGET_COPY_OUT_VENDOR)/etc/voicecommand/training/ubmfile/keyword03/en-GB/supplement/3 \
-    vendor/redmi/rosemary/proprietary/vendor/etc/voicecommand/training/ubmfile/keyword03/en-GB/supplement/4:$(TARGET_COPY_OUT_VENDOR)/etc/voicecommand/training/ubmfile/keyword03/en-GB/supplement/4 \
-    vendor/redmi/rosemary/proprietary/vendor/etc/voicecommand/training/ubmfile/keyword03/en-GB/supplement/5:$(TARGET_COPY_OUT_VENDOR)/etc/voicecommand/training/ubmfile/keyword03/en-GB/supplement/5 \
-    vendor/redmi/rosemary/proprietary/vendor/etc/voicecommand/training/ubmfile/keyword03/en-GB/supplement/6:$(TARGET_COPY_OUT_VENDOR)/etc/voicecommand/training/ubmfile/keyword03/en-GB/supplement/6 \
-    vendor/redmi/rosemary/proprietary/vendor/etc/voicecommand/training/ubmfile/keyword03/en-GB/supplement/7:$(TARGET_COPY_OUT_VENDOR)/etc/voicecommand/training/ubmfile/keyword03/en-GB/supplement/7 \
-    vendor/redmi/rosemary/proprietary/vendor/etc/voicecommand/training/ubmfile/keyword03/en-GB/supplement/8:$(TARGET_COPY_OUT_VENDOR)/etc/voicecommand/training/ubmfile/keyword03/en-GB/supplement/8 \
-    vendor/redmi/rosemary/proprietary/vendor/etc/voicecommand/training/ubmfile/keyword03/en-GB/supplement/9:$(TARGET_COPY_OUT_VENDOR)/etc/voicecommand/training/ubmfile/keyword03/en-GB/supplement/9 \
-    vendor/redmi/rosemary/proprietary/vendor/etc/voicecommand/training/ubmfile/keyword03/en-GB/supplement/b:$(TARGET_COPY_OUT_VENDOR)/etc/voicecommand/training/ubmfile/keyword03/en-GB/supplement/b \
-    vendor/redmi/rosemary/proprietary/vendor/etc/voicecommand/training/ubmfile/keyword03/en-IN/keyphrase.xml:$(TARGET_COPY_OUT_VENDOR)/etc/voicecommand/training/ubmfile/keyword03/en-IN/keyphrase.xml \
-    vendor/redmi/rosemary/proprietary/vendor/etc/voicecommand/training/ubmfile/keyword03/en-IN/p2.3/128.dat:$(TARGET_COPY_OUT_VENDOR)/etc/voicecommand/training/ubmfile/keyword03/en-IN/p2.3/128.dat \
-    vendor/redmi/rosemary/proprietary/vendor/etc/voicecommand/training/ubmfile/keyword03/en-IN/p2.3/64.dat:$(TARGET_COPY_OUT_VENDOR)/etc/voicecommand/training/ubmfile/keyword03/en-IN/p2.3/64.dat \
-    vendor/redmi/rosemary/proprietary/vendor/etc/voicecommand/training/ubmfile/keyword03/en-IN/p2.3/antiCmds/Model1.bin:$(TARGET_COPY_OUT_VENDOR)/etc/voicecommand/training/ubmfile/keyword03/en-IN/p2.3/antiCmds/Model1.bin \
-    vendor/redmi/rosemary/proprietary/vendor/etc/voicecommand/training/ubmfile/keyword03/en-IN/p2.3/antiCmds/Model4.bin:$(TARGET_COPY_OUT_VENDOR)/etc/voicecommand/training/ubmfile/keyword03/en-IN/p2.3/antiCmds/Model4.bin \
-    vendor/redmi/rosemary/proprietary/vendor/etc/voicecommand/training/ubmfile/keyword03/en-IN/p2.3/antiCmds/c_e_dic.bin.f:$(TARGET_COPY_OUT_VENDOR)/etc/voicecommand/training/ubmfile/keyword03/en-IN/p2.3/antiCmds/c_e_dic.bin.f \
-    vendor/redmi/rosemary/proprietary/vendor/etc/voicecommand/training/ubmfile/keyword03/en-IN/p2.3/antiCmds/c_e_dic.bin.gen:$(TARGET_COPY_OUT_VENDOR)/etc/voicecommand/training/ubmfile/keyword03/en-IN/p2.3/antiCmds/c_e_dic.bin.gen \
-    vendor/redmi/rosemary/proprietary/vendor/etc/voicecommand/training/ubmfile/keyword03/en-IN/p2.3/antiCmds/c_e_dic.bin.l:$(TARGET_COPY_OUT_VENDOR)/etc/voicecommand/training/ubmfile/keyword03/en-IN/p2.3/antiCmds/c_e_dic.bin.l \
-    vendor/redmi/rosemary/proprietary/vendor/etc/voicecommand/training/ubmfile/keyword03/en-IN/p2.3/antiCmds/c_e_dic.bin.p:$(TARGET_COPY_OUT_VENDOR)/etc/voicecommand/training/ubmfile/keyword03/en-IN/p2.3/antiCmds/c_e_dic.bin.p \
-    vendor/redmi/rosemary/proprietary/vendor/etc/voicecommand/training/ubmfile/keyword03/en-IN/p2.3/antiCmds/c_e_dic.bin.t:$(TARGET_COPY_OUT_VENDOR)/etc/voicecommand/training/ubmfile/keyword03/en-IN/p2.3/antiCmds/c_e_dic.bin.t \
-    vendor/redmi/rosemary/proprietary/vendor/etc/voicecommand/training/ubmfile/keyword03/en-IN/p2.3/antiCmds/commandfilr3.dic:$(TARGET_COPY_OUT_VENDOR)/etc/voicecommand/training/ubmfile/keyword03/en-IN/p2.3/antiCmds/commandfilr3.dic \
-    vendor/redmi/rosemary/proprietary/vendor/etc/voicecommand/training/ubmfile/keyword03/en-IN/p2.3/p0:$(TARGET_COPY_OUT_VENDOR)/etc/voicecommand/training/ubmfile/keyword03/en-IN/p2.3/p0 \
-    vendor/redmi/rosemary/proprietary/vendor/etc/voicecommand/training/ubmfile/keyword03/en-IN/p2.3/ubmModel0.bin:$(TARGET_COPY_OUT_VENDOR)/etc/voicecommand/training/ubmfile/keyword03/en-IN/p2.3/ubmModel0.bin \
-    vendor/redmi/rosemary/proprietary/vendor/etc/voicecommand/training/ubmfile/keyword03/en-IN/p2.3/ubmModel1.bin:$(TARGET_COPY_OUT_VENDOR)/etc/voicecommand/training/ubmfile/keyword03/en-IN/p2.3/ubmModel1.bin \
-    vendor/redmi/rosemary/proprietary/vendor/etc/voicecommand/training/ubmfile/keyword03/en-IN/p2.3/ubmModel10.bin:$(TARGET_COPY_OUT_VENDOR)/etc/voicecommand/training/ubmfile/keyword03/en-IN/p2.3/ubmModel10.bin \
-    vendor/redmi/rosemary/proprietary/vendor/etc/voicecommand/training/ubmfile/keyword03/en-IN/p2.3/ubmModel2.bin:$(TARGET_COPY_OUT_VENDOR)/etc/voicecommand/training/ubmfile/keyword03/en-IN/p2.3/ubmModel2.bin \
-    vendor/redmi/rosemary/proprietary/vendor/etc/voicecommand/training/ubmfile/keyword03/en-IN/p2.3/ubmModel3.bin:$(TARGET_COPY_OUT_VENDOR)/etc/voicecommand/training/ubmfile/keyword03/en-IN/p2.3/ubmModel3.bin \
-    vendor/redmi/rosemary/proprietary/vendor/etc/voicecommand/training/ubmfile/keyword03/en-IN/p2.3/ubmModel4.bin:$(TARGET_COPY_OUT_VENDOR)/etc/voicecommand/training/ubmfile/keyword03/en-IN/p2.3/ubmModel4.bin \
-    vendor/redmi/rosemary/proprietary/vendor/etc/voicecommand/training/ubmfile/keyword03/en-IN/p2.5/n0:$(TARGET_COPY_OUT_VENDOR)/etc/voicecommand/training/ubmfile/keyword03/en-IN/p2.5/n0 \
-    vendor/redmi/rosemary/proprietary/vendor/etc/voicecommand/training/ubmfile/keyword03/en-IN/p2.5/n1:$(TARGET_COPY_OUT_VENDOR)/etc/voicecommand/training/ubmfile/keyword03/en-IN/p2.5/n1 \
-    vendor/redmi/rosemary/proprietary/vendor/etc/voicecommand/training/ubmfile/keyword03/en-IN/p2.5/n2:$(TARGET_COPY_OUT_VENDOR)/etc/voicecommand/training/ubmfile/keyword03/en-IN/p2.5/n2 \
-    vendor/redmi/rosemary/proprietary/vendor/etc/voicecommand/training/ubmfile/keyword03/en-IN/p2.5/p0:$(TARGET_COPY_OUT_VENDOR)/etc/voicecommand/training/ubmfile/keyword03/en-IN/p2.5/p0 \
-    vendor/redmi/rosemary/proprietary/vendor/etc/voicecommand/training/ubmfile/keyword03/en-IN/p2.5/p1:$(TARGET_COPY_OUT_VENDOR)/etc/voicecommand/training/ubmfile/keyword03/en-IN/p2.5/p1 \
-    vendor/redmi/rosemary/proprietary/vendor/etc/voicecommand/training/ubmfile/keyword03/en-IN/p2.5/pn1:$(TARGET_COPY_OUT_VENDOR)/etc/voicecommand/training/ubmfile/keyword03/en-IN/p2.5/pn1 \
-    vendor/redmi/rosemary/proprietary/vendor/etc/voicecommand/training/ubmfile/keyword03/en-IN/p2.5/ubmModel0.bin:$(TARGET_COPY_OUT_VENDOR)/etc/voicecommand/training/ubmfile/keyword03/en-IN/p2.5/ubmModel0.bin \
-    vendor/redmi/rosemary/proprietary/vendor/etc/voicecommand/training/ubmfile/keyword03/en-IN/p2.5/ubmModel10.bin:$(TARGET_COPY_OUT_VENDOR)/etc/voicecommand/training/ubmfile/keyword03/en-IN/p2.5/ubmModel10.bin \
-    vendor/redmi/rosemary/proprietary/vendor/etc/voicecommand/training/ubmfile/keyword03/en-IN/p2.5/ubmModel3.bin:$(TARGET_COPY_OUT_VENDOR)/etc/voicecommand/training/ubmfile/keyword03/en-IN/p2.5/ubmModel3.bin \
-    vendor/redmi/rosemary/proprietary/vendor/etc/voicecommand/training/ubmfile/keyword03/en-IN/p2.5/ubmModel4.bin:$(TARGET_COPY_OUT_VENDOR)/etc/voicecommand/training/ubmfile/keyword03/en-IN/p2.5/ubmModel4.bin \
-    vendor/redmi/rosemary/proprietary/vendor/etc/voicecommand/training/ubmfile/keyword03/en-IN/p2/128.dat:$(TARGET_COPY_OUT_VENDOR)/etc/voicecommand/training/ubmfile/keyword03/en-IN/p2/128.dat \
-    vendor/redmi/rosemary/proprietary/vendor/etc/voicecommand/training/ubmfile/keyword03/en-IN/p2/64.dat:$(TARGET_COPY_OUT_VENDOR)/etc/voicecommand/training/ubmfile/keyword03/en-IN/p2/64.dat \
-    vendor/redmi/rosemary/proprietary/vendor/etc/voicecommand/training/ubmfile/keyword03/en-IN/p2/antiCmds/Model1.bin:$(TARGET_COPY_OUT_VENDOR)/etc/voicecommand/training/ubmfile/keyword03/en-IN/p2/antiCmds/Model1.bin \
-    vendor/redmi/rosemary/proprietary/vendor/etc/voicecommand/training/ubmfile/keyword03/en-IN/p2/antiCmds/Model4.bin:$(TARGET_COPY_OUT_VENDOR)/etc/voicecommand/training/ubmfile/keyword03/en-IN/p2/antiCmds/Model4.bin \
-    vendor/redmi/rosemary/proprietary/vendor/etc/voicecommand/training/ubmfile/keyword03/en-IN/p2/antiCmds/c_e_dic.bin.f:$(TARGET_COPY_OUT_VENDOR)/etc/voicecommand/training/ubmfile/keyword03/en-IN/p2/antiCmds/c_e_dic.bin.f \
-    vendor/redmi/rosemary/proprietary/vendor/etc/voicecommand/training/ubmfile/keyword03/en-IN/p2/antiCmds/c_e_dic.bin.gen:$(TARGET_COPY_OUT_VENDOR)/etc/voicecommand/training/ubmfile/keyword03/en-IN/p2/antiCmds/c_e_dic.bin.gen \
-    vendor/redmi/rosemary/proprietary/vendor/etc/voicecommand/training/ubmfile/keyword03/en-IN/p2/antiCmds/c_e_dic.bin.l:$(TARGET_COPY_OUT_VENDOR)/etc/voicecommand/training/ubmfile/keyword03/en-IN/p2/antiCmds/c_e_dic.bin.l \
-    vendor/redmi/rosemary/proprietary/vendor/etc/voicecommand/training/ubmfile/keyword03/en-IN/p2/antiCmds/c_e_dic.bin.p:$(TARGET_COPY_OUT_VENDOR)/etc/voicecommand/training/ubmfile/keyword03/en-IN/p2/antiCmds/c_e_dic.bin.p \
-    vendor/redmi/rosemary/proprietary/vendor/etc/voicecommand/training/ubmfile/keyword03/en-IN/p2/antiCmds/c_e_dic.bin.t:$(TARGET_COPY_OUT_VENDOR)/etc/voicecommand/training/ubmfile/keyword03/en-IN/p2/antiCmds/c_e_dic.bin.t \
-    vendor/redmi/rosemary/proprietary/vendor/etc/voicecommand/training/ubmfile/keyword03/en-IN/p2/antiCmds/commandfilr3.dic:$(TARGET_COPY_OUT_VENDOR)/etc/voicecommand/training/ubmfile/keyword03/en-IN/p2/antiCmds/commandfilr3.dic \
-    vendor/redmi/rosemary/proprietary/vendor/etc/voicecommand/training/ubmfile/keyword03/en-IN/p2/p0:$(TARGET_COPY_OUT_VENDOR)/etc/voicecommand/training/ubmfile/keyword03/en-IN/p2/p0 \
-    vendor/redmi/rosemary/proprietary/vendor/etc/voicecommand/training/ubmfile/keyword03/en-IN/p2/ubmModel0.bin:$(TARGET_COPY_OUT_VENDOR)/etc/voicecommand/training/ubmfile/keyword03/en-IN/p2/ubmModel0.bin \
-    vendor/redmi/rosemary/proprietary/vendor/etc/voicecommand/training/ubmfile/keyword03/en-IN/p2/ubmModel1.bin:$(TARGET_COPY_OUT_VENDOR)/etc/voicecommand/training/ubmfile/keyword03/en-IN/p2/ubmModel1.bin \
-    vendor/redmi/rosemary/proprietary/vendor/etc/voicecommand/training/ubmfile/keyword03/en-IN/p2/ubmModel10.bin:$(TARGET_COPY_OUT_VENDOR)/etc/voicecommand/training/ubmfile/keyword03/en-IN/p2/ubmModel10.bin \
-    vendor/redmi/rosemary/proprietary/vendor/etc/voicecommand/training/ubmfile/keyword03/en-IN/p2/ubmModel2.bin:$(TARGET_COPY_OUT_VENDOR)/etc/voicecommand/training/ubmfile/keyword03/en-IN/p2/ubmModel2.bin \
-    vendor/redmi/rosemary/proprietary/vendor/etc/voicecommand/training/ubmfile/keyword03/en-IN/p2/ubmModel3.bin:$(TARGET_COPY_OUT_VENDOR)/etc/voicecommand/training/ubmfile/keyword03/en-IN/p2/ubmModel3.bin \
-    vendor/redmi/rosemary/proprietary/vendor/etc/voicecommand/training/ubmfile/keyword03/en-IN/p2/ubmModel4.bin:$(TARGET_COPY_OUT_VENDOR)/etc/voicecommand/training/ubmfile/keyword03/en-IN/p2/ubmModel4.bin \
-    vendor/redmi/rosemary/proprietary/vendor/etc/voicecommand/training/ubmfile/keyword03/en-IN/supplement/1:$(TARGET_COPY_OUT_VENDOR)/etc/voicecommand/training/ubmfile/keyword03/en-IN/supplement/1 \
-    vendor/redmi/rosemary/proprietary/vendor/etc/voicecommand/training/ubmfile/keyword03/en-IN/supplement/10:$(TARGET_COPY_OUT_VENDOR)/etc/voicecommand/training/ubmfile/keyword03/en-IN/supplement/10 \
-    vendor/redmi/rosemary/proprietary/vendor/etc/voicecommand/training/ubmfile/keyword03/en-IN/supplement/11:$(TARGET_COPY_OUT_VENDOR)/etc/voicecommand/training/ubmfile/keyword03/en-IN/supplement/11 \
-    vendor/redmi/rosemary/proprietary/vendor/etc/voicecommand/training/ubmfile/keyword03/en-IN/supplement/12:$(TARGET_COPY_OUT_VENDOR)/etc/voicecommand/training/ubmfile/keyword03/en-IN/supplement/12 \
-    vendor/redmi/rosemary/proprietary/vendor/etc/voicecommand/training/ubmfile/keyword03/en-IN/supplement/13:$(TARGET_COPY_OUT_VENDOR)/etc/voicecommand/training/ubmfile/keyword03/en-IN/supplement/13 \
-    vendor/redmi/rosemary/proprietary/vendor/etc/voicecommand/training/ubmfile/keyword03/en-IN/supplement/2:$(TARGET_COPY_OUT_VENDOR)/etc/voicecommand/training/ubmfile/keyword03/en-IN/supplement/2 \
-    vendor/redmi/rosemary/proprietary/vendor/etc/voicecommand/training/ubmfile/keyword03/en-IN/supplement/3:$(TARGET_COPY_OUT_VENDOR)/etc/voicecommand/training/ubmfile/keyword03/en-IN/supplement/3 \
-    vendor/redmi/rosemary/proprietary/vendor/etc/voicecommand/training/ubmfile/keyword03/en-IN/supplement/4:$(TARGET_COPY_OUT_VENDOR)/etc/voicecommand/training/ubmfile/keyword03/en-IN/supplement/4 \
-    vendor/redmi/rosemary/proprietary/vendor/etc/voicecommand/training/ubmfile/keyword03/en-IN/supplement/5:$(TARGET_COPY_OUT_VENDOR)/etc/voicecommand/training/ubmfile/keyword03/en-IN/supplement/5 \
-    vendor/redmi/rosemary/proprietary/vendor/etc/voicecommand/training/ubmfile/keyword03/en-IN/supplement/6:$(TARGET_COPY_OUT_VENDOR)/etc/voicecommand/training/ubmfile/keyword03/en-IN/supplement/6 \
-    vendor/redmi/rosemary/proprietary/vendor/etc/voicecommand/training/ubmfile/keyword03/en-IN/supplement/7:$(TARGET_COPY_OUT_VENDOR)/etc/voicecommand/training/ubmfile/keyword03/en-IN/supplement/7 \
-    vendor/redmi/rosemary/proprietary/vendor/etc/voicecommand/training/ubmfile/keyword03/en-IN/supplement/8:$(TARGET_COPY_OUT_VENDOR)/etc/voicecommand/training/ubmfile/keyword03/en-IN/supplement/8 \
-    vendor/redmi/rosemary/proprietary/vendor/etc/voicecommand/training/ubmfile/keyword03/en-IN/supplement/9:$(TARGET_COPY_OUT_VENDOR)/etc/voicecommand/training/ubmfile/keyword03/en-IN/supplement/9 \
-    vendor/redmi/rosemary/proprietary/vendor/etc/voicecommand/training/ubmfile/keyword03/en-IN/supplement/b:$(TARGET_COPY_OUT_VENDOR)/etc/voicecommand/training/ubmfile/keyword03/en-IN/supplement/b \
-    vendor/redmi/rosemary/proprietary/vendor/etc/voicecommand/training/ubmfile/keyword03/en-US/keyphrase.xml:$(TARGET_COPY_OUT_VENDOR)/etc/voicecommand/training/ubmfile/keyword03/en-US/keyphrase.xml \
-    vendor/redmi/rosemary/proprietary/vendor/etc/voicecommand/training/ubmfile/keyword03/en-US/p2.3/128.dat:$(TARGET_COPY_OUT_VENDOR)/etc/voicecommand/training/ubmfile/keyword03/en-US/p2.3/128.dat \
-    vendor/redmi/rosemary/proprietary/vendor/etc/voicecommand/training/ubmfile/keyword03/en-US/p2.3/64.dat:$(TARGET_COPY_OUT_VENDOR)/etc/voicecommand/training/ubmfile/keyword03/en-US/p2.3/64.dat \
-    vendor/redmi/rosemary/proprietary/vendor/etc/voicecommand/training/ubmfile/keyword03/en-US/p2.3/antiCmds/Model1.bin:$(TARGET_COPY_OUT_VENDOR)/etc/voicecommand/training/ubmfile/keyword03/en-US/p2.3/antiCmds/Model1.bin \
-    vendor/redmi/rosemary/proprietary/vendor/etc/voicecommand/training/ubmfile/keyword03/en-US/p2.3/antiCmds/Model4.bin:$(TARGET_COPY_OUT_VENDOR)/etc/voicecommand/training/ubmfile/keyword03/en-US/p2.3/antiCmds/Model4.bin \
-    vendor/redmi/rosemary/proprietary/vendor/etc/voicecommand/training/ubmfile/keyword03/en-US/p2.3/antiCmds/c_e_dic.bin.f:$(TARGET_COPY_OUT_VENDOR)/etc/voicecommand/training/ubmfile/keyword03/en-US/p2.3/antiCmds/c_e_dic.bin.f \
-    vendor/redmi/rosemary/proprietary/vendor/etc/voicecommand/training/ubmfile/keyword03/en-US/p2.3/antiCmds/c_e_dic.bin.gen:$(TARGET_COPY_OUT_VENDOR)/etc/voicecommand/training/ubmfile/keyword03/en-US/p2.3/antiCmds/c_e_dic.bin.gen \
-    vendor/redmi/rosemary/proprietary/vendor/etc/voicecommand/training/ubmfile/keyword03/en-US/p2.3/antiCmds/c_e_dic.bin.l:$(TARGET_COPY_OUT_VENDOR)/etc/voicecommand/training/ubmfile/keyword03/en-US/p2.3/antiCmds/c_e_dic.bin.l \
-    vendor/redmi/rosemary/proprietary/vendor/etc/voicecommand/training/ubmfile/keyword03/en-US/p2.3/antiCmds/c_e_dic.bin.p:$(TARGET_COPY_OUT_VENDOR)/etc/voicecommand/training/ubmfile/keyword03/en-US/p2.3/antiCmds/c_e_dic.bin.p \
-    vendor/redmi/rosemary/proprietary/vendor/etc/voicecommand/training/ubmfile/keyword03/en-US/p2.3/antiCmds/c_e_dic.bin.t:$(TARGET_COPY_OUT_VENDOR)/etc/voicecommand/training/ubmfile/keyword03/en-US/p2.3/antiCmds/c_e_dic.bin.t \
-    vendor/redmi/rosemary/proprietary/vendor/etc/voicecommand/training/ubmfile/keyword03/en-US/p2.3/antiCmds/commandfilr3.dic:$(TARGET_COPY_OUT_VENDOR)/etc/voicecommand/training/ubmfile/keyword03/en-US/p2.3/antiCmds/commandfilr3.dic \
-    vendor/redmi/rosemary/proprietary/vendor/etc/voicecommand/training/ubmfile/keyword03/en-US/p2.3/p0:$(TARGET_COPY_OUT_VENDOR)/etc/voicecommand/training/ubmfile/keyword03/en-US/p2.3/p0 \
-    vendor/redmi/rosemary/proprietary/vendor/etc/voicecommand/training/ubmfile/keyword03/en-US/p2.3/ubmModel0.bin:$(TARGET_COPY_OUT_VENDOR)/etc/voicecommand/training/ubmfile/keyword03/en-US/p2.3/ubmModel0.bin \
-    vendor/redmi/rosemary/proprietary/vendor/etc/voicecommand/training/ubmfile/keyword03/en-US/p2.3/ubmModel1.bin:$(TARGET_COPY_OUT_VENDOR)/etc/voicecommand/training/ubmfile/keyword03/en-US/p2.3/ubmModel1.bin \
-    vendor/redmi/rosemary/proprietary/vendor/etc/voicecommand/training/ubmfile/keyword03/en-US/p2.3/ubmModel10.bin:$(TARGET_COPY_OUT_VENDOR)/etc/voicecommand/training/ubmfile/keyword03/en-US/p2.3/ubmModel10.bin \
-    vendor/redmi/rosemary/proprietary/vendor/etc/voicecommand/training/ubmfile/keyword03/en-US/p2.3/ubmModel2.bin:$(TARGET_COPY_OUT_VENDOR)/etc/voicecommand/training/ubmfile/keyword03/en-US/p2.3/ubmModel2.bin \
-    vendor/redmi/rosemary/proprietary/vendor/etc/voicecommand/training/ubmfile/keyword03/en-US/p2.3/ubmModel3.bin:$(TARGET_COPY_OUT_VENDOR)/etc/voicecommand/training/ubmfile/keyword03/en-US/p2.3/ubmModel3.bin \
-    vendor/redmi/rosemary/proprietary/vendor/etc/voicecommand/training/ubmfile/keyword03/en-US/p2.3/ubmModel4.bin:$(TARGET_COPY_OUT_VENDOR)/etc/voicecommand/training/ubmfile/keyword03/en-US/p2.3/ubmModel4.bin \
-    vendor/redmi/rosemary/proprietary/vendor/etc/voicecommand/training/ubmfile/keyword03/en-US/p2.5/n0:$(TARGET_COPY_OUT_VENDOR)/etc/voicecommand/training/ubmfile/keyword03/en-US/p2.5/n0 \
-    vendor/redmi/rosemary/proprietary/vendor/etc/voicecommand/training/ubmfile/keyword03/en-US/p2.5/n1:$(TARGET_COPY_OUT_VENDOR)/etc/voicecommand/training/ubmfile/keyword03/en-US/p2.5/n1 \
-    vendor/redmi/rosemary/proprietary/vendor/etc/voicecommand/training/ubmfile/keyword03/en-US/p2.5/n2:$(TARGET_COPY_OUT_VENDOR)/etc/voicecommand/training/ubmfile/keyword03/en-US/p2.5/n2 \
-    vendor/redmi/rosemary/proprietary/vendor/etc/voicecommand/training/ubmfile/keyword03/en-US/p2.5/p0:$(TARGET_COPY_OUT_VENDOR)/etc/voicecommand/training/ubmfile/keyword03/en-US/p2.5/p0 \
-    vendor/redmi/rosemary/proprietary/vendor/etc/voicecommand/training/ubmfile/keyword03/en-US/p2.5/p1:$(TARGET_COPY_OUT_VENDOR)/etc/voicecommand/training/ubmfile/keyword03/en-US/p2.5/p1 \
-    vendor/redmi/rosemary/proprietary/vendor/etc/voicecommand/training/ubmfile/keyword03/en-US/p2.5/pn1:$(TARGET_COPY_OUT_VENDOR)/etc/voicecommand/training/ubmfile/keyword03/en-US/p2.5/pn1 \
-    vendor/redmi/rosemary/proprietary/vendor/etc/voicecommand/training/ubmfile/keyword03/en-US/p2.5/ubmModel0.bin:$(TARGET_COPY_OUT_VENDOR)/etc/voicecommand/training/ubmfile/keyword03/en-US/p2.5/ubmModel0.bin \
-    vendor/redmi/rosemary/proprietary/vendor/etc/voicecommand/training/ubmfile/keyword03/en-US/p2.5/ubmModel10.bin:$(TARGET_COPY_OUT_VENDOR)/etc/voicecommand/training/ubmfile/keyword03/en-US/p2.5/ubmModel10.bin \
-    vendor/redmi/rosemary/proprietary/vendor/etc/voicecommand/training/ubmfile/keyword03/en-US/p2.5/ubmModel3.bin:$(TARGET_COPY_OUT_VENDOR)/etc/voicecommand/training/ubmfile/keyword03/en-US/p2.5/ubmModel3.bin \
-    vendor/redmi/rosemary/proprietary/vendor/etc/voicecommand/training/ubmfile/keyword03/en-US/p2.5/ubmModel4.bin:$(TARGET_COPY_OUT_VENDOR)/etc/voicecommand/training/ubmfile/keyword03/en-US/p2.5/ubmModel4.bin \
-    vendor/redmi/rosemary/proprietary/vendor/etc/voicecommand/training/ubmfile/keyword03/en-US/p2/128.dat:$(TARGET_COPY_OUT_VENDOR)/etc/voicecommand/training/ubmfile/keyword03/en-US/p2/128.dat \
-    vendor/redmi/rosemary/proprietary/vendor/etc/voicecommand/training/ubmfile/keyword03/en-US/p2/64.dat:$(TARGET_COPY_OUT_VENDOR)/etc/voicecommand/training/ubmfile/keyword03/en-US/p2/64.dat \
-    vendor/redmi/rosemary/proprietary/vendor/etc/voicecommand/training/ubmfile/keyword03/en-US/p2/antiCmds/Model1.bin:$(TARGET_COPY_OUT_VENDOR)/etc/voicecommand/training/ubmfile/keyword03/en-US/p2/antiCmds/Model1.bin \
-    vendor/redmi/rosemary/proprietary/vendor/etc/voicecommand/training/ubmfile/keyword03/en-US/p2/antiCmds/Model4.bin:$(TARGET_COPY_OUT_VENDOR)/etc/voicecommand/training/ubmfile/keyword03/en-US/p2/antiCmds/Model4.bin \
-    vendor/redmi/rosemary/proprietary/vendor/etc/voicecommand/training/ubmfile/keyword03/en-US/p2/antiCmds/c_e_dic.bin.f:$(TARGET_COPY_OUT_VENDOR)/etc/voicecommand/training/ubmfile/keyword03/en-US/p2/antiCmds/c_e_dic.bin.f \
-    vendor/redmi/rosemary/proprietary/vendor/etc/voicecommand/training/ubmfile/keyword03/en-US/p2/antiCmds/c_e_dic.bin.gen:$(TARGET_COPY_OUT_VENDOR)/etc/voicecommand/training/ubmfile/keyword03/en-US/p2/antiCmds/c_e_dic.bin.gen \
-    vendor/redmi/rosemary/proprietary/vendor/etc/voicecommand/training/ubmfile/keyword03/en-US/p2/antiCmds/c_e_dic.bin.l:$(TARGET_COPY_OUT_VENDOR)/etc/voicecommand/training/ubmfile/keyword03/en-US/p2/antiCmds/c_e_dic.bin.l \
-    vendor/redmi/rosemary/proprietary/vendor/etc/voicecommand/training/ubmfile/keyword03/en-US/p2/antiCmds/c_e_dic.bin.p:$(TARGET_COPY_OUT_VENDOR)/etc/voicecommand/training/ubmfile/keyword03/en-US/p2/antiCmds/c_e_dic.bin.p \
-    vendor/redmi/rosemary/proprietary/vendor/etc/voicecommand/training/ubmfile/keyword03/en-US/p2/antiCmds/c_e_dic.bin.t:$(TARGET_COPY_OUT_VENDOR)/etc/voicecommand/training/ubmfile/keyword03/en-US/p2/antiCmds/c_e_dic.bin.t \
-    vendor/redmi/rosemary/proprietary/vendor/etc/voicecommand/training/ubmfile/keyword03/en-US/p2/antiCmds/commandfilr3.dic:$(TARGET_COPY_OUT_VENDOR)/etc/voicecommand/training/ubmfile/keyword03/en-US/p2/antiCmds/commandfilr3.dic \
-    vendor/redmi/rosemary/proprietary/vendor/etc/voicecommand/training/ubmfile/keyword03/en-US/p2/p0:$(TARGET_COPY_OUT_VENDOR)/etc/voicecommand/training/ubmfile/keyword03/en-US/p2/p0 \
-    vendor/redmi/rosemary/proprietary/vendor/etc/voicecommand/training/ubmfile/keyword03/en-US/p2/ubmModel0.bin:$(TARGET_COPY_OUT_VENDOR)/etc/voicecommand/training/ubmfile/keyword03/en-US/p2/ubmModel0.bin \
-    vendor/redmi/rosemary/proprietary/vendor/etc/voicecommand/training/ubmfile/keyword03/en-US/p2/ubmModel1.bin:$(TARGET_COPY_OUT_VENDOR)/etc/voicecommand/training/ubmfile/keyword03/en-US/p2/ubmModel1.bin \
-    vendor/redmi/rosemary/proprietary/vendor/etc/voicecommand/training/ubmfile/keyword03/en-US/p2/ubmModel10.bin:$(TARGET_COPY_OUT_VENDOR)/etc/voicecommand/training/ubmfile/keyword03/en-US/p2/ubmModel10.bin \
-    vendor/redmi/rosemary/proprietary/vendor/etc/voicecommand/training/ubmfile/keyword03/en-US/p2/ubmModel2.bin:$(TARGET_COPY_OUT_VENDOR)/etc/voicecommand/training/ubmfile/keyword03/en-US/p2/ubmModel2.bin \
-    vendor/redmi/rosemary/proprietary/vendor/etc/voicecommand/training/ubmfile/keyword03/en-US/p2/ubmModel3.bin:$(TARGET_COPY_OUT_VENDOR)/etc/voicecommand/training/ubmfile/keyword03/en-US/p2/ubmModel3.bin \
-    vendor/redmi/rosemary/proprietary/vendor/etc/voicecommand/training/ubmfile/keyword03/en-US/p2/ubmModel4.bin:$(TARGET_COPY_OUT_VENDOR)/etc/voicecommand/training/ubmfile/keyword03/en-US/p2/ubmModel4.bin \
-    vendor/redmi/rosemary/proprietary/vendor/etc/voicecommand/training/ubmfile/keyword03/en-US/supplement/1:$(TARGET_COPY_OUT_VENDOR)/etc/voicecommand/training/ubmfile/keyword03/en-US/supplement/1 \
-    vendor/redmi/rosemary/proprietary/vendor/etc/voicecommand/training/ubmfile/keyword03/en-US/supplement/10:$(TARGET_COPY_OUT_VENDOR)/etc/voicecommand/training/ubmfile/keyword03/en-US/supplement/10 \
-    vendor/redmi/rosemary/proprietary/vendor/etc/voicecommand/training/ubmfile/keyword03/en-US/supplement/11:$(TARGET_COPY_OUT_VENDOR)/etc/voicecommand/training/ubmfile/keyword03/en-US/supplement/11 \
-    vendor/redmi/rosemary/proprietary/vendor/etc/voicecommand/training/ubmfile/keyword03/en-US/supplement/12:$(TARGET_COPY_OUT_VENDOR)/etc/voicecommand/training/ubmfile/keyword03/en-US/supplement/12 \
-    vendor/redmi/rosemary/proprietary/vendor/etc/voicecommand/training/ubmfile/keyword03/en-US/supplement/13:$(TARGET_COPY_OUT_VENDOR)/etc/voicecommand/training/ubmfile/keyword03/en-US/supplement/13 \
-    vendor/redmi/rosemary/proprietary/vendor/etc/voicecommand/training/ubmfile/keyword03/en-US/supplement/2:$(TARGET_COPY_OUT_VENDOR)/etc/voicecommand/training/ubmfile/keyword03/en-US/supplement/2 \
-    vendor/redmi/rosemary/proprietary/vendor/etc/voicecommand/training/ubmfile/keyword03/en-US/supplement/3:$(TARGET_COPY_OUT_VENDOR)/etc/voicecommand/training/ubmfile/keyword03/en-US/supplement/3 \
-    vendor/redmi/rosemary/proprietary/vendor/etc/voicecommand/training/ubmfile/keyword03/en-US/supplement/4:$(TARGET_COPY_OUT_VENDOR)/etc/voicecommand/training/ubmfile/keyword03/en-US/supplement/4 \
-    vendor/redmi/rosemary/proprietary/vendor/etc/voicecommand/training/ubmfile/keyword03/en-US/supplement/5:$(TARGET_COPY_OUT_VENDOR)/etc/voicecommand/training/ubmfile/keyword03/en-US/supplement/5 \
-    vendor/redmi/rosemary/proprietary/vendor/etc/voicecommand/training/ubmfile/keyword03/en-US/supplement/6:$(TARGET_COPY_OUT_VENDOR)/etc/voicecommand/training/ubmfile/keyword03/en-US/supplement/6 \
-    vendor/redmi/rosemary/proprietary/vendor/etc/voicecommand/training/ubmfile/keyword03/en-US/supplement/7:$(TARGET_COPY_OUT_VENDOR)/etc/voicecommand/training/ubmfile/keyword03/en-US/supplement/7 \
-    vendor/redmi/rosemary/proprietary/vendor/etc/voicecommand/training/ubmfile/keyword03/en-US/supplement/8:$(TARGET_COPY_OUT_VENDOR)/etc/voicecommand/training/ubmfile/keyword03/en-US/supplement/8 \
-    vendor/redmi/rosemary/proprietary/vendor/etc/voicecommand/training/ubmfile/keyword03/en-US/supplement/9:$(TARGET_COPY_OUT_VENDOR)/etc/voicecommand/training/ubmfile/keyword03/en-US/supplement/9 \
-    vendor/redmi/rosemary/proprietary/vendor/etc/voicecommand/training/ubmfile/keyword03/en-US/supplement/b:$(TARGET_COPY_OUT_VENDOR)/etc/voicecommand/training/ubmfile/keyword03/en-US/supplement/b \
-    vendor/redmi/rosemary/proprietary/vendor/etc/voicecommand/training/ubmfile/keyword03/es-ES/keyphrase.xml:$(TARGET_COPY_OUT_VENDOR)/etc/voicecommand/training/ubmfile/keyword03/es-ES/keyphrase.xml \
-    vendor/redmi/rosemary/proprietary/vendor/etc/voicecommand/training/ubmfile/keyword03/es-ES/p2.3/128.dat:$(TARGET_COPY_OUT_VENDOR)/etc/voicecommand/training/ubmfile/keyword03/es-ES/p2.3/128.dat \
-    vendor/redmi/rosemary/proprietary/vendor/etc/voicecommand/training/ubmfile/keyword03/es-ES/p2.3/64.dat:$(TARGET_COPY_OUT_VENDOR)/etc/voicecommand/training/ubmfile/keyword03/es-ES/p2.3/64.dat \
-    vendor/redmi/rosemary/proprietary/vendor/etc/voicecommand/training/ubmfile/keyword03/es-ES/p2.3/antiCmds/Model1.bin:$(TARGET_COPY_OUT_VENDOR)/etc/voicecommand/training/ubmfile/keyword03/es-ES/p2.3/antiCmds/Model1.bin \
-    vendor/redmi/rosemary/proprietary/vendor/etc/voicecommand/training/ubmfile/keyword03/es-ES/p2.3/antiCmds/Model4.bin:$(TARGET_COPY_OUT_VENDOR)/etc/voicecommand/training/ubmfile/keyword03/es-ES/p2.3/antiCmds/Model4.bin \
-    vendor/redmi/rosemary/proprietary/vendor/etc/voicecommand/training/ubmfile/keyword03/es-ES/p2.3/antiCmds/c_e_dic.bin.f:$(TARGET_COPY_OUT_VENDOR)/etc/voicecommand/training/ubmfile/keyword03/es-ES/p2.3/antiCmds/c_e_dic.bin.f \
-    vendor/redmi/rosemary/proprietary/vendor/etc/voicecommand/training/ubmfile/keyword03/es-ES/p2.3/antiCmds/c_e_dic.bin.gen:$(TARGET_COPY_OUT_VENDOR)/etc/voicecommand/training/ubmfile/keyword03/es-ES/p2.3/antiCmds/c_e_dic.bin.gen \
-    vendor/redmi/rosemary/proprietary/vendor/etc/voicecommand/training/ubmfile/keyword03/es-ES/p2.3/antiCmds/c_e_dic.bin.l:$(TARGET_COPY_OUT_VENDOR)/etc/voicecommand/training/ubmfile/keyword03/es-ES/p2.3/antiCmds/c_e_dic.bin.l \
-    vendor/redmi/rosemary/proprietary/vendor/etc/voicecommand/training/ubmfile/keyword03/es-ES/p2.3/antiCmds/c_e_dic.bin.p:$(TARGET_COPY_OUT_VENDOR)/etc/voicecommand/training/ubmfile/keyword03/es-ES/p2.3/antiCmds/c_e_dic.bin.p \
-    vendor/redmi/rosemary/proprietary/vendor/etc/voicecommand/training/ubmfile/keyword03/es-ES/p2.3/antiCmds/c_e_dic.bin.t:$(TARGET_COPY_OUT_VENDOR)/etc/voicecommand/training/ubmfile/keyword03/es-ES/p2.3/antiCmds/c_e_dic.bin.t \
-    vendor/redmi/rosemary/proprietary/vendor/etc/voicecommand/training/ubmfile/keyword03/es-ES/p2.3/antiCmds/commandfilr3.dic:$(TARGET_COPY_OUT_VENDOR)/etc/voicecommand/training/ubmfile/keyword03/es-ES/p2.3/antiCmds/commandfilr3.dic \
-    vendor/redmi/rosemary/proprietary/vendor/etc/voicecommand/training/ubmfile/keyword03/es-ES/p2.3/p0:$(TARGET_COPY_OUT_VENDOR)/etc/voicecommand/training/ubmfile/keyword03/es-ES/p2.3/p0 \
-    vendor/redmi/rosemary/proprietary/vendor/etc/voicecommand/training/ubmfile/keyword03/es-ES/p2.3/ubmModel0.bin:$(TARGET_COPY_OUT_VENDOR)/etc/voicecommand/training/ubmfile/keyword03/es-ES/p2.3/ubmModel0.bin \
-    vendor/redmi/rosemary/proprietary/vendor/etc/voicecommand/training/ubmfile/keyword03/es-ES/p2.3/ubmModel1.bin:$(TARGET_COPY_OUT_VENDOR)/etc/voicecommand/training/ubmfile/keyword03/es-ES/p2.3/ubmModel1.bin \
-    vendor/redmi/rosemary/proprietary/vendor/etc/voicecommand/training/ubmfile/keyword03/es-ES/p2.3/ubmModel10.bin:$(TARGET_COPY_OUT_VENDOR)/etc/voicecommand/training/ubmfile/keyword03/es-ES/p2.3/ubmModel10.bin \
-    vendor/redmi/rosemary/proprietary/vendor/etc/voicecommand/training/ubmfile/keyword03/es-ES/p2.3/ubmModel2.bin:$(TARGET_COPY_OUT_VENDOR)/etc/voicecommand/training/ubmfile/keyword03/es-ES/p2.3/ubmModel2.bin \
-    vendor/redmi/rosemary/proprietary/vendor/etc/voicecommand/training/ubmfile/keyword03/es-ES/p2.3/ubmModel3.bin:$(TARGET_COPY_OUT_VENDOR)/etc/voicecommand/training/ubmfile/keyword03/es-ES/p2.3/ubmModel3.bin \
-    vendor/redmi/rosemary/proprietary/vendor/etc/voicecommand/training/ubmfile/keyword03/es-ES/p2.3/ubmModel4.bin:$(TARGET_COPY_OUT_VENDOR)/etc/voicecommand/training/ubmfile/keyword03/es-ES/p2.3/ubmModel4.bin \
-    vendor/redmi/rosemary/proprietary/vendor/etc/voicecommand/training/ubmfile/keyword03/es-ES/p2.5/n0:$(TARGET_COPY_OUT_VENDOR)/etc/voicecommand/training/ubmfile/keyword03/es-ES/p2.5/n0 \
-    vendor/redmi/rosemary/proprietary/vendor/etc/voicecommand/training/ubmfile/keyword03/es-ES/p2.5/n1:$(TARGET_COPY_OUT_VENDOR)/etc/voicecommand/training/ubmfile/keyword03/es-ES/p2.5/n1 \
-    vendor/redmi/rosemary/proprietary/vendor/etc/voicecommand/training/ubmfile/keyword03/es-ES/p2.5/n2:$(TARGET_COPY_OUT_VENDOR)/etc/voicecommand/training/ubmfile/keyword03/es-ES/p2.5/n2 \
-    vendor/redmi/rosemary/proprietary/vendor/etc/voicecommand/training/ubmfile/keyword03/es-ES/p2.5/p0:$(TARGET_COPY_OUT_VENDOR)/etc/voicecommand/training/ubmfile/keyword03/es-ES/p2.5/p0 \
-    vendor/redmi/rosemary/proprietary/vendor/etc/voicecommand/training/ubmfile/keyword03/es-ES/p2.5/p1:$(TARGET_COPY_OUT_VENDOR)/etc/voicecommand/training/ubmfile/keyword03/es-ES/p2.5/p1 \
-    vendor/redmi/rosemary/proprietary/vendor/etc/voicecommand/training/ubmfile/keyword03/es-ES/p2.5/pn1:$(TARGET_COPY_OUT_VENDOR)/etc/voicecommand/training/ubmfile/keyword03/es-ES/p2.5/pn1 \
-    vendor/redmi/rosemary/proprietary/vendor/etc/voicecommand/training/ubmfile/keyword03/es-ES/p2.5/ubmModel0.bin:$(TARGET_COPY_OUT_VENDOR)/etc/voicecommand/training/ubmfile/keyword03/es-ES/p2.5/ubmModel0.bin \
-    vendor/redmi/rosemary/proprietary/vendor/etc/voicecommand/training/ubmfile/keyword03/es-ES/p2.5/ubmModel10.bin:$(TARGET_COPY_OUT_VENDOR)/etc/voicecommand/training/ubmfile/keyword03/es-ES/p2.5/ubmModel10.bin \
-    vendor/redmi/rosemary/proprietary/vendor/etc/voicecommand/training/ubmfile/keyword03/es-ES/p2.5/ubmModel3.bin:$(TARGET_COPY_OUT_VENDOR)/etc/voicecommand/training/ubmfile/keyword03/es-ES/p2.5/ubmModel3.bin \
-    vendor/redmi/rosemary/proprietary/vendor/etc/voicecommand/training/ubmfile/keyword03/es-ES/p2.5/ubmModel4.bin:$(TARGET_COPY_OUT_VENDOR)/etc/voicecommand/training/ubmfile/keyword03/es-ES/p2.5/ubmModel4.bin \
-    vendor/redmi/rosemary/proprietary/vendor/etc/voicecommand/training/ubmfile/keyword03/es-ES/p2/128.dat:$(TARGET_COPY_OUT_VENDOR)/etc/voicecommand/training/ubmfile/keyword03/es-ES/p2/128.dat \
-    vendor/redmi/rosemary/proprietary/vendor/etc/voicecommand/training/ubmfile/keyword03/es-ES/p2/64.dat:$(TARGET_COPY_OUT_VENDOR)/etc/voicecommand/training/ubmfile/keyword03/es-ES/p2/64.dat \
-    vendor/redmi/rosemary/proprietary/vendor/etc/voicecommand/training/ubmfile/keyword03/es-ES/p2/antiCmds/Model1.bin:$(TARGET_COPY_OUT_VENDOR)/etc/voicecommand/training/ubmfile/keyword03/es-ES/p2/antiCmds/Model1.bin \
-    vendor/redmi/rosemary/proprietary/vendor/etc/voicecommand/training/ubmfile/keyword03/es-ES/p2/antiCmds/Model4.bin:$(TARGET_COPY_OUT_VENDOR)/etc/voicecommand/training/ubmfile/keyword03/es-ES/p2/antiCmds/Model4.bin \
-    vendor/redmi/rosemary/proprietary/vendor/etc/voicecommand/training/ubmfile/keyword03/es-ES/p2/antiCmds/c_e_dic.bin.f:$(TARGET_COPY_OUT_VENDOR)/etc/voicecommand/training/ubmfile/keyword03/es-ES/p2/antiCmds/c_e_dic.bin.f \
-    vendor/redmi/rosemary/proprietary/vendor/etc/voicecommand/training/ubmfile/keyword03/es-ES/p2/antiCmds/c_e_dic.bin.gen:$(TARGET_COPY_OUT_VENDOR)/etc/voicecommand/training/ubmfile/keyword03/es-ES/p2/antiCmds/c_e_dic.bin.gen \
-    vendor/redmi/rosemary/proprietary/vendor/etc/voicecommand/training/ubmfile/keyword03/es-ES/p2/antiCmds/c_e_dic.bin.l:$(TARGET_COPY_OUT_VENDOR)/etc/voicecommand/training/ubmfile/keyword03/es-ES/p2/antiCmds/c_e_dic.bin.l \
-    vendor/redmi/rosemary/proprietary/vendor/etc/voicecommand/training/ubmfile/keyword03/es-ES/p2/antiCmds/c_e_dic.bin.p:$(TARGET_COPY_OUT_VENDOR)/etc/voicecommand/training/ubmfile/keyword03/es-ES/p2/antiCmds/c_e_dic.bin.p \
-    vendor/redmi/rosemary/proprietary/vendor/etc/voicecommand/training/ubmfile/keyword03/es-ES/p2/antiCmds/c_e_dic.bin.t:$(TARGET_COPY_OUT_VENDOR)/etc/voicecommand/training/ubmfile/keyword03/es-ES/p2/antiCmds/c_e_dic.bin.t \
-    vendor/redmi/rosemary/proprietary/vendor/etc/voicecommand/training/ubmfile/keyword03/es-ES/p2/antiCmds/commandfilr3.dic:$(TARGET_COPY_OUT_VENDOR)/etc/voicecommand/training/ubmfile/keyword03/es-ES/p2/antiCmds/commandfilr3.dic \
-    vendor/redmi/rosemary/proprietary/vendor/etc/voicecommand/training/ubmfile/keyword03/es-ES/p2/p0:$(TARGET_COPY_OUT_VENDOR)/etc/voicecommand/training/ubmfile/keyword03/es-ES/p2/p0 \
-    vendor/redmi/rosemary/proprietary/vendor/etc/voicecommand/training/ubmfile/keyword03/es-ES/p2/ubmModel0.bin:$(TARGET_COPY_OUT_VENDOR)/etc/voicecommand/training/ubmfile/keyword03/es-ES/p2/ubmModel0.bin \
-    vendor/redmi/rosemary/proprietary/vendor/etc/voicecommand/training/ubmfile/keyword03/es-ES/p2/ubmModel1.bin:$(TARGET_COPY_OUT_VENDOR)/etc/voicecommand/training/ubmfile/keyword03/es-ES/p2/ubmModel1.bin \
-    vendor/redmi/rosemary/proprietary/vendor/etc/voicecommand/training/ubmfile/keyword03/es-ES/p2/ubmModel10.bin:$(TARGET_COPY_OUT_VENDOR)/etc/voicecommand/training/ubmfile/keyword03/es-ES/p2/ubmModel10.bin \
-    vendor/redmi/rosemary/proprietary/vendor/etc/voicecommand/training/ubmfile/keyword03/es-ES/p2/ubmModel2.bin:$(TARGET_COPY_OUT_VENDOR)/etc/voicecommand/training/ubmfile/keyword03/es-ES/p2/ubmModel2.bin \
-    vendor/redmi/rosemary/proprietary/vendor/etc/voicecommand/training/ubmfile/keyword03/es-ES/p2/ubmModel3.bin:$(TARGET_COPY_OUT_VENDOR)/etc/voicecommand/training/ubmfile/keyword03/es-ES/p2/ubmModel3.bin \
-    vendor/redmi/rosemary/proprietary/vendor/etc/voicecommand/training/ubmfile/keyword03/es-ES/p2/ubmModel4.bin:$(TARGET_COPY_OUT_VENDOR)/etc/voicecommand/training/ubmfile/keyword03/es-ES/p2/ubmModel4.bin \
-    vendor/redmi/rosemary/proprietary/vendor/etc/voicecommand/training/ubmfile/keyword03/es-ES/supplement/1:$(TARGET_COPY_OUT_VENDOR)/etc/voicecommand/training/ubmfile/keyword03/es-ES/supplement/1 \
-    vendor/redmi/rosemary/proprietary/vendor/etc/voicecommand/training/ubmfile/keyword03/es-ES/supplement/10:$(TARGET_COPY_OUT_VENDOR)/etc/voicecommand/training/ubmfile/keyword03/es-ES/supplement/10 \
-    vendor/redmi/rosemary/proprietary/vendor/etc/voicecommand/training/ubmfile/keyword03/es-ES/supplement/11:$(TARGET_COPY_OUT_VENDOR)/etc/voicecommand/training/ubmfile/keyword03/es-ES/supplement/11 \
-    vendor/redmi/rosemary/proprietary/vendor/etc/voicecommand/training/ubmfile/keyword03/es-ES/supplement/12:$(TARGET_COPY_OUT_VENDOR)/etc/voicecommand/training/ubmfile/keyword03/es-ES/supplement/12 \
-    vendor/redmi/rosemary/proprietary/vendor/etc/voicecommand/training/ubmfile/keyword03/es-ES/supplement/13:$(TARGET_COPY_OUT_VENDOR)/etc/voicecommand/training/ubmfile/keyword03/es-ES/supplement/13 \
-    vendor/redmi/rosemary/proprietary/vendor/etc/voicecommand/training/ubmfile/keyword03/es-ES/supplement/2:$(TARGET_COPY_OUT_VENDOR)/etc/voicecommand/training/ubmfile/keyword03/es-ES/supplement/2 \
-    vendor/redmi/rosemary/proprietary/vendor/etc/voicecommand/training/ubmfile/keyword03/es-ES/supplement/3:$(TARGET_COPY_OUT_VENDOR)/etc/voicecommand/training/ubmfile/keyword03/es-ES/supplement/3 \
-    vendor/redmi/rosemary/proprietary/vendor/etc/voicecommand/training/ubmfile/keyword03/es-ES/supplement/4:$(TARGET_COPY_OUT_VENDOR)/etc/voicecommand/training/ubmfile/keyword03/es-ES/supplement/4 \
-    vendor/redmi/rosemary/proprietary/vendor/etc/voicecommand/training/ubmfile/keyword03/es-ES/supplement/5:$(TARGET_COPY_OUT_VENDOR)/etc/voicecommand/training/ubmfile/keyword03/es-ES/supplement/5 \
-    vendor/redmi/rosemary/proprietary/vendor/etc/voicecommand/training/ubmfile/keyword03/es-ES/supplement/6:$(TARGET_COPY_OUT_VENDOR)/etc/voicecommand/training/ubmfile/keyword03/es-ES/supplement/6 \
-    vendor/redmi/rosemary/proprietary/vendor/etc/voicecommand/training/ubmfile/keyword03/es-ES/supplement/7:$(TARGET_COPY_OUT_VENDOR)/etc/voicecommand/training/ubmfile/keyword03/es-ES/supplement/7 \
-    vendor/redmi/rosemary/proprietary/vendor/etc/voicecommand/training/ubmfile/keyword03/es-ES/supplement/8:$(TARGET_COPY_OUT_VENDOR)/etc/voicecommand/training/ubmfile/keyword03/es-ES/supplement/8 \
-    vendor/redmi/rosemary/proprietary/vendor/etc/voicecommand/training/ubmfile/keyword03/es-ES/supplement/9:$(TARGET_COPY_OUT_VENDOR)/etc/voicecommand/training/ubmfile/keyword03/es-ES/supplement/9 \
-    vendor/redmi/rosemary/proprietary/vendor/etc/voicecommand/training/ubmfile/keyword03/es-ES/supplement/b:$(TARGET_COPY_OUT_VENDOR)/etc/voicecommand/training/ubmfile/keyword03/es-ES/supplement/b \
-    vendor/redmi/rosemary/proprietary/vendor/etc/voicecommand/training/ubmfile/keyword03/fr-FR/keyphrase.xml:$(TARGET_COPY_OUT_VENDOR)/etc/voicecommand/training/ubmfile/keyword03/fr-FR/keyphrase.xml \
-    vendor/redmi/rosemary/proprietary/vendor/etc/voicecommand/training/ubmfile/keyword03/fr-FR/p2.3/128.dat:$(TARGET_COPY_OUT_VENDOR)/etc/voicecommand/training/ubmfile/keyword03/fr-FR/p2.3/128.dat \
-    vendor/redmi/rosemary/proprietary/vendor/etc/voicecommand/training/ubmfile/keyword03/fr-FR/p2.3/64.dat:$(TARGET_COPY_OUT_VENDOR)/etc/voicecommand/training/ubmfile/keyword03/fr-FR/p2.3/64.dat \
-    vendor/redmi/rosemary/proprietary/vendor/etc/voicecommand/training/ubmfile/keyword03/fr-FR/p2.3/antiCmds/Model1.bin:$(TARGET_COPY_OUT_VENDOR)/etc/voicecommand/training/ubmfile/keyword03/fr-FR/p2.3/antiCmds/Model1.bin \
-    vendor/redmi/rosemary/proprietary/vendor/etc/voicecommand/training/ubmfile/keyword03/fr-FR/p2.3/antiCmds/Model4.bin:$(TARGET_COPY_OUT_VENDOR)/etc/voicecommand/training/ubmfile/keyword03/fr-FR/p2.3/antiCmds/Model4.bin \
-    vendor/redmi/rosemary/proprietary/vendor/etc/voicecommand/training/ubmfile/keyword03/fr-FR/p2.3/antiCmds/c_e_dic.bin.f:$(TARGET_COPY_OUT_VENDOR)/etc/voicecommand/training/ubmfile/keyword03/fr-FR/p2.3/antiCmds/c_e_dic.bin.f \
-    vendor/redmi/rosemary/proprietary/vendor/etc/voicecommand/training/ubmfile/keyword03/fr-FR/p2.3/antiCmds/c_e_dic.bin.gen:$(TARGET_COPY_OUT_VENDOR)/etc/voicecommand/training/ubmfile/keyword03/fr-FR/p2.3/antiCmds/c_e_dic.bin.gen \
-    vendor/redmi/rosemary/proprietary/vendor/etc/voicecommand/training/ubmfile/keyword03/fr-FR/p2.3/antiCmds/c_e_dic.bin.l:$(TARGET_COPY_OUT_VENDOR)/etc/voicecommand/training/ubmfile/keyword03/fr-FR/p2.3/antiCmds/c_e_dic.bin.l \
-    vendor/redmi/rosemary/proprietary/vendor/etc/voicecommand/training/ubmfile/keyword03/fr-FR/p2.3/antiCmds/c_e_dic.bin.p:$(TARGET_COPY_OUT_VENDOR)/etc/voicecommand/training/ubmfile/keyword03/fr-FR/p2.3/antiCmds/c_e_dic.bin.p \
-    vendor/redmi/rosemary/proprietary/vendor/etc/voicecommand/training/ubmfile/keyword03/fr-FR/p2.3/antiCmds/c_e_dic.bin.t:$(TARGET_COPY_OUT_VENDOR)/etc/voicecommand/training/ubmfile/keyword03/fr-FR/p2.3/antiCmds/c_e_dic.bin.t \
-    vendor/redmi/rosemary/proprietary/vendor/etc/voicecommand/training/ubmfile/keyword03/fr-FR/p2.3/antiCmds/commandfilr3.dic:$(TARGET_COPY_OUT_VENDOR)/etc/voicecommand/training/ubmfile/keyword03/fr-FR/p2.3/antiCmds/commandfilr3.dic \
-    vendor/redmi/rosemary/proprietary/vendor/etc/voicecommand/training/ubmfile/keyword03/fr-FR/p2.3/p0:$(TARGET_COPY_OUT_VENDOR)/etc/voicecommand/training/ubmfile/keyword03/fr-FR/p2.3/p0 \
-    vendor/redmi/rosemary/proprietary/vendor/etc/voicecommand/training/ubmfile/keyword03/fr-FR/p2.3/ubmModel0.bin:$(TARGET_COPY_OUT_VENDOR)/etc/voicecommand/training/ubmfile/keyword03/fr-FR/p2.3/ubmModel0.bin \
-    vendor/redmi/rosemary/proprietary/vendor/etc/voicecommand/training/ubmfile/keyword03/fr-FR/p2.3/ubmModel1.bin:$(TARGET_COPY_OUT_VENDOR)/etc/voicecommand/training/ubmfile/keyword03/fr-FR/p2.3/ubmModel1.bin \
-    vendor/redmi/rosemary/proprietary/vendor/etc/voicecommand/training/ubmfile/keyword03/fr-FR/p2.3/ubmModel10.bin:$(TARGET_COPY_OUT_VENDOR)/etc/voicecommand/training/ubmfile/keyword03/fr-FR/p2.3/ubmModel10.bin \
-    vendor/redmi/rosemary/proprietary/vendor/etc/voicecommand/training/ubmfile/keyword03/fr-FR/p2.3/ubmModel2.bin:$(TARGET_COPY_OUT_VENDOR)/etc/voicecommand/training/ubmfile/keyword03/fr-FR/p2.3/ubmModel2.bin \
-    vendor/redmi/rosemary/proprietary/vendor/etc/voicecommand/training/ubmfile/keyword03/fr-FR/p2.3/ubmModel3.bin:$(TARGET_COPY_OUT_VENDOR)/etc/voicecommand/training/ubmfile/keyword03/fr-FR/p2.3/ubmModel3.bin \
-    vendor/redmi/rosemary/proprietary/vendor/etc/voicecommand/training/ubmfile/keyword03/fr-FR/p2.3/ubmModel4.bin:$(TARGET_COPY_OUT_VENDOR)/etc/voicecommand/training/ubmfile/keyword03/fr-FR/p2.3/ubmModel4.bin \
-    vendor/redmi/rosemary/proprietary/vendor/etc/voicecommand/training/ubmfile/keyword03/fr-FR/p2.5/n0:$(TARGET_COPY_OUT_VENDOR)/etc/voicecommand/training/ubmfile/keyword03/fr-FR/p2.5/n0 \
-    vendor/redmi/rosemary/proprietary/vendor/etc/voicecommand/training/ubmfile/keyword03/fr-FR/p2.5/n1:$(TARGET_COPY_OUT_VENDOR)/etc/voicecommand/training/ubmfile/keyword03/fr-FR/p2.5/n1 \
-    vendor/redmi/rosemary/proprietary/vendor/etc/voicecommand/training/ubmfile/keyword03/fr-FR/p2.5/n2:$(TARGET_COPY_OUT_VENDOR)/etc/voicecommand/training/ubmfile/keyword03/fr-FR/p2.5/n2 \
-    vendor/redmi/rosemary/proprietary/vendor/etc/voicecommand/training/ubmfile/keyword03/fr-FR/p2.5/p0:$(TARGET_COPY_OUT_VENDOR)/etc/voicecommand/training/ubmfile/keyword03/fr-FR/p2.5/p0 \
-    vendor/redmi/rosemary/proprietary/vendor/etc/voicecommand/training/ubmfile/keyword03/fr-FR/p2.5/p1:$(TARGET_COPY_OUT_VENDOR)/etc/voicecommand/training/ubmfile/keyword03/fr-FR/p2.5/p1 \
-    vendor/redmi/rosemary/proprietary/vendor/etc/voicecommand/training/ubmfile/keyword03/fr-FR/p2.5/pn1:$(TARGET_COPY_OUT_VENDOR)/etc/voicecommand/training/ubmfile/keyword03/fr-FR/p2.5/pn1 \
-    vendor/redmi/rosemary/proprietary/vendor/etc/voicecommand/training/ubmfile/keyword03/fr-FR/p2.5/ubmModel0.bin:$(TARGET_COPY_OUT_VENDOR)/etc/voicecommand/training/ubmfile/keyword03/fr-FR/p2.5/ubmModel0.bin \
-    vendor/redmi/rosemary/proprietary/vendor/etc/voicecommand/training/ubmfile/keyword03/fr-FR/p2.5/ubmModel10.bin:$(TARGET_COPY_OUT_VENDOR)/etc/voicecommand/training/ubmfile/keyword03/fr-FR/p2.5/ubmModel10.bin \
-    vendor/redmi/rosemary/proprietary/vendor/etc/voicecommand/training/ubmfile/keyword03/fr-FR/p2.5/ubmModel3.bin:$(TARGET_COPY_OUT_VENDOR)/etc/voicecommand/training/ubmfile/keyword03/fr-FR/p2.5/ubmModel3.bin \
-    vendor/redmi/rosemary/proprietary/vendor/etc/voicecommand/training/ubmfile/keyword03/fr-FR/p2.5/ubmModel4.bin:$(TARGET_COPY_OUT_VENDOR)/etc/voicecommand/training/ubmfile/keyword03/fr-FR/p2.5/ubmModel4.bin \
-    vendor/redmi/rosemary/proprietary/vendor/etc/voicecommand/training/ubmfile/keyword03/fr-FR/p2/128.dat:$(TARGET_COPY_OUT_VENDOR)/etc/voicecommand/training/ubmfile/keyword03/fr-FR/p2/128.dat \
-    vendor/redmi/rosemary/proprietary/vendor/etc/voicecommand/training/ubmfile/keyword03/fr-FR/p2/64.dat:$(TARGET_COPY_OUT_VENDOR)/etc/voicecommand/training/ubmfile/keyword03/fr-FR/p2/64.dat \
-    vendor/redmi/rosemary/proprietary/vendor/etc/voicecommand/training/ubmfile/keyword03/fr-FR/p2/antiCmds/Model1.bin:$(TARGET_COPY_OUT_VENDOR)/etc/voicecommand/training/ubmfile/keyword03/fr-FR/p2/antiCmds/Model1.bin \
-    vendor/redmi/rosemary/proprietary/vendor/etc/voicecommand/training/ubmfile/keyword03/fr-FR/p2/antiCmds/Model4.bin:$(TARGET_COPY_OUT_VENDOR)/etc/voicecommand/training/ubmfile/keyword03/fr-FR/p2/antiCmds/Model4.bin \
-    vendor/redmi/rosemary/proprietary/vendor/etc/voicecommand/training/ubmfile/keyword03/fr-FR/p2/antiCmds/c_e_dic.bin.f:$(TARGET_COPY_OUT_VENDOR)/etc/voicecommand/training/ubmfile/keyword03/fr-FR/p2/antiCmds/c_e_dic.bin.f \
-    vendor/redmi/rosemary/proprietary/vendor/etc/voicecommand/training/ubmfile/keyword03/fr-FR/p2/antiCmds/c_e_dic.bin.gen:$(TARGET_COPY_OUT_VENDOR)/etc/voicecommand/training/ubmfile/keyword03/fr-FR/p2/antiCmds/c_e_dic.bin.gen \
-    vendor/redmi/rosemary/proprietary/vendor/etc/voicecommand/training/ubmfile/keyword03/fr-FR/p2/antiCmds/c_e_dic.bin.l:$(TARGET_COPY_OUT_VENDOR)/etc/voicecommand/training/ubmfile/keyword03/fr-FR/p2/antiCmds/c_e_dic.bin.l \
-    vendor/redmi/rosemary/proprietary/vendor/etc/voicecommand/training/ubmfile/keyword03/fr-FR/p2/antiCmds/c_e_dic.bin.p:$(TARGET_COPY_OUT_VENDOR)/etc/voicecommand/training/ubmfile/keyword03/fr-FR/p2/antiCmds/c_e_dic.bin.p \
-    vendor/redmi/rosemary/proprietary/vendor/etc/voicecommand/training/ubmfile/keyword03/fr-FR/p2/antiCmds/c_e_dic.bin.t:$(TARGET_COPY_OUT_VENDOR)/etc/voicecommand/training/ubmfile/keyword03/fr-FR/p2/antiCmds/c_e_dic.bin.t \
-    vendor/redmi/rosemary/proprietary/vendor/etc/voicecommand/training/ubmfile/keyword03/fr-FR/p2/antiCmds/commandfilr3.dic:$(TARGET_COPY_OUT_VENDOR)/etc/voicecommand/training/ubmfile/keyword03/fr-FR/p2/antiCmds/commandfilr3.dic \
-    vendor/redmi/rosemary/proprietary/vendor/etc/voicecommand/training/ubmfile/keyword03/fr-FR/p2/p0:$(TARGET_COPY_OUT_VENDOR)/etc/voicecommand/training/ubmfile/keyword03/fr-FR/p2/p0 \
-    vendor/redmi/rosemary/proprietary/vendor/etc/voicecommand/training/ubmfile/keyword03/fr-FR/p2/ubmModel0.bin:$(TARGET_COPY_OUT_VENDOR)/etc/voicecommand/training/ubmfile/keyword03/fr-FR/p2/ubmModel0.bin \
-    vendor/redmi/rosemary/proprietary/vendor/etc/voicecommand/training/ubmfile/keyword03/fr-FR/p2/ubmModel1.bin:$(TARGET_COPY_OUT_VENDOR)/etc/voicecommand/training/ubmfile/keyword03/fr-FR/p2/ubmModel1.bin \
-    vendor/redmi/rosemary/proprietary/vendor/etc/voicecommand/training/ubmfile/keyword03/fr-FR/p2/ubmModel10.bin:$(TARGET_COPY_OUT_VENDOR)/etc/voicecommand/training/ubmfile/keyword03/fr-FR/p2/ubmModel10.bin \
-    vendor/redmi/rosemary/proprietary/vendor/etc/voicecommand/training/ubmfile/keyword03/fr-FR/p2/ubmModel2.bin:$(TARGET_COPY_OUT_VENDOR)/etc/voicecommand/training/ubmfile/keyword03/fr-FR/p2/ubmModel2.bin \
-    vendor/redmi/rosemary/proprietary/vendor/etc/voicecommand/training/ubmfile/keyword03/fr-FR/p2/ubmModel3.bin:$(TARGET_COPY_OUT_VENDOR)/etc/voicecommand/training/ubmfile/keyword03/fr-FR/p2/ubmModel3.bin \
-    vendor/redmi/rosemary/proprietary/vendor/etc/voicecommand/training/ubmfile/keyword03/fr-FR/p2/ubmModel4.bin:$(TARGET_COPY_OUT_VENDOR)/etc/voicecommand/training/ubmfile/keyword03/fr-FR/p2/ubmModel4.bin \
-    vendor/redmi/rosemary/proprietary/vendor/etc/voicecommand/training/ubmfile/keyword03/fr-FR/supplement/1:$(TARGET_COPY_OUT_VENDOR)/etc/voicecommand/training/ubmfile/keyword03/fr-FR/supplement/1 \
-    vendor/redmi/rosemary/proprietary/vendor/etc/voicecommand/training/ubmfile/keyword03/fr-FR/supplement/10:$(TARGET_COPY_OUT_VENDOR)/etc/voicecommand/training/ubmfile/keyword03/fr-FR/supplement/10 \
-    vendor/redmi/rosemary/proprietary/vendor/etc/voicecommand/training/ubmfile/keyword03/fr-FR/supplement/11:$(TARGET_COPY_OUT_VENDOR)/etc/voicecommand/training/ubmfile/keyword03/fr-FR/supplement/11 \
-    vendor/redmi/rosemary/proprietary/vendor/etc/voicecommand/training/ubmfile/keyword03/fr-FR/supplement/12:$(TARGET_COPY_OUT_VENDOR)/etc/voicecommand/training/ubmfile/keyword03/fr-FR/supplement/12 \
-    vendor/redmi/rosemary/proprietary/vendor/etc/voicecommand/training/ubmfile/keyword03/fr-FR/supplement/13:$(TARGET_COPY_OUT_VENDOR)/etc/voicecommand/training/ubmfile/keyword03/fr-FR/supplement/13 \
-    vendor/redmi/rosemary/proprietary/vendor/etc/voicecommand/training/ubmfile/keyword03/fr-FR/supplement/2:$(TARGET_COPY_OUT_VENDOR)/etc/voicecommand/training/ubmfile/keyword03/fr-FR/supplement/2 \
-    vendor/redmi/rosemary/proprietary/vendor/etc/voicecommand/training/ubmfile/keyword03/fr-FR/supplement/3:$(TARGET_COPY_OUT_VENDOR)/etc/voicecommand/training/ubmfile/keyword03/fr-FR/supplement/3 \
-    vendor/redmi/rosemary/proprietary/vendor/etc/voicecommand/training/ubmfile/keyword03/fr-FR/supplement/4:$(TARGET_COPY_OUT_VENDOR)/etc/voicecommand/training/ubmfile/keyword03/fr-FR/supplement/4 \
-    vendor/redmi/rosemary/proprietary/vendor/etc/voicecommand/training/ubmfile/keyword03/fr-FR/supplement/5:$(TARGET_COPY_OUT_VENDOR)/etc/voicecommand/training/ubmfile/keyword03/fr-FR/supplement/5 \
-    vendor/redmi/rosemary/proprietary/vendor/etc/voicecommand/training/ubmfile/keyword03/fr-FR/supplement/6:$(TARGET_COPY_OUT_VENDOR)/etc/voicecommand/training/ubmfile/keyword03/fr-FR/supplement/6 \
-    vendor/redmi/rosemary/proprietary/vendor/etc/voicecommand/training/ubmfile/keyword03/fr-FR/supplement/7:$(TARGET_COPY_OUT_VENDOR)/etc/voicecommand/training/ubmfile/keyword03/fr-FR/supplement/7 \
-    vendor/redmi/rosemary/proprietary/vendor/etc/voicecommand/training/ubmfile/keyword03/fr-FR/supplement/8:$(TARGET_COPY_OUT_VENDOR)/etc/voicecommand/training/ubmfile/keyword03/fr-FR/supplement/8 \
-    vendor/redmi/rosemary/proprietary/vendor/etc/voicecommand/training/ubmfile/keyword03/fr-FR/supplement/9:$(TARGET_COPY_OUT_VENDOR)/etc/voicecommand/training/ubmfile/keyword03/fr-FR/supplement/9 \
-    vendor/redmi/rosemary/proprietary/vendor/etc/voicecommand/training/ubmfile/keyword03/fr-FR/supplement/b:$(TARGET_COPY_OUT_VENDOR)/etc/voicecommand/training/ubmfile/keyword03/fr-FR/supplement/b \
-    vendor/redmi/rosemary/proprietary/vendor/etc/voicecommand/training/ubmfile/keyword03/hi-IN/keyphrase.xml:$(TARGET_COPY_OUT_VENDOR)/etc/voicecommand/training/ubmfile/keyword03/hi-IN/keyphrase.xml \
-    vendor/redmi/rosemary/proprietary/vendor/etc/voicecommand/training/ubmfile/keyword03/hi-IN/p2.3/128.dat:$(TARGET_COPY_OUT_VENDOR)/etc/voicecommand/training/ubmfile/keyword03/hi-IN/p2.3/128.dat \
-    vendor/redmi/rosemary/proprietary/vendor/etc/voicecommand/training/ubmfile/keyword03/hi-IN/p2.3/64.dat:$(TARGET_COPY_OUT_VENDOR)/etc/voicecommand/training/ubmfile/keyword03/hi-IN/p2.3/64.dat \
-    vendor/redmi/rosemary/proprietary/vendor/etc/voicecommand/training/ubmfile/keyword03/hi-IN/p2.3/antiCmds/Model1.bin:$(TARGET_COPY_OUT_VENDOR)/etc/voicecommand/training/ubmfile/keyword03/hi-IN/p2.3/antiCmds/Model1.bin \
-    vendor/redmi/rosemary/proprietary/vendor/etc/voicecommand/training/ubmfile/keyword03/hi-IN/p2.3/antiCmds/Model4.bin:$(TARGET_COPY_OUT_VENDOR)/etc/voicecommand/training/ubmfile/keyword03/hi-IN/p2.3/antiCmds/Model4.bin \
-    vendor/redmi/rosemary/proprietary/vendor/etc/voicecommand/training/ubmfile/keyword03/hi-IN/p2.3/antiCmds/c_e_dic.bin.f:$(TARGET_COPY_OUT_VENDOR)/etc/voicecommand/training/ubmfile/keyword03/hi-IN/p2.3/antiCmds/c_e_dic.bin.f \
-    vendor/redmi/rosemary/proprietary/vendor/etc/voicecommand/training/ubmfile/keyword03/hi-IN/p2.3/antiCmds/c_e_dic.bin.gen:$(TARGET_COPY_OUT_VENDOR)/etc/voicecommand/training/ubmfile/keyword03/hi-IN/p2.3/antiCmds/c_e_dic.bin.gen \
-    vendor/redmi/rosemary/proprietary/vendor/etc/voicecommand/training/ubmfile/keyword03/hi-IN/p2.3/antiCmds/c_e_dic.bin.l:$(TARGET_COPY_OUT_VENDOR)/etc/voicecommand/training/ubmfile/keyword03/hi-IN/p2.3/antiCmds/c_e_dic.bin.l \
-    vendor/redmi/rosemary/proprietary/vendor/etc/voicecommand/training/ubmfile/keyword03/hi-IN/p2.3/antiCmds/c_e_dic.bin.p:$(TARGET_COPY_OUT_VENDOR)/etc/voicecommand/training/ubmfile/keyword03/hi-IN/p2.3/antiCmds/c_e_dic.bin.p \
-    vendor/redmi/rosemary/proprietary/vendor/etc/voicecommand/training/ubmfile/keyword03/hi-IN/p2.3/antiCmds/c_e_dic.bin.t:$(TARGET_COPY_OUT_VENDOR)/etc/voicecommand/training/ubmfile/keyword03/hi-IN/p2.3/antiCmds/c_e_dic.bin.t \
-    vendor/redmi/rosemary/proprietary/vendor/etc/voicecommand/training/ubmfile/keyword03/hi-IN/p2.3/antiCmds/commandfilr3.dic:$(TARGET_COPY_OUT_VENDOR)/etc/voicecommand/training/ubmfile/keyword03/hi-IN/p2.3/antiCmds/commandfilr3.dic \
-    vendor/redmi/rosemary/proprietary/vendor/etc/voicecommand/training/ubmfile/keyword03/hi-IN/p2.3/p0:$(TARGET_COPY_OUT_VENDOR)/etc/voicecommand/training/ubmfile/keyword03/hi-IN/p2.3/p0 \
-    vendor/redmi/rosemary/proprietary/vendor/etc/voicecommand/training/ubmfile/keyword03/hi-IN/p2.3/ubmModel0.bin:$(TARGET_COPY_OUT_VENDOR)/etc/voicecommand/training/ubmfile/keyword03/hi-IN/p2.3/ubmModel0.bin \
-    vendor/redmi/rosemary/proprietary/vendor/etc/voicecommand/training/ubmfile/keyword03/hi-IN/p2.3/ubmModel1.bin:$(TARGET_COPY_OUT_VENDOR)/etc/voicecommand/training/ubmfile/keyword03/hi-IN/p2.3/ubmModel1.bin \
-    vendor/redmi/rosemary/proprietary/vendor/etc/voicecommand/training/ubmfile/keyword03/hi-IN/p2.3/ubmModel10.bin:$(TARGET_COPY_OUT_VENDOR)/etc/voicecommand/training/ubmfile/keyword03/hi-IN/p2.3/ubmModel10.bin \
-    vendor/redmi/rosemary/proprietary/vendor/etc/voicecommand/training/ubmfile/keyword03/hi-IN/p2.3/ubmModel2.bin:$(TARGET_COPY_OUT_VENDOR)/etc/voicecommand/training/ubmfile/keyword03/hi-IN/p2.3/ubmModel2.bin \
-    vendor/redmi/rosemary/proprietary/vendor/etc/voicecommand/training/ubmfile/keyword03/hi-IN/p2.3/ubmModel3.bin:$(TARGET_COPY_OUT_VENDOR)/etc/voicecommand/training/ubmfile/keyword03/hi-IN/p2.3/ubmModel3.bin \
-    vendor/redmi/rosemary/proprietary/vendor/etc/voicecommand/training/ubmfile/keyword03/hi-IN/p2.3/ubmModel4.bin:$(TARGET_COPY_OUT_VENDOR)/etc/voicecommand/training/ubmfile/keyword03/hi-IN/p2.3/ubmModel4.bin \
-    vendor/redmi/rosemary/proprietary/vendor/etc/voicecommand/training/ubmfile/keyword03/hi-IN/p2.5/n0:$(TARGET_COPY_OUT_VENDOR)/etc/voicecommand/training/ubmfile/keyword03/hi-IN/p2.5/n0 \
-    vendor/redmi/rosemary/proprietary/vendor/etc/voicecommand/training/ubmfile/keyword03/hi-IN/p2.5/n1:$(TARGET_COPY_OUT_VENDOR)/etc/voicecommand/training/ubmfile/keyword03/hi-IN/p2.5/n1 \
-    vendor/redmi/rosemary/proprietary/vendor/etc/voicecommand/training/ubmfile/keyword03/hi-IN/p2.5/n2:$(TARGET_COPY_OUT_VENDOR)/etc/voicecommand/training/ubmfile/keyword03/hi-IN/p2.5/n2 \
-    vendor/redmi/rosemary/proprietary/vendor/etc/voicecommand/training/ubmfile/keyword03/hi-IN/p2.5/p0:$(TARGET_COPY_OUT_VENDOR)/etc/voicecommand/training/ubmfile/keyword03/hi-IN/p2.5/p0 \
-    vendor/redmi/rosemary/proprietary/vendor/etc/voicecommand/training/ubmfile/keyword03/hi-IN/p2.5/p1:$(TARGET_COPY_OUT_VENDOR)/etc/voicecommand/training/ubmfile/keyword03/hi-IN/p2.5/p1 \
-    vendor/redmi/rosemary/proprietary/vendor/etc/voicecommand/training/ubmfile/keyword03/hi-IN/p2.5/pn1:$(TARGET_COPY_OUT_VENDOR)/etc/voicecommand/training/ubmfile/keyword03/hi-IN/p2.5/pn1 \
-    vendor/redmi/rosemary/proprietary/vendor/etc/voicecommand/training/ubmfile/keyword03/hi-IN/p2.5/ubmModel0.bin:$(TARGET_COPY_OUT_VENDOR)/etc/voicecommand/training/ubmfile/keyword03/hi-IN/p2.5/ubmModel0.bin \
-    vendor/redmi/rosemary/proprietary/vendor/etc/voicecommand/training/ubmfile/keyword03/hi-IN/p2.5/ubmModel10.bin:$(TARGET_COPY_OUT_VENDOR)/etc/voicecommand/training/ubmfile/keyword03/hi-IN/p2.5/ubmModel10.bin \
-    vendor/redmi/rosemary/proprietary/vendor/etc/voicecommand/training/ubmfile/keyword03/hi-IN/p2.5/ubmModel3.bin:$(TARGET_COPY_OUT_VENDOR)/etc/voicecommand/training/ubmfile/keyword03/hi-IN/p2.5/ubmModel3.bin \
-    vendor/redmi/rosemary/proprietary/vendor/etc/voicecommand/training/ubmfile/keyword03/hi-IN/p2.5/ubmModel4.bin:$(TARGET_COPY_OUT_VENDOR)/etc/voicecommand/training/ubmfile/keyword03/hi-IN/p2.5/ubmModel4.bin \
-    vendor/redmi/rosemary/proprietary/vendor/etc/voicecommand/training/ubmfile/keyword03/hi-IN/p2/128.dat:$(TARGET_COPY_OUT_VENDOR)/etc/voicecommand/training/ubmfile/keyword03/hi-IN/p2/128.dat \
-    vendor/redmi/rosemary/proprietary/vendor/etc/voicecommand/training/ubmfile/keyword03/hi-IN/p2/64.dat:$(TARGET_COPY_OUT_VENDOR)/etc/voicecommand/training/ubmfile/keyword03/hi-IN/p2/64.dat \
-    vendor/redmi/rosemary/proprietary/vendor/etc/voicecommand/training/ubmfile/keyword03/hi-IN/p2/antiCmds/Model1.bin:$(TARGET_COPY_OUT_VENDOR)/etc/voicecommand/training/ubmfile/keyword03/hi-IN/p2/antiCmds/Model1.bin \
-    vendor/redmi/rosemary/proprietary/vendor/etc/voicecommand/training/ubmfile/keyword03/hi-IN/p2/antiCmds/Model4.bin:$(TARGET_COPY_OUT_VENDOR)/etc/voicecommand/training/ubmfile/keyword03/hi-IN/p2/antiCmds/Model4.bin \
-    vendor/redmi/rosemary/proprietary/vendor/etc/voicecommand/training/ubmfile/keyword03/hi-IN/p2/antiCmds/c_e_dic.bin.f:$(TARGET_COPY_OUT_VENDOR)/etc/voicecommand/training/ubmfile/keyword03/hi-IN/p2/antiCmds/c_e_dic.bin.f \
-    vendor/redmi/rosemary/proprietary/vendor/etc/voicecommand/training/ubmfile/keyword03/hi-IN/p2/antiCmds/c_e_dic.bin.gen:$(TARGET_COPY_OUT_VENDOR)/etc/voicecommand/training/ubmfile/keyword03/hi-IN/p2/antiCmds/c_e_dic.bin.gen \
-    vendor/redmi/rosemary/proprietary/vendor/etc/voicecommand/training/ubmfile/keyword03/hi-IN/p2/antiCmds/c_e_dic.bin.l:$(TARGET_COPY_OUT_VENDOR)/etc/voicecommand/training/ubmfile/keyword03/hi-IN/p2/antiCmds/c_e_dic.bin.l \
-    vendor/redmi/rosemary/proprietary/vendor/etc/voicecommand/training/ubmfile/keyword03/hi-IN/p2/antiCmds/c_e_dic.bin.p:$(TARGET_COPY_OUT_VENDOR)/etc/voicecommand/training/ubmfile/keyword03/hi-IN/p2/antiCmds/c_e_dic.bin.p \
-    vendor/redmi/rosemary/proprietary/vendor/etc/voicecommand/training/ubmfile/keyword03/hi-IN/p2/antiCmds/c_e_dic.bin.t:$(TARGET_COPY_OUT_VENDOR)/etc/voicecommand/training/ubmfile/keyword03/hi-IN/p2/antiCmds/c_e_dic.bin.t \
-    vendor/redmi/rosemary/proprietary/vendor/etc/voicecommand/training/ubmfile/keyword03/hi-IN/p2/antiCmds/commandfilr3.dic:$(TARGET_COPY_OUT_VENDOR)/etc/voicecommand/training/ubmfile/keyword03/hi-IN/p2/antiCmds/commandfilr3.dic \
-    vendor/redmi/rosemary/proprietary/vendor/etc/voicecommand/training/ubmfile/keyword03/hi-IN/p2/p0:$(TARGET_COPY_OUT_VENDOR)/etc/voicecommand/training/ubmfile/keyword03/hi-IN/p2/p0 \
-    vendor/redmi/rosemary/proprietary/vendor/etc/voicecommand/training/ubmfile/keyword03/hi-IN/p2/ubmModel0.bin:$(TARGET_COPY_OUT_VENDOR)/etc/voicecommand/training/ubmfile/keyword03/hi-IN/p2/ubmModel0.bin \
-    vendor/redmi/rosemary/proprietary/vendor/etc/voicecommand/training/ubmfile/keyword03/hi-IN/p2/ubmModel1.bin:$(TARGET_COPY_OUT_VENDOR)/etc/voicecommand/training/ubmfile/keyword03/hi-IN/p2/ubmModel1.bin \
-    vendor/redmi/rosemary/proprietary/vendor/etc/voicecommand/training/ubmfile/keyword03/hi-IN/p2/ubmModel10.bin:$(TARGET_COPY_OUT_VENDOR)/etc/voicecommand/training/ubmfile/keyword03/hi-IN/p2/ubmModel10.bin \
-    vendor/redmi/rosemary/proprietary/vendor/etc/voicecommand/training/ubmfile/keyword03/hi-IN/p2/ubmModel2.bin:$(TARGET_COPY_OUT_VENDOR)/etc/voicecommand/training/ubmfile/keyword03/hi-IN/p2/ubmModel2.bin \
-    vendor/redmi/rosemary/proprietary/vendor/etc/voicecommand/training/ubmfile/keyword03/hi-IN/p2/ubmModel3.bin:$(TARGET_COPY_OUT_VENDOR)/etc/voicecommand/training/ubmfile/keyword03/hi-IN/p2/ubmModel3.bin \
-    vendor/redmi/rosemary/proprietary/vendor/etc/voicecommand/training/ubmfile/keyword03/hi-IN/p2/ubmModel4.bin:$(TARGET_COPY_OUT_VENDOR)/etc/voicecommand/training/ubmfile/keyword03/hi-IN/p2/ubmModel4.bin \
-    vendor/redmi/rosemary/proprietary/vendor/etc/voicecommand/training/ubmfile/keyword03/hi-IN/supplement/1:$(TARGET_COPY_OUT_VENDOR)/etc/voicecommand/training/ubmfile/keyword03/hi-IN/supplement/1 \
-    vendor/redmi/rosemary/proprietary/vendor/etc/voicecommand/training/ubmfile/keyword03/hi-IN/supplement/10:$(TARGET_COPY_OUT_VENDOR)/etc/voicecommand/training/ubmfile/keyword03/hi-IN/supplement/10 \
-    vendor/redmi/rosemary/proprietary/vendor/etc/voicecommand/training/ubmfile/keyword03/hi-IN/supplement/11:$(TARGET_COPY_OUT_VENDOR)/etc/voicecommand/training/ubmfile/keyword03/hi-IN/supplement/11 \
-    vendor/redmi/rosemary/proprietary/vendor/etc/voicecommand/training/ubmfile/keyword03/hi-IN/supplement/12:$(TARGET_COPY_OUT_VENDOR)/etc/voicecommand/training/ubmfile/keyword03/hi-IN/supplement/12 \
-    vendor/redmi/rosemary/proprietary/vendor/etc/voicecommand/training/ubmfile/keyword03/hi-IN/supplement/13:$(TARGET_COPY_OUT_VENDOR)/etc/voicecommand/training/ubmfile/keyword03/hi-IN/supplement/13 \
-    vendor/redmi/rosemary/proprietary/vendor/etc/voicecommand/training/ubmfile/keyword03/hi-IN/supplement/2:$(TARGET_COPY_OUT_VENDOR)/etc/voicecommand/training/ubmfile/keyword03/hi-IN/supplement/2 \
-    vendor/redmi/rosemary/proprietary/vendor/etc/voicecommand/training/ubmfile/keyword03/hi-IN/supplement/3:$(TARGET_COPY_OUT_VENDOR)/etc/voicecommand/training/ubmfile/keyword03/hi-IN/supplement/3 \
-    vendor/redmi/rosemary/proprietary/vendor/etc/voicecommand/training/ubmfile/keyword03/hi-IN/supplement/4:$(TARGET_COPY_OUT_VENDOR)/etc/voicecommand/training/ubmfile/keyword03/hi-IN/supplement/4 \
-    vendor/redmi/rosemary/proprietary/vendor/etc/voicecommand/training/ubmfile/keyword03/hi-IN/supplement/5:$(TARGET_COPY_OUT_VENDOR)/etc/voicecommand/training/ubmfile/keyword03/hi-IN/supplement/5 \
-    vendor/redmi/rosemary/proprietary/vendor/etc/voicecommand/training/ubmfile/keyword03/hi-IN/supplement/6:$(TARGET_COPY_OUT_VENDOR)/etc/voicecommand/training/ubmfile/keyword03/hi-IN/supplement/6 \
-    vendor/redmi/rosemary/proprietary/vendor/etc/voicecommand/training/ubmfile/keyword03/hi-IN/supplement/7:$(TARGET_COPY_OUT_VENDOR)/etc/voicecommand/training/ubmfile/keyword03/hi-IN/supplement/7 \
-    vendor/redmi/rosemary/proprietary/vendor/etc/voicecommand/training/ubmfile/keyword03/hi-IN/supplement/8:$(TARGET_COPY_OUT_VENDOR)/etc/voicecommand/training/ubmfile/keyword03/hi-IN/supplement/8 \
-    vendor/redmi/rosemary/proprietary/vendor/etc/voicecommand/training/ubmfile/keyword03/hi-IN/supplement/9:$(TARGET_COPY_OUT_VENDOR)/etc/voicecommand/training/ubmfile/keyword03/hi-IN/supplement/9 \
-    vendor/redmi/rosemary/proprietary/vendor/etc/voicecommand/training/ubmfile/keyword03/hi-IN/supplement/b:$(TARGET_COPY_OUT_VENDOR)/etc/voicecommand/training/ubmfile/keyword03/hi-IN/supplement/b \
-    vendor/redmi/rosemary/proprietary/vendor/etc/voicecommand/training/ubmfile/keyword03/it-IT/keyphrase.xml:$(TARGET_COPY_OUT_VENDOR)/etc/voicecommand/training/ubmfile/keyword03/it-IT/keyphrase.xml \
-    vendor/redmi/rosemary/proprietary/vendor/etc/voicecommand/training/ubmfile/keyword03/it-IT/p2.3/128.dat:$(TARGET_COPY_OUT_VENDOR)/etc/voicecommand/training/ubmfile/keyword03/it-IT/p2.3/128.dat \
-    vendor/redmi/rosemary/proprietary/vendor/etc/voicecommand/training/ubmfile/keyword03/it-IT/p2.3/64.dat:$(TARGET_COPY_OUT_VENDOR)/etc/voicecommand/training/ubmfile/keyword03/it-IT/p2.3/64.dat \
-    vendor/redmi/rosemary/proprietary/vendor/etc/voicecommand/training/ubmfile/keyword03/it-IT/p2.3/antiCmds/Model1.bin:$(TARGET_COPY_OUT_VENDOR)/etc/voicecommand/training/ubmfile/keyword03/it-IT/p2.3/antiCmds/Model1.bin \
-    vendor/redmi/rosemary/proprietary/vendor/etc/voicecommand/training/ubmfile/keyword03/it-IT/p2.3/antiCmds/Model4.bin:$(TARGET_COPY_OUT_VENDOR)/etc/voicecommand/training/ubmfile/keyword03/it-IT/p2.3/antiCmds/Model4.bin \
-    vendor/redmi/rosemary/proprietary/vendor/etc/voicecommand/training/ubmfile/keyword03/it-IT/p2.3/antiCmds/c_e_dic.bin.f:$(TARGET_COPY_OUT_VENDOR)/etc/voicecommand/training/ubmfile/keyword03/it-IT/p2.3/antiCmds/c_e_dic.bin.f \
-    vendor/redmi/rosemary/proprietary/vendor/etc/voicecommand/training/ubmfile/keyword03/it-IT/p2.3/antiCmds/c_e_dic.bin.gen:$(TARGET_COPY_OUT_VENDOR)/etc/voicecommand/training/ubmfile/keyword03/it-IT/p2.3/antiCmds/c_e_dic.bin.gen \
-    vendor/redmi/rosemary/proprietary/vendor/etc/voicecommand/training/ubmfile/keyword03/it-IT/p2.3/antiCmds/c_e_dic.bin.l:$(TARGET_COPY_OUT_VENDOR)/etc/voicecommand/training/ubmfile/keyword03/it-IT/p2.3/antiCmds/c_e_dic.bin.l \
-    vendor/redmi/rosemary/proprietary/vendor/etc/voicecommand/training/ubmfile/keyword03/it-IT/p2.3/antiCmds/c_e_dic.bin.p:$(TARGET_COPY_OUT_VENDOR)/etc/voicecommand/training/ubmfile/keyword03/it-IT/p2.3/antiCmds/c_e_dic.bin.p \
-    vendor/redmi/rosemary/proprietary/vendor/etc/voicecommand/training/ubmfile/keyword03/it-IT/p2.3/antiCmds/c_e_dic.bin.t:$(TARGET_COPY_OUT_VENDOR)/etc/voicecommand/training/ubmfile/keyword03/it-IT/p2.3/antiCmds/c_e_dic.bin.t \
-    vendor/redmi/rosemary/proprietary/vendor/etc/voicecommand/training/ubmfile/keyword03/it-IT/p2.3/antiCmds/commandfilr3.dic:$(TARGET_COPY_OUT_VENDOR)/etc/voicecommand/training/ubmfile/keyword03/it-IT/p2.3/antiCmds/commandfilr3.dic \
-    vendor/redmi/rosemary/proprietary/vendor/etc/voicecommand/training/ubmfile/keyword03/it-IT/p2.3/p0:$(TARGET_COPY_OUT_VENDOR)/etc/voicecommand/training/ubmfile/keyword03/it-IT/p2.3/p0 \
-    vendor/redmi/rosemary/proprietary/vendor/etc/voicecommand/training/ubmfile/keyword03/it-IT/p2.3/ubmModel0.bin:$(TARGET_COPY_OUT_VENDOR)/etc/voicecommand/training/ubmfile/keyword03/it-IT/p2.3/ubmModel0.bin \
-    vendor/redmi/rosemary/proprietary/vendor/etc/voicecommand/training/ubmfile/keyword03/it-IT/p2.3/ubmModel1.bin:$(TARGET_COPY_OUT_VENDOR)/etc/voicecommand/training/ubmfile/keyword03/it-IT/p2.3/ubmModel1.bin \
-    vendor/redmi/rosemary/proprietary/vendor/etc/voicecommand/training/ubmfile/keyword03/it-IT/p2.3/ubmModel10.bin:$(TARGET_COPY_OUT_VENDOR)/etc/voicecommand/training/ubmfile/keyword03/it-IT/p2.3/ubmModel10.bin \
-    vendor/redmi/rosemary/proprietary/vendor/etc/voicecommand/training/ubmfile/keyword03/it-IT/p2.3/ubmModel2.bin:$(TARGET_COPY_OUT_VENDOR)/etc/voicecommand/training/ubmfile/keyword03/it-IT/p2.3/ubmModel2.bin \
-    vendor/redmi/rosemary/proprietary/vendor/etc/voicecommand/training/ubmfile/keyword03/it-IT/p2.3/ubmModel3.bin:$(TARGET_COPY_OUT_VENDOR)/etc/voicecommand/training/ubmfile/keyword03/it-IT/p2.3/ubmModel3.bin \
-    vendor/redmi/rosemary/proprietary/vendor/etc/voicecommand/training/ubmfile/keyword03/it-IT/p2.3/ubmModel4.bin:$(TARGET_COPY_OUT_VENDOR)/etc/voicecommand/training/ubmfile/keyword03/it-IT/p2.3/ubmModel4.bin \
-    vendor/redmi/rosemary/proprietary/vendor/etc/voicecommand/training/ubmfile/keyword03/it-IT/p2.5/n0:$(TARGET_COPY_OUT_VENDOR)/etc/voicecommand/training/ubmfile/keyword03/it-IT/p2.5/n0 \
-    vendor/redmi/rosemary/proprietary/vendor/etc/voicecommand/training/ubmfile/keyword03/it-IT/p2.5/n1:$(TARGET_COPY_OUT_VENDOR)/etc/voicecommand/training/ubmfile/keyword03/it-IT/p2.5/n1 \
-    vendor/redmi/rosemary/proprietary/vendor/etc/voicecommand/training/ubmfile/keyword03/it-IT/p2.5/n2:$(TARGET_COPY_OUT_VENDOR)/etc/voicecommand/training/ubmfile/keyword03/it-IT/p2.5/n2 \
-    vendor/redmi/rosemary/proprietary/vendor/etc/voicecommand/training/ubmfile/keyword03/it-IT/p2.5/p0:$(TARGET_COPY_OUT_VENDOR)/etc/voicecommand/training/ubmfile/keyword03/it-IT/p2.5/p0 \
-    vendor/redmi/rosemary/proprietary/vendor/etc/voicecommand/training/ubmfile/keyword03/it-IT/p2.5/p1:$(TARGET_COPY_OUT_VENDOR)/etc/voicecommand/training/ubmfile/keyword03/it-IT/p2.5/p1 \
-    vendor/redmi/rosemary/proprietary/vendor/etc/voicecommand/training/ubmfile/keyword03/it-IT/p2.5/pn1:$(TARGET_COPY_OUT_VENDOR)/etc/voicecommand/training/ubmfile/keyword03/it-IT/p2.5/pn1 \
-    vendor/redmi/rosemary/proprietary/vendor/etc/voicecommand/training/ubmfile/keyword03/it-IT/p2.5/ubmModel0.bin:$(TARGET_COPY_OUT_VENDOR)/etc/voicecommand/training/ubmfile/keyword03/it-IT/p2.5/ubmModel0.bin \
-    vendor/redmi/rosemary/proprietary/vendor/etc/voicecommand/training/ubmfile/keyword03/it-IT/p2.5/ubmModel10.bin:$(TARGET_COPY_OUT_VENDOR)/etc/voicecommand/training/ubmfile/keyword03/it-IT/p2.5/ubmModel10.bin \
-    vendor/redmi/rosemary/proprietary/vendor/etc/voicecommand/training/ubmfile/keyword03/it-IT/p2.5/ubmModel3.bin:$(TARGET_COPY_OUT_VENDOR)/etc/voicecommand/training/ubmfile/keyword03/it-IT/p2.5/ubmModel3.bin \
-    vendor/redmi/rosemary/proprietary/vendor/etc/voicecommand/training/ubmfile/keyword03/it-IT/p2.5/ubmModel4.bin:$(TARGET_COPY_OUT_VENDOR)/etc/voicecommand/training/ubmfile/keyword03/it-IT/p2.5/ubmModel4.bin \
-    vendor/redmi/rosemary/proprietary/vendor/etc/voicecommand/training/ubmfile/keyword03/it-IT/p2/128.dat:$(TARGET_COPY_OUT_VENDOR)/etc/voicecommand/training/ubmfile/keyword03/it-IT/p2/128.dat \
-    vendor/redmi/rosemary/proprietary/vendor/etc/voicecommand/training/ubmfile/keyword03/it-IT/p2/64.dat:$(TARGET_COPY_OUT_VENDOR)/etc/voicecommand/training/ubmfile/keyword03/it-IT/p2/64.dat \
-    vendor/redmi/rosemary/proprietary/vendor/etc/voicecommand/training/ubmfile/keyword03/it-IT/p2/antiCmds/Model1.bin:$(TARGET_COPY_OUT_VENDOR)/etc/voicecommand/training/ubmfile/keyword03/it-IT/p2/antiCmds/Model1.bin \
-    vendor/redmi/rosemary/proprietary/vendor/etc/voicecommand/training/ubmfile/keyword03/it-IT/p2/antiCmds/Model4.bin:$(TARGET_COPY_OUT_VENDOR)/etc/voicecommand/training/ubmfile/keyword03/it-IT/p2/antiCmds/Model4.bin \
-    vendor/redmi/rosemary/proprietary/vendor/etc/voicecommand/training/ubmfile/keyword03/it-IT/p2/antiCmds/c_e_dic.bin.f:$(TARGET_COPY_OUT_VENDOR)/etc/voicecommand/training/ubmfile/keyword03/it-IT/p2/antiCmds/c_e_dic.bin.f \
-    vendor/redmi/rosemary/proprietary/vendor/etc/voicecommand/training/ubmfile/keyword03/it-IT/p2/antiCmds/c_e_dic.bin.gen:$(TARGET_COPY_OUT_VENDOR)/etc/voicecommand/training/ubmfile/keyword03/it-IT/p2/antiCmds/c_e_dic.bin.gen \
-    vendor/redmi/rosemary/proprietary/vendor/etc/voicecommand/training/ubmfile/keyword03/it-IT/p2/antiCmds/c_e_dic.bin.l:$(TARGET_COPY_OUT_VENDOR)/etc/voicecommand/training/ubmfile/keyword03/it-IT/p2/antiCmds/c_e_dic.bin.l \
-    vendor/redmi/rosemary/proprietary/vendor/etc/voicecommand/training/ubmfile/keyword03/it-IT/p2/antiCmds/c_e_dic.bin.p:$(TARGET_COPY_OUT_VENDOR)/etc/voicecommand/training/ubmfile/keyword03/it-IT/p2/antiCmds/c_e_dic.bin.p \
-    vendor/redmi/rosemary/proprietary/vendor/etc/voicecommand/training/ubmfile/keyword03/it-IT/p2/antiCmds/c_e_dic.bin.t:$(TARGET_COPY_OUT_VENDOR)/etc/voicecommand/training/ubmfile/keyword03/it-IT/p2/antiCmds/c_e_dic.bin.t \
-    vendor/redmi/rosemary/proprietary/vendor/etc/voicecommand/training/ubmfile/keyword03/it-IT/p2/antiCmds/commandfilr3.dic:$(TARGET_COPY_OUT_VENDOR)/etc/voicecommand/training/ubmfile/keyword03/it-IT/p2/antiCmds/commandfilr3.dic \
-    vendor/redmi/rosemary/proprietary/vendor/etc/voicecommand/training/ubmfile/keyword03/it-IT/p2/p0:$(TARGET_COPY_OUT_VENDOR)/etc/voicecommand/training/ubmfile/keyword03/it-IT/p2/p0 \
-    vendor/redmi/rosemary/proprietary/vendor/etc/voicecommand/training/ubmfile/keyword03/it-IT/p2/ubmModel0.bin:$(TARGET_COPY_OUT_VENDOR)/etc/voicecommand/training/ubmfile/keyword03/it-IT/p2/ubmModel0.bin \
-    vendor/redmi/rosemary/proprietary/vendor/etc/voicecommand/training/ubmfile/keyword03/it-IT/p2/ubmModel1.bin:$(TARGET_COPY_OUT_VENDOR)/etc/voicecommand/training/ubmfile/keyword03/it-IT/p2/ubmModel1.bin \
-    vendor/redmi/rosemary/proprietary/vendor/etc/voicecommand/training/ubmfile/keyword03/it-IT/p2/ubmModel10.bin:$(TARGET_COPY_OUT_VENDOR)/etc/voicecommand/training/ubmfile/keyword03/it-IT/p2/ubmModel10.bin \
-    vendor/redmi/rosemary/proprietary/vendor/etc/voicecommand/training/ubmfile/keyword03/it-IT/p2/ubmModel2.bin:$(TARGET_COPY_OUT_VENDOR)/etc/voicecommand/training/ubmfile/keyword03/it-IT/p2/ubmModel2.bin \
-    vendor/redmi/rosemary/proprietary/vendor/etc/voicecommand/training/ubmfile/keyword03/it-IT/p2/ubmModel3.bin:$(TARGET_COPY_OUT_VENDOR)/etc/voicecommand/training/ubmfile/keyword03/it-IT/p2/ubmModel3.bin \
-    vendor/redmi/rosemary/proprietary/vendor/etc/voicecommand/training/ubmfile/keyword03/it-IT/p2/ubmModel4.bin:$(TARGET_COPY_OUT_VENDOR)/etc/voicecommand/training/ubmfile/keyword03/it-IT/p2/ubmModel4.bin \
-    vendor/redmi/rosemary/proprietary/vendor/etc/voicecommand/training/ubmfile/keyword03/it-IT/supplement/1:$(TARGET_COPY_OUT_VENDOR)/etc/voicecommand/training/ubmfile/keyword03/it-IT/supplement/1 \
-    vendor/redmi/rosemary/proprietary/vendor/etc/voicecommand/training/ubmfile/keyword03/it-IT/supplement/10:$(TARGET_COPY_OUT_VENDOR)/etc/voicecommand/training/ubmfile/keyword03/it-IT/supplement/10 \
-    vendor/redmi/rosemary/proprietary/vendor/etc/voicecommand/training/ubmfile/keyword03/it-IT/supplement/11:$(TARGET_COPY_OUT_VENDOR)/etc/voicecommand/training/ubmfile/keyword03/it-IT/supplement/11 \
-    vendor/redmi/rosemary/proprietary/vendor/etc/voicecommand/training/ubmfile/keyword03/it-IT/supplement/12:$(TARGET_COPY_OUT_VENDOR)/etc/voicecommand/training/ubmfile/keyword03/it-IT/supplement/12 \
-    vendor/redmi/rosemary/proprietary/vendor/etc/voicecommand/training/ubmfile/keyword03/it-IT/supplement/13:$(TARGET_COPY_OUT_VENDOR)/etc/voicecommand/training/ubmfile/keyword03/it-IT/supplement/13 \
-    vendor/redmi/rosemary/proprietary/vendor/etc/voicecommand/training/ubmfile/keyword03/it-IT/supplement/2:$(TARGET_COPY_OUT_VENDOR)/etc/voicecommand/training/ubmfile/keyword03/it-IT/supplement/2 \
-    vendor/redmi/rosemary/proprietary/vendor/etc/voicecommand/training/ubmfile/keyword03/it-IT/supplement/3:$(TARGET_COPY_OUT_VENDOR)/etc/voicecommand/training/ubmfile/keyword03/it-IT/supplement/3 \
-    vendor/redmi/rosemary/proprietary/vendor/etc/voicecommand/training/ubmfile/keyword03/it-IT/supplement/4:$(TARGET_COPY_OUT_VENDOR)/etc/voicecommand/training/ubmfile/keyword03/it-IT/supplement/4 \
-    vendor/redmi/rosemary/proprietary/vendor/etc/voicecommand/training/ubmfile/keyword03/it-IT/supplement/5:$(TARGET_COPY_OUT_VENDOR)/etc/voicecommand/training/ubmfile/keyword03/it-IT/supplement/5 \
-    vendor/redmi/rosemary/proprietary/vendor/etc/voicecommand/training/ubmfile/keyword03/it-IT/supplement/6:$(TARGET_COPY_OUT_VENDOR)/etc/voicecommand/training/ubmfile/keyword03/it-IT/supplement/6 \
-    vendor/redmi/rosemary/proprietary/vendor/etc/voicecommand/training/ubmfile/keyword03/it-IT/supplement/7:$(TARGET_COPY_OUT_VENDOR)/etc/voicecommand/training/ubmfile/keyword03/it-IT/supplement/7 \
-    vendor/redmi/rosemary/proprietary/vendor/etc/voicecommand/training/ubmfile/keyword03/it-IT/supplement/8:$(TARGET_COPY_OUT_VENDOR)/etc/voicecommand/training/ubmfile/keyword03/it-IT/supplement/8 \
-    vendor/redmi/rosemary/proprietary/vendor/etc/voicecommand/training/ubmfile/keyword03/it-IT/supplement/9:$(TARGET_COPY_OUT_VENDOR)/etc/voicecommand/training/ubmfile/keyword03/it-IT/supplement/9 \
-    vendor/redmi/rosemary/proprietary/vendor/etc/voicecommand/training/ubmfile/keyword03/it-IT/supplement/b:$(TARGET_COPY_OUT_VENDOR)/etc/voicecommand/training/ubmfile/keyword03/it-IT/supplement/b \
     vendor/redmi/rosemary/proprietary/vendor/etc/wifi/p2p_supplicant_overlay.conf:$(TARGET_COPY_OUT_VENDOR)/etc/wifi/p2p_supplicant_overlay.conf \
     vendor/redmi/rosemary/proprietary/vendor/etc/wifi/wpa_supplicant.conf:$(TARGET_COPY_OUT_VENDOR)/etc/wifi/wpa_supplicant.conf \
     vendor/redmi/rosemary/proprietary/vendor/etc/wifi/wpa_supplicant_overlay.conf:$(TARGET_COPY_OUT_VENDOR)/etc/wifi/wpa_supplicant_overlay.conf \
@@ -1521,11 +863,8 @@ PRODUCT_COPY_FILES += \
     vendor/redmi/rosemary/proprietary/vendor/firmware/soc3_0_ram_mcu_1a_1_hdr.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/soc3_0_ram_mcu_1a_1_hdr.bin \
     vendor/redmi/rosemary/proprietary/vendor/firmware/soc3_0_ram_mcu_e1_hdr.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/soc3_0_ram_mcu_e1_hdr.bin \
     vendor/redmi/rosemary/proprietary/vendor/firmware/st21nfc_fw7.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/st21nfc_fw7.bin \
-    vendor/redmi/rosemary/proprietary/vendor/fstab.enableswap:$(TARGET_COPY_OUT_VENDOR)/fstab.enableswap \
     vendor/redmi/rosemary/proprietary/vendor/lib/AVCSecureVdecCA.so:$(TARGET_COPY_OUT_VENDOR)/lib/AVCSecureVdecCA.so \
     vendor/redmi/rosemary/proprietary/vendor/lib/VP9SecureVdecCA.so:$(TARGET_COPY_OUT_VENDOR)/lib/VP9SecureVdecCA.so \
-    vendor/redmi/rosemary/proprietary/vendor/lib/android.hardware.graphics.composer@2.1-resources.so:$(TARGET_COPY_OUT_VENDOR)/lib/android.hardware.graphics.composer@2.1-resources.so \
-    vendor/redmi/rosemary/proprietary/vendor/lib/android.hidl.allocator@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib/android.hidl.allocator@1.0.so \
     vendor/redmi/rosemary/proprietary/vendor/lib/arm.graphics-V1-ndk_platform.so:$(TARGET_COPY_OUT_VENDOR)/lib/arm.graphics-V1-ndk_platform.so \
     vendor/redmi/rosemary/proprietary/vendor/lib/egl/egl.cfg:$(TARGET_COPY_OUT_VENDOR)/lib/egl/egl.cfg \
     vendor/redmi/rosemary/proprietary/vendor/lib/egl/libGLES_mali.so:$(TARGET_COPY_OUT_VENDOR)/lib/egl/libGLES_mali.so \
@@ -1544,41 +883,24 @@ PRODUCT_COPY_FILES += \
     vendor/redmi/rosemary/proprietary/vendor/lib/gc02m1sunny_mipi_raw_india_IdxMgr.so:$(TARGET_COPY_OUT_VENDOR)/lib/gc02m1sunny_mipi_raw_india_IdxMgr.so \
     vendor/redmi/rosemary/proprietary/vendor/lib/gc02m1sunny_mipi_raw_india_tuning.so:$(TARGET_COPY_OUT_VENDOR)/lib/gc02m1sunny_mipi_raw_india_tuning.so \
     vendor/redmi/rosemary/proprietary/vendor/lib/gc02m1sunny_mipi_raw_tuning.so:$(TARGET_COPY_OUT_VENDOR)/lib/gc02m1sunny_mipi_raw_tuning.so \
-    vendor/redmi/rosemary/proprietary/vendor/lib/hw/android.hardware.audio.effect@6.0-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/android.hardware.audio.effect@6.0-impl.so \
     vendor/redmi/rosemary/proprietary/vendor/lib/hw/android.hardware.audio@6.0-impl-mediatek.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/android.hardware.audio@6.0-impl-mediatek.so \
-    vendor/redmi/rosemary/proprietary/vendor/lib/hw/android.hardware.bluetooth.audio@2.0-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/android.hardware.bluetooth.audio@2.0-impl.so \
     vendor/redmi/rosemary/proprietary/vendor/lib/hw/android.hardware.bluetooth@1.0-impl-mediatek.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/android.hardware.bluetooth@1.0-impl-mediatek.so \
-    vendor/redmi/rosemary/proprietary/vendor/lib/hw/android.hardware.gatekeeper@1.0-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/android.hardware.gatekeeper@1.0-impl.so \
     vendor/redmi/rosemary/proprietary/vendor/lib/hw/android.hardware.graphics.allocator@4.0-impl-mediatek.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/android.hardware.graphics.allocator@4.0-impl-mediatek.so \
     vendor/redmi/rosemary/proprietary/vendor/lib/hw/android.hardware.graphics.composer@2.1-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/android.hardware.graphics.composer@2.1-impl.so \
     vendor/redmi/rosemary/proprietary/vendor/lib/hw/android.hardware.graphics.mapper@4.0-impl-mediatek.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/android.hardware.graphics.mapper@4.0-impl-mediatek.so \
-    vendor/redmi/rosemary/proprietary/vendor/lib/hw/android.hardware.ir@1.0-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/android.hardware.ir@1.0-impl.so \
-    vendor/redmi/rosemary/proprietary/vendor/lib/hw/android.hardware.memtrack@1.0-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/android.hardware.memtrack@1.0-impl.so \
-    vendor/redmi/rosemary/proprietary/vendor/lib/hw/android.hardware.renderscript@1.0-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/android.hardware.renderscript@1.0-impl.so \
-    vendor/redmi/rosemary/proprietary/vendor/lib/hw/android.hardware.soundtrigger@2.3-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/android.hardware.soundtrigger@2.3-impl.so \
     vendor/redmi/rosemary/proprietary/vendor/lib/hw/android.hardware.thermal@1.0-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/android.hardware.thermal@1.0-impl.so \
     vendor/redmi/rosemary/proprietary/vendor/lib/hw/android.hardware.thermal@2.0-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/android.hardware.thermal@2.0-impl.so \
-    vendor/redmi/rosemary/proprietary/vendor/lib/hw/audio.bluetooth.default.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/audio.bluetooth.default.so \
-    vendor/redmi/rosemary/proprietary/vendor/lib/hw/audio.primary.default.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/audio.primary.default.so \
     vendor/redmi/rosemary/proprietary/vendor/lib/hw/audio.primary.mt6785.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/audio.primary.mt6785.so \
-    vendor/redmi/rosemary/proprietary/vendor/lib/hw/audio.r_submix.default.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/audio.r_submix.default.so \
     vendor/redmi/rosemary/proprietary/vendor/lib/hw/audio.r_submix.mt6785.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/audio.r_submix.mt6785.so \
-    vendor/redmi/rosemary/proprietary/vendor/lib/hw/audio.usb.default.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/audio.usb.default.so \
     vendor/redmi/rosemary/proprietary/vendor/lib/hw/audio.usb.mt6785.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/audio.usb.mt6785.so \
-    vendor/redmi/rosemary/proprietary/vendor/lib/hw/audio_policy.stub.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/audio_policy.stub.so \
-    vendor/redmi/rosemary/proprietary/vendor/lib/hw/consumerir.default.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/consumerir.default.so \
+    vendor/redmi/rosemary/proprietary/vendor/lib/hw/consumerir.mt6785.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/consumerir.mt6785.so \
     vendor/redmi/rosemary/proprietary/vendor/lib/hw/dfps.mt6785.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/dfps.mt6785.so \
-    vendor/redmi/rosemary/proprietary/vendor/lib/hw/displayfeature.default.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/displayfeature.default.so \
     vendor/redmi/rosemary/proprietary/vendor/lib/hw/gatekeeper.beanpod.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/gatekeeper.beanpod.so \
-    vendor/redmi/rosemary/proprietary/vendor/lib/hw/gatekeeper.default.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/gatekeeper.default.so \
     vendor/redmi/rosemary/proprietary/vendor/lib/hw/gps.default.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/gps.default.so \
-    vendor/redmi/rosemary/proprietary/vendor/lib/hw/gralloc.default.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/gralloc.default.so \
     vendor/redmi/rosemary/proprietary/vendor/lib/hw/kmsetkey.beanpod.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/kmsetkey.beanpod.so \
     vendor/redmi/rosemary/proprietary/vendor/lib/hw/libSoftGatekeeper.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/libSoftGatekeeper.so \
     vendor/redmi/rosemary/proprietary/vendor/lib/hw/lights.mt6785.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/lights.mt6785.so \
-    vendor/redmi/rosemary/proprietary/vendor/lib/hw/local_time.default.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/local_time.default.so \
     vendor/redmi/rosemary/proprietary/vendor/lib/hw/memtrack.mt6785.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/memtrack.mt6785.so \
-    vendor/redmi/rosemary/proprietary/vendor/lib/hw/power.default.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/power.default.so \
     vendor/redmi/rosemary/proprietary/vendor/lib/hw/power.mt6785.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/power.mt6785.so \
     vendor/redmi/rosemary/proprietary/vendor/lib/hw/sound_trigger.primary.mt6785.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/sound_trigger.primary.mt6785.so \
     vendor/redmi/rosemary/proprietary/vendor/lib/hw/thermal.mt6785.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/thermal.mt6785.so \
@@ -1595,14 +917,6 @@ PRODUCT_COPY_FILES += \
     vendor/redmi/rosemary/proprietary/vendor/lib/hw/vendor.mediatek.hardware.nvram@1.1-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/vendor.mediatek.hardware.nvram@1.1-impl.so \
     vendor/redmi/rosemary/proprietary/vendor/lib/hw/vendor.mediatek.hardware.pq@2.6-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/vendor.mediatek.hardware.pq@2.6-impl.so \
     vendor/redmi/rosemary/proprietary/vendor/lib/hw/vendor.mediatek.hardware.videotelephony@1.0-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/vendor.mediatek.hardware.videotelephony@1.0-impl.so \
-    vendor/redmi/rosemary/proprietary/vendor/lib/hw/vendor.xiaomi.hardware.displayfeature@1.0-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/vendor.xiaomi.hardware.displayfeature@1.0-impl.so \
-    vendor/redmi/rosemary/proprietary/vendor/lib/hw/vendor.xiaomi.hardware.micharge@1.0-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/vendor.xiaomi.hardware.micharge@1.0-impl.so \
-    vendor/redmi/rosemary/proprietary/vendor/lib/hw/vendor.xiaomi.hardware.misys@1.0-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/vendor.xiaomi.hardware.misys@1.0-impl.so \
-    vendor/redmi/rosemary/proprietary/vendor/lib/hw/vendor.xiaomi.hardware.misys@2.0-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/vendor.xiaomi.hardware.misys@2.0-impl.so \
-    vendor/redmi/rosemary/proprietary/vendor/lib/hw/vendor.xiaomi.hardware.misys@3.0-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/vendor.xiaomi.hardware.misys@3.0-impl.so \
-    vendor/redmi/rosemary/proprietary/vendor/lib/hw/vendor.xiaomi.hardware.touchfeature@1.0-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/vendor.xiaomi.hardware.touchfeature@1.0-impl.so \
-    vendor/redmi/rosemary/proprietary/vendor/lib/hw/vibrator.default.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/vibrator.default.so \
-    vendor/redmi/rosemary/proprietary/vendor/lib/hw/vulkan.mt6785.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/vulkan.mt6785.so \
     vendor/redmi/rosemary/proprietary/vendor/lib/imx355ofilm_mipi_raw_IdxMgr.so:$(TARGET_COPY_OUT_VENDOR)/lib/imx355ofilm_mipi_raw_IdxMgr.so \
     vendor/redmi/rosemary/proprietary/vendor/lib/imx355ofilm_mipi_raw_india_IdxMgr.so:$(TARGET_COPY_OUT_VENDOR)/lib/imx355ofilm_mipi_raw_india_IdxMgr.so \
     vendor/redmi/rosemary/proprietary/vendor/lib/imx355ofilm_mipi_raw_india_tuning.so:$(TARGET_COPY_OUT_VENDOR)/lib/imx355ofilm_mipi_raw_india_tuning.so \
@@ -2116,7 +1430,6 @@ PRODUCT_COPY_FILES += \
     vendor/redmi/rosemary/proprietary/vendor/lib/libaalservice.so:$(TARGET_COPY_OUT_VENDOR)/lib/libaalservice.so \
     vendor/redmi/rosemary/proprietary/vendor/lib/libaedv.so:$(TARGET_COPY_OUT_VENDOR)/lib/libaedv.so \
     vendor/redmi/rosemary/proprietary/vendor/lib/libakm.so:$(TARGET_COPY_OUT_VENDOR)/lib/libakm.so \
-    vendor/redmi/rosemary/proprietary/vendor/lib/libalsautils.so:$(TARGET_COPY_OUT_VENDOR)/lib/libalsautils.so \
     vendor/redmi/rosemary/proprietary/vendor/lib/libarmnn_ndk.mtk.so:$(TARGET_COPY_OUT_VENDOR)/lib/libarmnn_ndk.mtk.so \
     vendor/redmi/rosemary/proprietary/vendor/lib/libaudio_param_parser-vnd.so:$(TARGET_COPY_OUT_VENDOR)/lib/libaudio_param_parser-vnd.so \
     vendor/redmi/rosemary/proprietary/vendor/lib/libaudiocompensationfilter_vendor.so:$(TARGET_COPY_OUT_VENDOR)/lib/libaudiocompensationfilter_vendor.so \
@@ -2126,7 +1439,6 @@ PRODUCT_COPY_FILES += \
     vendor/redmi/rosemary/proprietary/vendor/lib/libaudiocustparam_vendor.so:$(TARGET_COPY_OUT_VENDOR)/lib/libaudiocustparam_vendor.so \
     vendor/redmi/rosemary/proprietary/vendor/lib/libaudiodcrflt_vendor.so:$(TARGET_COPY_OUT_VENDOR)/lib/libaudiodcrflt_vendor.so \
     vendor/redmi/rosemary/proprietary/vendor/lib/libaudiofmtconv.so:$(TARGET_COPY_OUT_VENDOR)/lib/libaudiofmtconv.so \
-    vendor/redmi/rosemary/proprietary/vendor/lib/libaudiofoundation.so:$(TARGET_COPY_OUT_VENDOR)/lib/libaudiofoundation.so \
     vendor/redmi/rosemary/proprietary/vendor/lib/libaudioloudc.so:$(TARGET_COPY_OUT_VENDOR)/lib/libaudioloudc.so \
     vendor/redmi/rosemary/proprietary/vendor/lib/libaudioprimarydevicehalifclient.so:$(TARGET_COPY_OUT_VENDOR)/lib/libaudioprimarydevicehalifclient.so \
     vendor/redmi/rosemary/proprietary/vendor/lib/libaudiotoolkit_vendor.so:$(TARGET_COPY_OUT_VENDOR)/lib/libaudiotoolkit_vendor.so \
@@ -2134,7 +1446,6 @@ PRODUCT_COPY_FILES += \
     vendor/redmi/rosemary/proprietary/vendor/lib/libawinicsmartpaparse.so:$(TARGET_COPY_OUT_VENDOR)/lib/libawinicsmartpaparse.so \
     vendor/redmi/rosemary/proprietary/vendor/lib/libbessound_hd_mtk_vendor.so:$(TARGET_COPY_OUT_VENDOR)/lib/libbessound_hd_mtk_vendor.so \
     vendor/redmi/rosemary/proprietary/vendor/lib/libblisrc32_vendor.so:$(TARGET_COPY_OUT_VENDOR)/lib/libblisrc32_vendor.so \
-    vendor/redmi/rosemary/proprietary/vendor/lib/libbluetooth_audio_session.so:$(TARGET_COPY_OUT_VENDOR)/lib/libbluetooth_audio_session.so \
     vendor/redmi/rosemary/proprietary/vendor/lib/libbluetooth_audio_session_mediatek.so:$(TARGET_COPY_OUT_VENDOR)/lib/libbluetooth_audio_session_mediatek.so \
     vendor/redmi/rosemary/proprietary/vendor/lib/libbluetooth_hw_test.so:$(TARGET_COPY_OUT_VENDOR)/lib/libbluetooth_hw_test.so \
     vendor/redmi/rosemary/proprietary/vendor/lib/libbluetooth_mtk.so:$(TARGET_COPY_OUT_VENDOR)/lib/libbluetooth_mtk.so \
@@ -2172,7 +1483,6 @@ PRODUCT_COPY_FILES += \
     vendor/redmi/rosemary/proprietary/vendor/lib/libcarrierconfig.so:$(TARGET_COPY_OUT_VENDOR)/lib/libcarrierconfig.so \
     vendor/redmi/rosemary/proprietary/vendor/lib/libccci_util.so:$(TARGET_COPY_OUT_VENDOR)/lib/libccci_util.so \
     vendor/redmi/rosemary/proprietary/vendor/lib/libcharon-ss.so:$(TARGET_COPY_OUT_VENDOR)/lib/libcharon-ss.so \
-    vendor/redmi/rosemary/proprietary/vendor/lib/libcheckpid.so:$(TARGET_COPY_OUT_VENDOR)/lib/libcheckpid.so \
     vendor/redmi/rosemary/proprietary/vendor/lib/libchromanr.so:$(TARGET_COPY_OUT_VENDOR)/lib/libchromanr.so \
     vendor/redmi/rosemary/proprietary/vendor/lib/libcmdl_ndk.mtk.so:$(TARGET_COPY_OUT_VENDOR)/lib/libcmdl_ndk.mtk.so \
     vendor/redmi/rosemary/proprietary/vendor/lib/libcrypto-md.so:$(TARGET_COPY_OUT_VENDOR)/lib/libcrypto-md.so \
@@ -2205,7 +1515,6 @@ PRODUCT_COPY_FILES += \
     vendor/redmi/rosemary/proprietary/vendor/lib/libh264enc_sa.ca7.so:$(TARGET_COPY_OUT_VENDOR)/lib/libh264enc_sa.ca7.so \
     vendor/redmi/rosemary/proprietary/vendor/lib/libhdrvideo.so:$(TARGET_COPY_OUT_VENDOR)/lib/libhdrvideo.so \
     vendor/redmi/rosemary/proprietary/vendor/lib/libhevce_sb.ca7.android.so:$(TARGET_COPY_OUT_VENDOR)/lib/libhevce_sb.ca7.android.so \
-    vendor/redmi/rosemary/proprietary/vendor/lib/libhwc2onfbadapter.so:$(TARGET_COPY_OUT_VENDOR)/lib/libhwc2onfbadapter.so \
     vendor/redmi/rosemary/proprietary/vendor/lib/libhwm.so:$(TARGET_COPY_OUT_VENDOR)/lib/libhwm.so \
     vendor/redmi/rosemary/proprietary/vendor/lib/libhydra.so:$(TARGET_COPY_OUT_VENDOR)/lib/libhydra.so \
     vendor/redmi/rosemary/proprietary/vendor/lib/libimageio.so:$(TARGET_COPY_OUT_VENDOR)/lib/libimageio.so \
@@ -2219,10 +1528,8 @@ PRODUCT_COPY_FILES += \
     vendor/redmi/rosemary/proprietary/vendor/lib/libjpeg-alpha_vendor.so:$(TARGET_COPY_OUT_VENDOR)/lib/libjpeg-alpha_vendor.so \
     vendor/redmi/rosemary/proprietary/vendor/lib/libladder.so:$(TARGET_COPY_OUT_VENDOR)/lib/libladder.so \
     vendor/redmi/rosemary/proprietary/vendor/lib/liblogwrap_vendor.so:$(TARGET_COPY_OUT_VENDOR)/lib/liblogwrap_vendor.so \
-    vendor/redmi/rosemary/proprietary/vendor/lib/libmfido.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmfido.so \
     vendor/redmi/rosemary/proprietary/vendor/lib/libmfllcore.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmfllcore.so \
     vendor/redmi/rosemary/proprietary/vendor/lib/libminiui.so:$(TARGET_COPY_OUT_VENDOR)/lib/libminiui.so \
-    vendor/redmi/rosemary/proprietary/vendor/lib/libmisound.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmisound.so \
     vendor/redmi/rosemary/proprietary/vendor/lib/libmlipay.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmlipay.so \
     vendor/redmi/rosemary/proprietary/vendor/lib/libmlipay@1.1.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmlipay@1.1.so \
     vendor/redmi/rosemary/proprietary/vendor/lib/libmmprofile.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmmprofile.so \
@@ -2231,7 +1538,6 @@ PRODUCT_COPY_FILES += \
     vendor/redmi/rosemary/proprietary/vendor/lib/libmp4enc_sa.ca7.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmp4enc_sa.ca7.so \
     vendor/redmi/rosemary/proprietary/vendor/lib/libmp4enc_xa.ca7.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmp4enc_xa.ca7.so \
     vendor/redmi/rosemary/proprietary/vendor/lib/libmsbc_mtk.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmsbc_mtk.so \
-    vendor/redmi/rosemary/proprietary/vendor/lib/libmt.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmt.so \
     vendor/redmi/rosemary/proprietary/vendor/lib/libmtcloader.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmtcloader.so \
     vendor/redmi/rosemary/proprietary/vendor/lib/libmtk_drvb.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmtk_drvb.so \
     vendor/redmi/rosemary/proprietary/vendor/lib/libmtkares.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmtkares.so \
@@ -2285,12 +1591,10 @@ PRODUCT_COPY_FILES += \
     vendor/redmi/rosemary/proprietary/vendor/lib/librgbwlightsensor.so:$(TARGET_COPY_OUT_VENDOR)/lib/librgbwlightsensor.so \
     vendor/redmi/rosemary/proprietary/vendor/lib/librpc.so:$(TARGET_COPY_OUT_VENDOR)/lib/librpc.so \
     vendor/redmi/rosemary/proprietary/vendor/lib/libscltm.so:$(TARGET_COPY_OUT_VENDOR)/lib/libscltm.so \
-    vendor/redmi/rosemary/proprietary/vendor/lib/libsensorndkbridge.so:$(TARGET_COPY_OUT_VENDOR)/lib/libsensorndkbridge.so \
     vendor/redmi/rosemary/proprietary/vendor/lib/libsimaka.so:$(TARGET_COPY_OUT_VENDOR)/lib/libsimaka.so \
     vendor/redmi/rosemary/proprietary/vendor/lib/libspeech_enh_lib.so:$(TARGET_COPY_OUT_VENDOR)/lib/libspeech_enh_lib.so \
     vendor/redmi/rosemary/proprietary/vendor/lib/libspeechparser_vendor.so:$(TARGET_COPY_OUT_VENDOR)/lib/libspeechparser_vendor.so \
     vendor/redmi/rosemary/proprietary/vendor/lib/libssl-md.so:$(TARGET_COPY_OUT_VENDOR)/lib/libssl-md.so \
-    vendor/redmi/rosemary/proprietary/vendor/lib/libstagefright_softomx_plugin.so:$(TARGET_COPY_OUT_VENDOR)/lib/libstagefright_softomx_plugin.so \
     vendor/redmi/rosemary/proprietary/vendor/lib/libstagefrighthw.so:$(TARGET_COPY_OUT_VENDOR)/lib/libstagefrighthw.so \
     vendor/redmi/rosemary/proprietary/vendor/lib/libstorage_otp.so:$(TARGET_COPY_OUT_VENDOR)/lib/libstorage_otp.so \
     vendor/redmi/rosemary/proprietary/vendor/lib/libstrongswan.so:$(TARGET_COPY_OUT_VENDOR)/lib/libstrongswan.so \
@@ -2301,9 +1605,6 @@ PRODUCT_COPY_FILES += \
     vendor/redmi/rosemary/proprietary/vendor/lib/libtflite_mtk_static_R.so:$(TARGET_COPY_OUT_VENDOR)/lib/libtflite_mtk_static_R.so \
     vendor/redmi/rosemary/proprietary/vendor/lib/libthermalalgo.so:$(TARGET_COPY_OUT_VENDOR)/lib/libthermalalgo.so \
     vendor/redmi/rosemary/proprietary/vendor/lib/libthha.so:$(TARGET_COPY_OUT_VENDOR)/lib/libthha.so \
-    vendor/redmi/rosemary/proprietary/vendor/lib/libtida@1.1.so:$(TARGET_COPY_OUT_VENDOR)/lib/libtida@1.1.so \
-    vendor/redmi/rosemary/proprietary/vendor/lib/libtinycompress.so:$(TARGET_COPY_OUT_VENDOR)/lib/libtinycompress.so \
-    vendor/redmi/rosemary/proprietary/vendor/lib/libtinyxml.so:$(TARGET_COPY_OUT_VENDOR)/lib/libtinyxml.so \
     vendor/redmi/rosemary/proprietary/vendor/lib/libtlcWidevineModularDrm.so:$(TARGET_COPY_OUT_VENDOR)/lib/libtlcWidevineModularDrm.so \
     vendor/redmi/rosemary/proprietary/vendor/lib/libudf.so:$(TARGET_COPY_OUT_VENDOR)/lib/libudf.so \
     vendor/redmi/rosemary/proprietary/vendor/lib/liburee_meta_drmkeyinstall.so:$(TARGET_COPY_OUT_VENDOR)/lib/liburee_meta_drmkeyinstall.so \
@@ -2325,34 +1626,12 @@ PRODUCT_COPY_FILES += \
     vendor/redmi/rosemary/proprietary/vendor/lib/libvp9dec_sa.ca7.so:$(TARGET_COPY_OUT_VENDOR)/lib/libvp9dec_sa.ca7.so \
     vendor/redmi/rosemary/proprietary/vendor/lib/libvpu.so:$(TARGET_COPY_OUT_VENDOR)/lib/libvpu.so \
     vendor/redmi/rosemary/proprietary/vendor/lib/libvpud_vcodec.so:$(TARGET_COPY_OUT_VENDOR)/lib/libvpud_vcodec.so \
-    vendor/redmi/rosemary/proprietary/vendor/lib/libvpx.so:$(TARGET_COPY_OUT_VENDOR)/lib/libvpx.so \
-    vendor/redmi/rosemary/proprietary/vendor/lib/libvsim.so:$(TARGET_COPY_OUT_VENDOR)/lib/libvsim.so \
     vendor/redmi/rosemary/proprietary/vendor/lib/libvt_custom.so:$(TARGET_COPY_OUT_VENDOR)/lib/libvt_custom.so \
     vendor/redmi/rosemary/proprietary/vendor/lib/libwo.so:$(TARGET_COPY_OUT_VENDOR)/lib/libwo.so \
-    vendor/redmi/rosemary/proprietary/vendor/lib/libwpa_client.so:$(TARGET_COPY_OUT_VENDOR)/lib/libwpa_client.so \
     vendor/redmi/rosemary/proprietary/vendor/lib/libwvhidl.so:$(TARGET_COPY_OUT_VENDOR)/lib/libwvhidl.so \
     vendor/redmi/rosemary/proprietary/vendor/lib/libwvkeybox.so:$(TARGET_COPY_OUT_VENDOR)/lib/libwvkeybox.so \
     vendor/redmi/rosemary/proprietary/vendor/lib/libwvkeyboxext.so:$(TARGET_COPY_OUT_VENDOR)/lib/libwvkeyboxext.so \
-    vendor/redmi/rosemary/proprietary/vendor/lib/mediacas/libclearkeycasplugin.so:$(TARGET_COPY_OUT_VENDOR)/lib/mediacas/libclearkeycasplugin.so \
-    vendor/redmi/rosemary/proprietary/vendor/lib/mediadrm/libdrmclearkeyplugin.so:$(TARGET_COPY_OUT_VENDOR)/lib/mediadrm/libdrmclearkeyplugin.so \
-    vendor/redmi/rosemary/proprietary/vendor/lib/mediadrm/libmockdrmcryptoplugin.so:$(TARGET_COPY_OUT_VENDOR)/lib/mediadrm/libmockdrmcryptoplugin.so \
     vendor/redmi/rosemary/proprietary/vendor/lib/mediadrm/libwvdrmengine.so:$(TARGET_COPY_OUT_VENDOR)/lib/mediadrm/libwvdrmengine.so \
-    vendor/redmi/rosemary/proprietary/vendor/lib/modules/bt_drv.ko:$(TARGET_COPY_OUT_VENDOR)/lib/modules/bt_drv.ko \
-    vendor/redmi/rosemary/proprietary/vendor/lib/modules/fmradio_drv.ko:$(TARGET_COPY_OUT_VENDOR)/lib/modules/fmradio_drv.ko \
-    vendor/redmi/rosemary/proprietary/vendor/lib/modules/fpsgo.ko:$(TARGET_COPY_OUT_VENDOR)/lib/modules/fpsgo.ko \
-    vendor/redmi/rosemary/proprietary/vendor/lib/modules/gps_drv.ko:$(TARGET_COPY_OUT_VENDOR)/lib/modules/gps_drv.ko \
-    vendor/redmi/rosemary/proprietary/vendor/lib/modules/kheaders.ko:$(TARGET_COPY_OUT_VENDOR)/lib/modules/kheaders.ko \
-    vendor/redmi/rosemary/proprietary/vendor/lib/modules/met.ko:$(TARGET_COPY_OUT_VENDOR)/lib/modules/met.ko \
-    vendor/redmi/rosemary/proprietary/vendor/lib/modules/mi_memory.ko:$(TARGET_COPY_OUT_VENDOR)/lib/modules/mi_memory.ko \
-    vendor/redmi/rosemary/proprietary/vendor/lib/modules/modules.alias:$(TARGET_COPY_OUT_VENDOR)/lib/modules/modules.alias \
-    vendor/redmi/rosemary/proprietary/vendor/lib/modules/modules.dep:$(TARGET_COPY_OUT_VENDOR)/lib/modules/modules.dep \
-    vendor/redmi/rosemary/proprietary/vendor/lib/modules/modules.load:$(TARGET_COPY_OUT_VENDOR)/lib/modules/modules.load \
-    vendor/redmi/rosemary/proprietary/vendor/lib/modules/modules.softdep:$(TARGET_COPY_OUT_VENDOR)/lib/modules/modules.softdep \
-    vendor/redmi/rosemary/proprietary/vendor/lib/modules/udc_lib.ko:$(TARGET_COPY_OUT_VENDOR)/lib/modules/udc_lib.ko \
-    vendor/redmi/rosemary/proprietary/vendor/lib/modules/wlan_drv_gen4m.ko:$(TARGET_COPY_OUT_VENDOR)/lib/modules/wlan_drv_gen4m.ko \
-    vendor/redmi/rosemary/proprietary/vendor/lib/modules/wmt_chrdev_wifi.ko:$(TARGET_COPY_OUT_VENDOR)/lib/modules/wmt_chrdev_wifi.ko \
-    vendor/redmi/rosemary/proprietary/vendor/lib/modules/wmt_drv.ko:$(TARGET_COPY_OUT_VENDOR)/lib/modules/wmt_drv.ko \
-    vendor/redmi/rosemary/proprietary/vendor/lib/nfc_nci.st21nfc.st.so:$(TARGET_COPY_OUT_VENDOR)/lib/nfc_nci.st21nfc.st.so \
     vendor/redmi/rosemary/proprietary/vendor/lib/ov02b1bofilm_mipi_raw_IdxMgr.so:$(TARGET_COPY_OUT_VENDOR)/lib/ov02b1bofilm_mipi_raw_IdxMgr.so \
     vendor/redmi/rosemary/proprietary/vendor/lib/ov02b1bofilm_mipi_raw_india_IdxMgr.so:$(TARGET_COPY_OUT_VENDOR)/lib/ov02b1bofilm_mipi_raw_india_IdxMgr.so \
     vendor/redmi/rosemary/proprietary/vendor/lib/ov02b1bofilm_mipi_raw_india_tuning.so:$(TARGET_COPY_OUT_VENDOR)/lib/ov02b1bofilm_mipi_raw_india_tuning.so \
@@ -2373,57 +1652,14 @@ PRODUCT_COPY_FILES += \
     vendor/redmi/rosemary/proprietary/vendor/lib/ov64b40semco_mipi_raw_india_IdxMgr.so:$(TARGET_COPY_OUT_VENDOR)/lib/ov64b40semco_mipi_raw_india_IdxMgr.so \
     vendor/redmi/rosemary/proprietary/vendor/lib/ov64b40semco_mipi_raw_india_tuning.so:$(TARGET_COPY_OUT_VENDOR)/lib/ov64b40semco_mipi_raw_india_tuning.so \
     vendor/redmi/rosemary/proprietary/vendor/lib/ov64b40semco_mipi_raw_tuning.so:$(TARGET_COPY_OUT_VENDOR)/lib/ov64b40semco_mipi_raw_tuning.so \
-    vendor/redmi/rosemary/proprietary/vendor/lib/soundfx/libaudiopreprocessing_mtk.so:$(TARGET_COPY_OUT_VENDOR)/lib/soundfx/libaudiopreprocessing_mtk.so \
-    vendor/redmi/rosemary/proprietary/vendor/lib/soundfx/libdynproc.so:$(TARGET_COPY_OUT_VENDOR)/lib/soundfx/libdynproc.so \
-    vendor/redmi/rosemary/proprietary/vendor/lib/soundfx/libmisoundfx.so:$(TARGET_COPY_OUT_VENDOR)/lib/soundfx/libmisoundfx.so \
-    vendor/redmi/rosemary/proprietary/vendor/lib/vendor.mediatek.hardware.audio@6.1.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.mediatek.hardware.audio@6.1.so \
     vendor/redmi/rosemary/proprietary/vendor/lib/vendor.mediatek.hardware.bluetooth.audio@2.1.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.mediatek.hardware.bluetooth.audio@2.1.so \
-    vendor/redmi/rosemary/proprietary/vendor/lib/vendor.mediatek.hardware.camera.atms@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.mediatek.hardware.camera.atms@1.0.so \
-    vendor/redmi/rosemary/proprietary/vendor/lib/vendor.mediatek.hardware.camera.bgservice@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.mediatek.hardware.camera.bgservice@1.0.so \
-    vendor/redmi/rosemary/proprietary/vendor/lib/vendor.mediatek.hardware.camera.bgservice@1.1.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.mediatek.hardware.camera.bgservice@1.1.so \
-    vendor/redmi/rosemary/proprietary/vendor/lib/vendor.mediatek.hardware.camera.postproc@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.mediatek.hardware.camera.postproc@1.0.so \
-    vendor/redmi/rosemary/proprietary/vendor/lib/vendor.mediatek.hardware.dfps@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.mediatek.hardware.dfps@1.0.so \
-    vendor/redmi/rosemary/proprietary/vendor/lib/vendor.mediatek.hardware.gpu@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.mediatek.hardware.gpu@1.0.so \
-    vendor/redmi/rosemary/proprietary/vendor/lib/vendor.mediatek.hardware.keyinstall@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.mediatek.hardware.keyinstall@1.0.so \
-    vendor/redmi/rosemary/proprietary/vendor/lib/vendor.mediatek.hardware.keymaster_attestation@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.mediatek.hardware.keymaster_attestation@1.0.so \
-    vendor/redmi/rosemary/proprietary/vendor/lib/vendor.mediatek.hardware.keymaster_attestation@1.1.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.mediatek.hardware.keymaster_attestation@1.1.so \
-    vendor/redmi/rosemary/proprietary/vendor/lib/vendor.mediatek.hardware.mms@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.mediatek.hardware.mms@1.0.so \
-    vendor/redmi/rosemary/proprietary/vendor/lib/vendor.mediatek.hardware.mms@1.1.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.mediatek.hardware.mms@1.1.so \
-    vendor/redmi/rosemary/proprietary/vendor/lib/vendor.mediatek.hardware.mms@1.2.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.mediatek.hardware.mms@1.2.so \
-    vendor/redmi/rosemary/proprietary/vendor/lib/vendor.mediatek.hardware.mms@1.3.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.mediatek.hardware.mms@1.3.so \
-    vendor/redmi/rosemary/proprietary/vendor/lib/vendor.mediatek.hardware.mms@1.4.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.mediatek.hardware.mms@1.4.so \
-    vendor/redmi/rosemary/proprietary/vendor/lib/vendor.mediatek.hardware.mms@1.5.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.mediatek.hardware.mms@1.5.so \
-    vendor/redmi/rosemary/proprietary/vendor/lib/vendor.mediatek.hardware.mtkcodecservice@1.1.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.mediatek.hardware.mtkcodecservice@1.1.so \
-    vendor/redmi/rosemary/proprietary/vendor/lib/vendor.mediatek.hardware.mtkpower@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.mediatek.hardware.mtkpower@1.0.so \
     vendor/redmi/rosemary/proprietary/vendor/lib/vendor.mediatek.hardware.mtkpower@1.1.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.mediatek.hardware.mtkpower@1.1.so \
-    vendor/redmi/rosemary/proprietary/vendor/lib/vendor.mediatek.hardware.netdagent@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.mediatek.hardware.netdagent@1.0.so \
-    vendor/redmi/rosemary/proprietary/vendor/lib/vendor.mediatek.hardware.nvram@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.mediatek.hardware.nvram@1.0.so \
-    vendor/redmi/rosemary/proprietary/vendor/lib/vendor.mediatek.hardware.nvram@1.1.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.mediatek.hardware.nvram@1.1.so \
-    vendor/redmi/rosemary/proprietary/vendor/lib/vendor.mediatek.hardware.nwk_opt@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.mediatek.hardware.nwk_opt@1.0.so \
-    vendor/redmi/rosemary/proprietary/vendor/lib/vendor.mediatek.hardware.power@2.0.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.mediatek.hardware.power@2.0.so \
-    vendor/redmi/rosemary/proprietary/vendor/lib/vendor.mediatek.hardware.pq@2.0.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.mediatek.hardware.pq@2.0.so \
-    vendor/redmi/rosemary/proprietary/vendor/lib/vendor.mediatek.hardware.pq@2.1.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.mediatek.hardware.pq@2.1.so \
-    vendor/redmi/rosemary/proprietary/vendor/lib/vendor.mediatek.hardware.pq@2.2.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.mediatek.hardware.pq@2.2.so \
-    vendor/redmi/rosemary/proprietary/vendor/lib/vendor.mediatek.hardware.pq@2.3.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.mediatek.hardware.pq@2.3.so \
-    vendor/redmi/rosemary/proprietary/vendor/lib/vendor.mediatek.hardware.pq@2.4.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.mediatek.hardware.pq@2.4.so \
-    vendor/redmi/rosemary/proprietary/vendor/lib/vendor.mediatek.hardware.pq@2.5.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.mediatek.hardware.pq@2.5.so \
-    vendor/redmi/rosemary/proprietary/vendor/lib/vendor.mediatek.hardware.pq@2.6.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.mediatek.hardware.pq@2.6.so \
-    vendor/redmi/rosemary/proprietary/vendor/lib/vendor.mediatek.hardware.videotelephony@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.mediatek.hardware.videotelephony@1.0.so \
     vendor/redmi/rosemary/proprietary/vendor/lib/vendor.xiaomi.hardware.citsensorservice@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.xiaomi.hardware.citsensorservice@1.0.so \
     vendor/redmi/rosemary/proprietary/vendor/lib/vendor.xiaomi.hardware.citsensorservice@1.1.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.xiaomi.hardware.citsensorservice@1.1.so \
     vendor/redmi/rosemary/proprietary/vendor/lib/vendor.xiaomi.hardware.displayfeature@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.xiaomi.hardware.displayfeature@1.0.so \
-    vendor/redmi/rosemary/proprietary/vendor/lib/vendor.xiaomi.hardware.mfidoca@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.xiaomi.hardware.mfidoca@1.0.so \
-    vendor/redmi/rosemary/proprietary/vendor/lib/vendor.xiaomi.hardware.micharge@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.xiaomi.hardware.micharge@1.0.so \
-    vendor/redmi/rosemary/proprietary/vendor/lib/vendor.xiaomi.hardware.misys@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.xiaomi.hardware.misys@1.0.so \
-    vendor/redmi/rosemary/proprietary/vendor/lib/vendor.xiaomi.hardware.misys@2.0.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.xiaomi.hardware.misys@2.0.so \
-    vendor/redmi/rosemary/proprietary/vendor/lib/vendor.xiaomi.hardware.misys@3.0.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.xiaomi.hardware.misys@3.0.so \
     vendor/redmi/rosemary/proprietary/vendor/lib/vendor.xiaomi.hardware.mlipay@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.xiaomi.hardware.mlipay@1.0.so \
     vendor/redmi/rosemary/proprietary/vendor/lib/vendor.xiaomi.hardware.mlipay@1.1.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.xiaomi.hardware.mlipay@1.1.so \
-    vendor/redmi/rosemary/proprietary/vendor/lib/vendor.xiaomi.hardware.mtdservice@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.xiaomi.hardware.mtdservice@1.0.so \
-    vendor/redmi/rosemary/proprietary/vendor/lib/vendor.xiaomi.hardware.tidaservice@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.xiaomi.hardware.tidaservice@1.0.so \
-    vendor/redmi/rosemary/proprietary/vendor/lib/vendor.xiaomi.hardware.tidaservice@1.1.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.xiaomi.hardware.tidaservice@1.1.so \
     vendor/redmi/rosemary/proprietary/vendor/lib/vendor.xiaomi.hardware.touchfeature@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.xiaomi.hardware.touchfeature@1.0.so \
-    vendor/redmi/rosemary/proprietary/vendor/lib/vendor.xiaomi.hardware.vsimapp@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.xiaomi.hardware.vsimapp@1.0.so \
     vendor/redmi/rosemary/proprietary/vendor/lib64/APUWareUtilsServer.so:$(TARGET_COPY_OUT_VENDOR)/lib64/APUWareUtilsServer.so \
     vendor/redmi/rosemary/proprietary/vendor/lib64/APUWareXrpServer.so:$(TARGET_COPY_OUT_VENDOR)/lib64/APUWareXrpServer.so \
     vendor/redmi/rosemary/proprietary/vendor/lib64/AVCSecureVdecCA.so:$(TARGET_COPY_OUT_VENDOR)/lib64/AVCSecureVdecCA.so \
@@ -2448,46 +1684,30 @@ PRODUCT_COPY_FILES += \
     vendor/redmi/rosemary/proprietary/vendor/lib64/gc02m1sunny_mipi_raw_india_IdxMgr.so:$(TARGET_COPY_OUT_VENDOR)/lib64/gc02m1sunny_mipi_raw_india_IdxMgr.so \
     vendor/redmi/rosemary/proprietary/vendor/lib64/gc02m1sunny_mipi_raw_india_tuning.so:$(TARGET_COPY_OUT_VENDOR)/lib64/gc02m1sunny_mipi_raw_india_tuning.so \
     vendor/redmi/rosemary/proprietary/vendor/lib64/gc02m1sunny_mipi_raw_tuning.so:$(TARGET_COPY_OUT_VENDOR)/lib64/gc02m1sunny_mipi_raw_tuning.so \
-    vendor/redmi/rosemary/proprietary/vendor/lib64/hw/android.hardware.audio.effect@6.0-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/android.hardware.audio.effect@6.0-impl.so \
     vendor/redmi/rosemary/proprietary/vendor/lib64/hw/android.hardware.audio@6.0-impl-mediatek.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/android.hardware.audio@6.0-impl-mediatek.so \
-    vendor/redmi/rosemary/proprietary/vendor/lib64/hw/android.hardware.bluetooth.audio@2.0-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/android.hardware.bluetooth.audio@2.0-impl.so \
     vendor/redmi/rosemary/proprietary/vendor/lib64/hw/android.hardware.bluetooth@1.0-impl-mediatek.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/android.hardware.bluetooth@1.0-impl-mediatek.so \
     vendor/redmi/rosemary/proprietary/vendor/lib64/hw/android.hardware.camera.provider@2.6-impl-mediatek.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/android.hardware.camera.provider@2.6-impl-mediatek.so \
-    vendor/redmi/rosemary/proprietary/vendor/lib64/hw/android.hardware.gatekeeper@1.0-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/android.hardware.gatekeeper@1.0-impl.so \
     vendor/redmi/rosemary/proprietary/vendor/lib64/hw/android.hardware.gnss@2.1-impl-mediatek.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/android.hardware.gnss@2.1-impl-mediatek.so \
     vendor/redmi/rosemary/proprietary/vendor/lib64/hw/android.hardware.graphics.allocator@4.0-impl-mediatek.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/android.hardware.graphics.allocator@4.0-impl-mediatek.so \
     vendor/redmi/rosemary/proprietary/vendor/lib64/hw/android.hardware.graphics.composer@2.1-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/android.hardware.graphics.composer@2.1-impl.so \
     vendor/redmi/rosemary/proprietary/vendor/lib64/hw/android.hardware.graphics.mapper@4.0-impl-mediatek.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/android.hardware.graphics.mapper@4.0-impl-mediatek.so \
-    vendor/redmi/rosemary/proprietary/vendor/lib64/hw/android.hardware.ir@1.0-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/android.hardware.ir@1.0-impl.so \
-    vendor/redmi/rosemary/proprietary/vendor/lib64/hw/android.hardware.memtrack@1.0-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/android.hardware.memtrack@1.0-impl.so \
-    vendor/redmi/rosemary/proprietary/vendor/lib64/hw/android.hardware.renderscript@1.0-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/android.hardware.renderscript@1.0-impl.so \
     vendor/redmi/rosemary/proprietary/vendor/lib64/hw/android.hardware.sensors@2.X-subhal-mediatek.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/android.hardware.sensors@2.X-subhal-mediatek.so \
-    vendor/redmi/rosemary/proprietary/vendor/lib64/hw/android.hardware.soundtrigger@2.3-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/android.hardware.soundtrigger@2.3-impl.so \
     vendor/redmi/rosemary/proprietary/vendor/lib64/hw/android.hardware.thermal@1.0-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/android.hardware.thermal@1.0-impl.so \
     vendor/redmi/rosemary/proprietary/vendor/lib64/hw/android.hardware.thermal@2.0-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/android.hardware.thermal@2.0-impl.so \
-    vendor/redmi/rosemary/proprietary/vendor/lib64/hw/audio.bluetooth.default.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/audio.bluetooth.default.so \
     vendor/redmi/rosemary/proprietary/vendor/lib64/hw/audio.primary.mt6785.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/audio.primary.mt6785.so \
-    vendor/redmi/rosemary/proprietary/vendor/lib64/hw/audio.r_submix.default.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/audio.r_submix.default.so \
     vendor/redmi/rosemary/proprietary/vendor/lib64/hw/audio.r_submix.mt6785.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/audio.r_submix.mt6785.so \
-    vendor/redmi/rosemary/proprietary/vendor/lib64/hw/audio.usb.default.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/audio.usb.default.so \
     vendor/redmi/rosemary/proprietary/vendor/lib64/hw/audio.usb.mt6785.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/audio.usb.mt6785.so \
-    vendor/redmi/rosemary/proprietary/vendor/lib64/hw/audio_policy.stub.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/audio_policy.stub.so \
-    vendor/redmi/rosemary/proprietary/vendor/lib64/hw/consumerir.default.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/consumerir.default.so \
+    vendor/redmi/rosemary/proprietary/vendor/lib64/hw/consumerir.mt6785.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/consumerir.mt6785.so \
     vendor/redmi/rosemary/proprietary/vendor/lib64/hw/dfps.mt6785.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/dfps.mt6785.so \
-    vendor/redmi/rosemary/proprietary/vendor/lib64/hw/displayfeature.default.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/displayfeature.default.so \
-    vendor/redmi/rosemary/proprietary/vendor/lib64/hw/fingerprint.fpc.default.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/fingerprint.fpc.default.so \
-    vendor/redmi/rosemary/proprietary/vendor/lib64/hw/fingerprint.goodix.default.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/fingerprint.goodix.default.so \
+    vendor/redmi/rosemary/proprietary/vendor/lib64/hw/fingerprint.fpc.mt6785.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/fingerprint.fpc.mt6785.so \
+    vendor/redmi/rosemary/proprietary/vendor/lib64/hw/fingerprint.goodix.mt6785.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/fingerprint.goodix.mt6785.so \
     vendor/redmi/rosemary/proprietary/vendor/lib64/hw/gatekeeper.beanpod.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/gatekeeper.beanpod.so \
-    vendor/redmi/rosemary/proprietary/vendor/lib64/hw/gatekeeper.default.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/gatekeeper.default.so \
     vendor/redmi/rosemary/proprietary/vendor/lib64/hw/gps.default.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/gps.default.so \
-    vendor/redmi/rosemary/proprietary/vendor/lib64/hw/gralloc.default.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/gralloc.default.so \
     vendor/redmi/rosemary/proprietary/vendor/lib64/hw/hwcomposer.mt6785.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/hwcomposer.mt6785.so \
     vendor/redmi/rosemary/proprietary/vendor/lib64/hw/kmsetkey.beanpod.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/kmsetkey.beanpod.so \
     vendor/redmi/rosemary/proprietary/vendor/lib64/hw/libSoftGatekeeper.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/libSoftGatekeeper.so \
     vendor/redmi/rosemary/proprietary/vendor/lib64/hw/lights.mt6785.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/lights.mt6785.so \
-    vendor/redmi/rosemary/proprietary/vendor/lib64/hw/local_time.default.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/local_time.default.so \
     vendor/redmi/rosemary/proprietary/vendor/lib64/hw/memtrack.mt6785.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/memtrack.mt6785.so \
-    vendor/redmi/rosemary/proprietary/vendor/lib64/hw/power.default.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/power.default.so \
     vendor/redmi/rosemary/proprietary/vendor/lib64/hw/power.mt6785.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/power.mt6785.so \
     vendor/redmi/rosemary/proprietary/vendor/lib64/hw/sensors.elliptic.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/sensors.elliptic.so \
     vendor/redmi/rosemary/proprietary/vendor/lib64/hw/sensors.mt6785.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/sensors.mt6785.so \
@@ -2508,14 +1728,6 @@ PRODUCT_COPY_FILES += \
     vendor/redmi/rosemary/proprietary/vendor/lib64/hw/vendor.mediatek.hardware.nvram@1.1-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/vendor.mediatek.hardware.nvram@1.1-impl.so \
     vendor/redmi/rosemary/proprietary/vendor/lib64/hw/vendor.mediatek.hardware.pq@2.6-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/vendor.mediatek.hardware.pq@2.6-impl.so \
     vendor/redmi/rosemary/proprietary/vendor/lib64/hw/vendor.mediatek.hardware.videotelephony@1.0-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/vendor.mediatek.hardware.videotelephony@1.0-impl.so \
-    vendor/redmi/rosemary/proprietary/vendor/lib64/hw/vendor.xiaomi.hardware.displayfeature@1.0-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/vendor.xiaomi.hardware.displayfeature@1.0-impl.so \
-    vendor/redmi/rosemary/proprietary/vendor/lib64/hw/vendor.xiaomi.hardware.micharge@1.0-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/vendor.xiaomi.hardware.micharge@1.0-impl.so \
-    vendor/redmi/rosemary/proprietary/vendor/lib64/hw/vendor.xiaomi.hardware.misys@1.0-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/vendor.xiaomi.hardware.misys@1.0-impl.so \
-    vendor/redmi/rosemary/proprietary/vendor/lib64/hw/vendor.xiaomi.hardware.misys@2.0-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/vendor.xiaomi.hardware.misys@2.0-impl.so \
-    vendor/redmi/rosemary/proprietary/vendor/lib64/hw/vendor.xiaomi.hardware.misys@3.0-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/vendor.xiaomi.hardware.misys@3.0-impl.so \
-    vendor/redmi/rosemary/proprietary/vendor/lib64/hw/vendor.xiaomi.hardware.touchfeature@1.0-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/vendor.xiaomi.hardware.touchfeature@1.0-impl.so \
-    vendor/redmi/rosemary/proprietary/vendor/lib64/hw/vibrator.default.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/vibrator.default.so \
-    vendor/redmi/rosemary/proprietary/vendor/lib64/hw/vulkan.mt6785.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/vulkan.mt6785.so \
     vendor/redmi/rosemary/proprietary/vendor/lib64/imx355ofilm_mipi_raw_IdxMgr.so:$(TARGET_COPY_OUT_VENDOR)/lib64/imx355ofilm_mipi_raw_IdxMgr.so \
     vendor/redmi/rosemary/proprietary/vendor/lib64/imx355ofilm_mipi_raw_india_IdxMgr.so:$(TARGET_COPY_OUT_VENDOR)/lib64/imx355ofilm_mipi_raw_india_IdxMgr.so \
     vendor/redmi/rosemary/proprietary/vendor/lib64/imx355ofilm_mipi_raw_india_tuning.so:$(TARGET_COPY_OUT_VENDOR)/lib64/imx355ofilm_mipi_raw_india_tuning.so \
@@ -3026,7 +2238,6 @@ PRODUCT_COPY_FILES += \
     vendor/redmi/rosemary/proprietary/vendor/lib64/libalCFR.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libalCFR.so \
     vendor/redmi/rosemary/proprietary/vendor/lib64/libalLDC.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libalLDC.so \
     vendor/redmi/rosemary/proprietary/vendor/lib64/libalhLDC.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libalhLDC.so \
-    vendor/redmi/rosemary/proprietary/vendor/lib64/libalsautils.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libalsautils.so \
     vendor/redmi/rosemary/proprietary/vendor/lib64/libanc_dc_base.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libanc_dc_base.so \
     vendor/redmi/rosemary/proprietary/vendor/lib64/libanc_dc_plugin_xiaomi_v2.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libanc_dc_plugin_xiaomi_v2.so \
     vendor/redmi/rosemary/proprietary/vendor/lib64/libapu-apuwareutils.mtk.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libapu-apuwareutils.mtk.so \
@@ -3048,7 +2259,6 @@ PRODUCT_COPY_FILES += \
     vendor/redmi/rosemary/proprietary/vendor/lib64/libaudiocustparam_vendor.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libaudiocustparam_vendor.so \
     vendor/redmi/rosemary/proprietary/vendor/lib64/libaudiodcrflt_vendor.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libaudiodcrflt_vendor.so \
     vendor/redmi/rosemary/proprietary/vendor/lib64/libaudiofmtconv.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libaudiofmtconv.so \
-    vendor/redmi/rosemary/proprietary/vendor/lib64/libaudiofoundation.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libaudiofoundation.so \
     vendor/redmi/rosemary/proprietary/vendor/lib64/libaudioloudc.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libaudioloudc.so \
     vendor/redmi/rosemary/proprietary/vendor/lib64/libaudioprimarydevicehalifclient.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libaudioprimarydevicehalifclient.so \
     vendor/redmi/rosemary/proprietary/vendor/lib64/libaudiotoolkit_vendor.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libaudiotoolkit_vendor.so \
@@ -3056,7 +2266,6 @@ PRODUCT_COPY_FILES += \
     vendor/redmi/rosemary/proprietary/vendor/lib64/libawinicsmartpaparse.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libawinicsmartpaparse.so \
     vendor/redmi/rosemary/proprietary/vendor/lib64/libbessound_hd_mtk_vendor.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libbessound_hd_mtk_vendor.so \
     vendor/redmi/rosemary/proprietary/vendor/lib64/libblisrc32_vendor.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libblisrc32_vendor.so \
-    vendor/redmi/rosemary/proprietary/vendor/lib64/libbluetooth_audio_session.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libbluetooth_audio_session.so \
     vendor/redmi/rosemary/proprietary/vendor/lib64/libbluetooth_audio_session_mediatek.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libbluetooth_audio_session_mediatek.so \
     vendor/redmi/rosemary/proprietary/vendor/lib64/libbluetooth_hw_test.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libbluetooth_hw_test.so \
     vendor/redmi/rosemary/proprietary/vendor/lib64/libbluetooth_mtk.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libbluetooth_mtk.so \
@@ -3110,7 +2319,6 @@ PRODUCT_COPY_FILES += \
     vendor/redmi/rosemary/proprietary/vendor/lib64/libcarrierconfig.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcarrierconfig.so \
     vendor/redmi/rosemary/proprietary/vendor/lib64/libccci_util.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libccci_util.so \
     vendor/redmi/rosemary/proprietary/vendor/lib64/libcharon-ss.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcharon-ss.so \
-    vendor/redmi/rosemary/proprietary/vendor/lib64/libcheckpid.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcheckpid.so \
     vendor/redmi/rosemary/proprietary/vendor/lib64/libchromanr.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libchromanr.so \
     vendor/redmi/rosemary/proprietary/vendor/lib64/libcmdl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcmdl.so \
     vendor/redmi/rosemary/proprietary/vendor/lib64/libcmdl_ndk.mtk.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcmdl_ndk.mtk.so \
@@ -3152,7 +2360,6 @@ PRODUCT_COPY_FILES += \
     vendor/redmi/rosemary/proprietary/vendor/lib64/libgz_uree.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libgz_uree.so \
     vendor/redmi/rosemary/proprietary/vendor/lib64/libhdrvideo.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libhdrvideo.so \
     vendor/redmi/rosemary/proprietary/vendor/lib64/libhevce_sb.ca7.android.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libhevce_sb.ca7.android.so \
-    vendor/redmi/rosemary/proprietary/vendor/lib64/libhwc2onfbadapter.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libhwc2onfbadapter.so \
     vendor/redmi/rosemary/proprietary/vendor/lib64/libhwm.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libhwm.so \
     vendor/redmi/rosemary/proprietary/vendor/lib64/libhydra.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libhydra.so \
     vendor/redmi/rosemary/proprietary/vendor/lib64/libifcutils_mtk.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libifcutils_mtk.so \
@@ -3165,15 +2372,11 @@ PRODUCT_COPY_FILES += \
     vendor/redmi/rosemary/proprietary/vendor/lib64/libipsec_ims_shr.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libipsec_ims_shr.so \
     vendor/redmi/rosemary/proprietary/vendor/lib64/libjpeg-alpha-oal_vendor.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libjpeg-alpha-oal_vendor.so \
     vendor/redmi/rosemary/proprietary/vendor/lib64/libjpeg-alpha_vendor.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libjpeg-alpha_vendor.so \
-    vendor/redmi/rosemary/proprietary/vendor/lib64/libkeymaster4.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libkeymaster4.so \
-    vendor/redmi/rosemary/proprietary/vendor/lib64/libkeystore-engine-wifi-hidl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libkeystore-engine-wifi-hidl.so \
-    vendor/redmi/rosemary/proprietary/vendor/lib64/libkeystore-wifi-hidl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libkeystore-wifi-hidl.so \
     vendor/redmi/rosemary/proprietary/vendor/lib64/libkmsetkey.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libkmsetkey.so \
     vendor/redmi/rosemary/proprietary/vendor/lib64/libksensor.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libksensor.so \
     vendor/redmi/rosemary/proprietary/vendor/lib64/libladder.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libladder.so \
     vendor/redmi/rosemary/proprietary/vendor/lib64/liblogwrap_vendor.so:$(TARGET_COPY_OUT_VENDOR)/lib64/liblogwrap_vendor.so \
     vendor/redmi/rosemary/proprietary/vendor/lib64/liblpcnr.so:$(TARGET_COPY_OUT_VENDOR)/lib64/liblpcnr.so \
-    vendor/redmi/rosemary/proprietary/vendor/lib64/libmfido.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmfido.so \
     vendor/redmi/rosemary/proprietary/vendor/lib64/libmfllcore.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmfllcore.so \
     vendor/redmi/rosemary/proprietary/vendor/lib64/libmiStereoFactoryRemapBasicLib.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmiStereoFactoryRemapBasicLib.so \
     vendor/redmi/rosemary/proprietary/vendor/lib64/libmiStereoFactoryRemapLib.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmiStereoFactoryRemapLib.so \
@@ -3182,7 +2385,6 @@ PRODUCT_COPY_FILES += \
     vendor/redmi/rosemary/proprietary/vendor/lib64/libmialgoengine.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmialgoengine.so \
     vendor/redmi/rosemary/proprietary/vendor/lib64/libmibokeh_mt6873.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmibokeh_mt6873.so \
     vendor/redmi/rosemary/proprietary/vendor/lib64/libminiui.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libminiui.so \
-    vendor/redmi/rosemary/proprietary/vendor/lib64/libmisound.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmisound.so \
     vendor/redmi/rosemary/proprietary/vendor/lib64/libmlipay.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmlipay.so \
     vendor/redmi/rosemary/proprietary/vendor/lib64/libmlipay@1.1.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmlipay@1.1.so \
     vendor/redmi/rosemary/proprietary/vendor/lib64/libmmprofile.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmmprofile.so \
@@ -3190,8 +2392,6 @@ PRODUCT_COPY_FILES += \
     vendor/redmi/rosemary/proprietary/vendor/lib64/libmpbase.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmpbase.so \
     vendor/redmi/rosemary/proprietary/vendor/lib64/libmsbc_mtk.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmsbc_mtk.so \
     vendor/redmi/rosemary/proprietary/vendor/lib64/libmsnr.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmsnr.so \
-    vendor/redmi/rosemary/proprietary/vendor/lib64/libmt.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmt.so \
-    vendor/redmi/rosemary/proprietary/vendor/lib64/libmt@1.2.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmt@1.2.so \
     vendor/redmi/rosemary/proprietary/vendor/lib64/libmtcloader.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmtcloader.so \
     vendor/redmi/rosemary/proprietary/vendor/lib64/libmtk-ril.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmtk-ril.so \
     vendor/redmi/rosemary/proprietary/vendor/lib64/libmtk_drvb.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmtk_drvb.so \
@@ -3301,9 +2501,7 @@ PRODUCT_COPY_FILES += \
     vendor/redmi/rosemary/proprietary/vendor/lib64/libscltm.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libscltm.so \
     vendor/redmi/rosemary/proprietary/vendor/lib64/libsdk_sr.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libsdk_sr.so \
     vendor/redmi/rosemary/proprietary/vendor/lib64/libsensor_custom.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libsensor_custom.so \
-    vendor/redmi/rosemary/proprietary/vendor/lib64/libsensorndkbridge.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libsensorndkbridge.so \
     vendor/redmi/rosemary/proprietary/vendor/lib64/libsimaka.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libsimaka.so \
-    vendor/redmi/rosemary/proprietary/vendor/lib64/libsoft_attestation_cert.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libsoft_attestation_cert.so \
     vendor/redmi/rosemary/proprietary/vendor/lib64/libspeech_enh_lib.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libspeech_enh_lib.so \
     vendor/redmi/rosemary/proprietary/vendor/lib64/libspeechparser_vendor.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libspeechparser_vendor.so \
     vendor/redmi/rosemary/proprietary/vendor/lib64/libssl-md.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libssl-md.so \
@@ -3317,9 +2515,6 @@ PRODUCT_COPY_FILES += \
     vendor/redmi/rosemary/proprietary/vendor/lib64/libtflite_mtk.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libtflite_mtk.so \
     vendor/redmi/rosemary/proprietary/vendor/lib64/libtflite_mtk_static_R.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libtflite_mtk_static_R.so \
     vendor/redmi/rosemary/proprietary/vendor/lib64/libthha.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libthha.so \
-    vendor/redmi/rosemary/proprietary/vendor/lib64/libtida@1.1.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libtida@1.1.so \
-    vendor/redmi/rosemary/proprietary/vendor/lib64/libtinycompress.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libtinycompress.so \
-    vendor/redmi/rosemary/proprietary/vendor/lib64/libtinyxml.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libtinyxml.so \
     vendor/redmi/rosemary/proprietary/vendor/lib64/libtlcWidevineModularDrm.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libtlcWidevineModularDrm.so \
     vendor/redmi/rosemary/proprietary/vendor/lib64/libudf.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libudf.so \
     vendor/redmi/rosemary/proprietary/vendor/lib64/liburee_meta_drmkeyinstall.so:$(TARGET_COPY_OUT_VENDOR)/lib64/liburee_meta_drmkeyinstall.so \
@@ -3335,23 +2530,16 @@ PRODUCT_COPY_FILES += \
     vendor/redmi/rosemary/proprietary/vendor/lib64/libvowp25testing_alexa.vendor.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libvowp25testing_alexa.vendor.so \
     vendor/redmi/rosemary/proprietary/vendor/lib64/libvowp2training_alexa.vendor.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libvowp2training_alexa.vendor.so \
     vendor/redmi/rosemary/proprietary/vendor/lib64/libvpu.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libvpu.so \
-    vendor/redmi/rosemary/proprietary/vendor/lib64/libvsim.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libvsim.so \
     vendor/redmi/rosemary/proprietary/vendor/lib64/libwa_dof.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libwa_dof.so \
     vendor/redmi/rosemary/proprietary/vendor/lib64/libwa_rtdof.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libwa_rtdof.so \
-    vendor/redmi/rosemary/proprietary/vendor/lib64/libwifi-hal.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libwifi-hal.so \
     vendor/redmi/rosemary/proprietary/vendor/lib64/libwifitest.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libwifitest.so \
     vendor/redmi/rosemary/proprietary/vendor/lib64/libwo.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libwo.so \
-    vendor/redmi/rosemary/proprietary/vendor/lib64/libwpa_client.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libwpa_client.so \
     vendor/redmi/rosemary/proprietary/vendor/lib64/libwvhidl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libwvhidl.so \
     vendor/redmi/rosemary/proprietary/vendor/lib64/libwvkeybox.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libwvkeybox.so \
     vendor/redmi/rosemary/proprietary/vendor/lib64/libwvkeyboxext.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libwvkeyboxext.so \
     vendor/redmi/rosemary/proprietary/vendor/lib64/libxmi_high_dynamic_range.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libxmi_high_dynamic_range.so \
-    vendor/redmi/rosemary/proprietary/vendor/lib64/mediacas/libclearkeycasplugin.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mediacas/libclearkeycasplugin.so \
-    vendor/redmi/rosemary/proprietary/vendor/lib64/mediadrm/libdrmclearkeyplugin.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mediadrm/libdrmclearkeyplugin.so \
-    vendor/redmi/rosemary/proprietary/vendor/lib64/mediadrm/libmockdrmcryptoplugin.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mediadrm/libmockdrmcryptoplugin.so \
     vendor/redmi/rosemary/proprietary/vendor/lib64/mediadrm/libwvdrmengine.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mediadrm/libwvdrmengine.so \
     vendor/redmi/rosemary/proprietary/vendor/lib64/mtkcam/libmtkcam_streaminfo_plugin-p1stt.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mtkcam/libmtkcam_streaminfo_plugin-p1stt.so \
-    vendor/redmi/rosemary/proprietary/vendor/lib64/nfc_nci.st21nfc.st.so:$(TARGET_COPY_OUT_VENDOR)/lib64/nfc_nci.st21nfc.st.so \
     vendor/redmi/rosemary/proprietary/vendor/lib64/nwk_opt_imp.so:$(TARGET_COPY_OUT_VENDOR)/lib64/nwk_opt_imp.so \
     vendor/redmi/rosemary/proprietary/vendor/lib64/ov02b1bofilm_mipi_raw_IdxMgr.so:$(TARGET_COPY_OUT_VENDOR)/lib64/ov02b1bofilm_mipi_raw_IdxMgr.so \
     vendor/redmi/rosemary/proprietary/vendor/lib64/ov02b1bofilm_mipi_raw_india_IdxMgr.so:$(TARGET_COPY_OUT_VENDOR)/lib64/ov02b1bofilm_mipi_raw_india_IdxMgr.so \
@@ -3373,89 +2561,19 @@ PRODUCT_COPY_FILES += \
     vendor/redmi/rosemary/proprietary/vendor/lib64/ov64b40semco_mipi_raw_india_IdxMgr.so:$(TARGET_COPY_OUT_VENDOR)/lib64/ov64b40semco_mipi_raw_india_IdxMgr.so \
     vendor/redmi/rosemary/proprietary/vendor/lib64/ov64b40semco_mipi_raw_india_tuning.so:$(TARGET_COPY_OUT_VENDOR)/lib64/ov64b40semco_mipi_raw_india_tuning.so \
     vendor/redmi/rosemary/proprietary/vendor/lib64/ov64b40semco_mipi_raw_tuning.so:$(TARGET_COPY_OUT_VENDOR)/lib64/ov64b40semco_mipi_raw_tuning.so \
-    vendor/redmi/rosemary/proprietary/vendor/lib64/soundfx/libaudiopreprocessing_mtk.so:$(TARGET_COPY_OUT_VENDOR)/lib64/soundfx/libaudiopreprocessing_mtk.so \
-    vendor/redmi/rosemary/proprietary/vendor/lib64/soundfx/libdynproc.so:$(TARGET_COPY_OUT_VENDOR)/lib64/soundfx/libdynproc.so \
-    vendor/redmi/rosemary/proprietary/vendor/lib64/vendor.mediatek.hardware.aee@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.mediatek.hardware.aee@1.0.so \
     vendor/redmi/rosemary/proprietary/vendor/lib64/vendor.mediatek.hardware.apuware.utils@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.mediatek.hardware.apuware.utils@1.0.so \
     vendor/redmi/rosemary/proprietary/vendor/lib64/vendor.mediatek.hardware.apuware.xrp@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.mediatek.hardware.apuware.xrp@1.0.so \
-    vendor/redmi/rosemary/proprietary/vendor/lib64/vendor.mediatek.hardware.atci@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.mediatek.hardware.atci@1.0.so \
-    vendor/redmi/rosemary/proprietary/vendor/lib64/vendor.mediatek.hardware.audio@6.1.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.mediatek.hardware.audio@6.1.so \
     vendor/redmi/rosemary/proprietary/vendor/lib64/vendor.mediatek.hardware.bluetooth.audio@2.1.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.mediatek.hardware.bluetooth.audio@2.1.so \
-    vendor/redmi/rosemary/proprietary/vendor/lib64/vendor.mediatek.hardware.camera.atms@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.mediatek.hardware.camera.atms@1.0.so \
-    vendor/redmi/rosemary/proprietary/vendor/lib64/vendor.mediatek.hardware.camera.bgservice@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.mediatek.hardware.camera.bgservice@1.0.so \
-    vendor/redmi/rosemary/proprietary/vendor/lib64/vendor.mediatek.hardware.camera.bgservice@1.1.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.mediatek.hardware.camera.bgservice@1.1.so \
-    vendor/redmi/rosemary/proprietary/vendor/lib64/vendor.mediatek.hardware.camera.frhandler@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.mediatek.hardware.camera.frhandler@1.0.so \
-    vendor/redmi/rosemary/proprietary/vendor/lib64/vendor.mediatek.hardware.camera.isphal@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.mediatek.hardware.camera.isphal@1.0.so \
-    vendor/redmi/rosemary/proprietary/vendor/lib64/vendor.mediatek.hardware.camera.lomoeffect@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.mediatek.hardware.camera.lomoeffect@1.0.so \
-    vendor/redmi/rosemary/proprietary/vendor/lib64/vendor.mediatek.hardware.camera.postproc@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.mediatek.hardware.camera.postproc@1.0.so \
-    vendor/redmi/rosemary/proprietary/vendor/lib64/vendor.mediatek.hardware.camera.security@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.mediatek.hardware.camera.security@1.0.so \
-    vendor/redmi/rosemary/proprietary/vendor/lib64/vendor.mediatek.hardware.dfps@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.mediatek.hardware.dfps@1.0.so \
-    vendor/redmi/rosemary/proprietary/vendor/lib64/vendor.mediatek.hardware.dplanner@2.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.mediatek.hardware.dplanner@2.0.so \
-    vendor/redmi/rosemary/proprietary/vendor/lib64/vendor.mediatek.hardware.engineermode@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.mediatek.hardware.engineermode@1.0.so \
-    vendor/redmi/rosemary/proprietary/vendor/lib64/vendor.mediatek.hardware.engineermode@1.1.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.mediatek.hardware.engineermode@1.1.so \
-    vendor/redmi/rosemary/proprietary/vendor/lib64/vendor.mediatek.hardware.engineermode@1.2.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.mediatek.hardware.engineermode@1.2.so \
-    vendor/redmi/rosemary/proprietary/vendor/lib64/vendor.mediatek.hardware.engineermode@1.3.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.mediatek.hardware.engineermode@1.3.so \
-    vendor/redmi/rosemary/proprietary/vendor/lib64/vendor.mediatek.hardware.gpu@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.mediatek.hardware.gpu@1.0.so \
-    vendor/redmi/rosemary/proprietary/vendor/lib64/vendor.mediatek.hardware.keyinstall@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.mediatek.hardware.keyinstall@1.0.so \
-    vendor/redmi/rosemary/proprietary/vendor/lib64/vendor.mediatek.hardware.keymaster_attestation@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.mediatek.hardware.keymaster_attestation@1.0.so \
-    vendor/redmi/rosemary/proprietary/vendor/lib64/vendor.mediatek.hardware.keymaster_attestation@1.1.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.mediatek.hardware.keymaster_attestation@1.1.so \
-    vendor/redmi/rosemary/proprietary/vendor/lib64/vendor.mediatek.hardware.lbs@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.mediatek.hardware.lbs@1.0.so \
-    vendor/redmi/rosemary/proprietary/vendor/lib64/vendor.mediatek.hardware.log@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.mediatek.hardware.log@1.0.so \
-    vendor/redmi/rosemary/proprietary/vendor/lib64/vendor.mediatek.hardware.mdmonitor@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.mediatek.hardware.mdmonitor@1.0.so \
-    vendor/redmi/rosemary/proprietary/vendor/lib64/vendor.mediatek.hardware.mms@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.mediatek.hardware.mms@1.0.so \
-    vendor/redmi/rosemary/proprietary/vendor/lib64/vendor.mediatek.hardware.mms@1.1.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.mediatek.hardware.mms@1.1.so \
-    vendor/redmi/rosemary/proprietary/vendor/lib64/vendor.mediatek.hardware.mms@1.2.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.mediatek.hardware.mms@1.2.so \
-    vendor/redmi/rosemary/proprietary/vendor/lib64/vendor.mediatek.hardware.mms@1.3.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.mediatek.hardware.mms@1.3.so \
-    vendor/redmi/rosemary/proprietary/vendor/lib64/vendor.mediatek.hardware.mms@1.4.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.mediatek.hardware.mms@1.4.so \
-    vendor/redmi/rosemary/proprietary/vendor/lib64/vendor.mediatek.hardware.mms@1.5.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.mediatek.hardware.mms@1.5.so \
-    vendor/redmi/rosemary/proprietary/vendor/lib64/vendor.mediatek.hardware.mtkcodecservice@1.1.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.mediatek.hardware.mtkcodecservice@1.1.so \
-    vendor/redmi/rosemary/proprietary/vendor/lib64/vendor.mediatek.hardware.mtkpower@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.mediatek.hardware.mtkpower@1.0.so \
     vendor/redmi/rosemary/proprietary/vendor/lib64/vendor.mediatek.hardware.mtkpower@1.1.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.mediatek.hardware.mtkpower@1.1.so \
     vendor/redmi/rosemary/proprietary/vendor/lib64/vendor.mediatek.hardware.mtkradioex@2.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.mediatek.hardware.mtkradioex@2.0.so \
-    vendor/redmi/rosemary/proprietary/vendor/lib64/vendor.mediatek.hardware.netdagent@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.mediatek.hardware.netdagent@1.0.so \
-    vendor/redmi/rosemary/proprietary/vendor/lib64/vendor.mediatek.hardware.nvram@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.mediatek.hardware.nvram@1.0.so \
-    vendor/redmi/rosemary/proprietary/vendor/lib64/vendor.mediatek.hardware.nvram@1.1.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.mediatek.hardware.nvram@1.1.so \
-    vendor/redmi/rosemary/proprietary/vendor/lib64/vendor.mediatek.hardware.nwk_opt@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.mediatek.hardware.nwk_opt@1.0.so \
-    vendor/redmi/rosemary/proprietary/vendor/lib64/vendor.mediatek.hardware.power@1.1.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.mediatek.hardware.power@1.1.so \
-    vendor/redmi/rosemary/proprietary/vendor/lib64/vendor.mediatek.hardware.power@2.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.mediatek.hardware.power@2.0.so \
-    vendor/redmi/rosemary/proprietary/vendor/lib64/vendor.mediatek.hardware.pq@2.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.mediatek.hardware.pq@2.0.so \
-    vendor/redmi/rosemary/proprietary/vendor/lib64/vendor.mediatek.hardware.pq@2.1.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.mediatek.hardware.pq@2.1.so \
-    vendor/redmi/rosemary/proprietary/vendor/lib64/vendor.mediatek.hardware.pq@2.2.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.mediatek.hardware.pq@2.2.so \
-    vendor/redmi/rosemary/proprietary/vendor/lib64/vendor.mediatek.hardware.pq@2.3.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.mediatek.hardware.pq@2.3.so \
-    vendor/redmi/rosemary/proprietary/vendor/lib64/vendor.mediatek.hardware.pq@2.4.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.mediatek.hardware.pq@2.4.so \
-    vendor/redmi/rosemary/proprietary/vendor/lib64/vendor.mediatek.hardware.pq@2.5.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.mediatek.hardware.pq@2.5.so \
-    vendor/redmi/rosemary/proprietary/vendor/lib64/vendor.mediatek.hardware.pq@2.6.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.mediatek.hardware.pq@2.6.so \
-    vendor/redmi/rosemary/proprietary/vendor/lib64/vendor.mediatek.hardware.videotelephony@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.mediatek.hardware.videotelephony@1.0.so \
-    vendor/redmi/rosemary/proprietary/vendor/lib64/vendor.mediatek.hardware.wifi.supplicant@2.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.mediatek.hardware.wifi.supplicant@2.0.so \
-    vendor/redmi/rosemary/proprietary/vendor/lib64/vendor.mediatek.hardware.wifi.supplicant@2.1.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.mediatek.hardware.wifi.supplicant@2.1.so \
-    vendor/redmi/rosemary/proprietary/vendor/lib64/vendor.mediatek.hardware.wifi.supplicant@2.2.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.mediatek.hardware.wifi.supplicant@2.2.so \
     vendor/redmi/rosemary/proprietary/vendor/lib64/vendor.microtrust.hardware.soter@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.microtrust.hardware.soter@1.0.so \
     vendor/redmi/rosemary/proprietary/vendor/lib64/vendor.xiaomi.hardware.citsensorservice@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.xiaomi.hardware.citsensorservice@1.0.so \
     vendor/redmi/rosemary/proprietary/vendor/lib64/vendor.xiaomi.hardware.citsensorservice@1.1.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.xiaomi.hardware.citsensorservice@1.1.so \
     vendor/redmi/rosemary/proprietary/vendor/lib64/vendor.xiaomi.hardware.displayfeature@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.xiaomi.hardware.displayfeature@1.0.so \
-    vendor/redmi/rosemary/proprietary/vendor/lib64/vendor.xiaomi.hardware.mfidoca@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.xiaomi.hardware.mfidoca@1.0.so \
-    vendor/redmi/rosemary/proprietary/vendor/lib64/vendor.xiaomi.hardware.micharge@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.xiaomi.hardware.micharge@1.0.so \
-    vendor/redmi/rosemary/proprietary/vendor/lib64/vendor.xiaomi.hardware.misys@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.xiaomi.hardware.misys@1.0.so \
-    vendor/redmi/rosemary/proprietary/vendor/lib64/vendor.xiaomi.hardware.misys@2.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.xiaomi.hardware.misys@2.0.so \
-    vendor/redmi/rosemary/proprietary/vendor/lib64/vendor.xiaomi.hardware.misys@3.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.xiaomi.hardware.misys@3.0.so \
     vendor/redmi/rosemary/proprietary/vendor/lib64/vendor.xiaomi.hardware.mlipay@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.xiaomi.hardware.mlipay@1.0.so \
     vendor/redmi/rosemary/proprietary/vendor/lib64/vendor.xiaomi.hardware.mlipay@1.1.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.xiaomi.hardware.mlipay@1.1.so \
-    vendor/redmi/rosemary/proprietary/vendor/lib64/vendor.xiaomi.hardware.mtdservice@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.xiaomi.hardware.mtdservice@1.0.so \
-    vendor/redmi/rosemary/proprietary/vendor/lib64/vendor.xiaomi.hardware.mtdservice@1.1.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.xiaomi.hardware.mtdservice@1.1.so \
-    vendor/redmi/rosemary/proprietary/vendor/lib64/vendor.xiaomi.hardware.mtdservice@1.2.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.xiaomi.hardware.mtdservice@1.2.so \
-    vendor/redmi/rosemary/proprietary/vendor/lib64/vendor.xiaomi.hardware.tidaservice@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.xiaomi.hardware.tidaservice@1.0.so \
-    vendor/redmi/rosemary/proprietary/vendor/lib64/vendor.xiaomi.hardware.tidaservice@1.1.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.xiaomi.hardware.tidaservice@1.1.so \
     vendor/redmi/rosemary/proprietary/vendor/lib64/vendor.xiaomi.hardware.touchfeature@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.xiaomi.hardware.touchfeature@1.0.so \
-    vendor/redmi/rosemary/proprietary/vendor/lib64/vendor.xiaomi.hardware.vsimapp@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.xiaomi.hardware.vsimapp@1.0.so \
     vendor/redmi/rosemary/proprietary/vendor/lib64/wechat.beanpod.so:$(TARGET_COPY_OUT_VENDOR)/lib64/wechat.beanpod.so \
-    vendor/redmi/rosemary/proprietary/vendor/odm/etc/build_maltose.prop:$(TARGET_COPY_OUT_ODM)/odm/etc/build_maltose.prop \
-    vendor/redmi/rosemary/proprietary/vendor/odm/etc/build_rosemary.prop:$(TARGET_COPY_OUT_ODM)/odm/etc/build_rosemary.prop \
-    vendor/redmi/rosemary/proprietary/vendor/odm/etc/build_secret.prop:$(TARGET_COPY_OUT_ODM)/odm/etc/build_secret.prop \
-    vendor/redmi/rosemary/proprietary/vendor/res/images/lcd_test_00.png:$(TARGET_COPY_OUT_VENDOR)/res/images/lcd_test_00.png \
-    vendor/redmi/rosemary/proprietary/vendor/res/images/lcd_test_01.png:$(TARGET_COPY_OUT_VENDOR)/res/images/lcd_test_01.png \
-    vendor/redmi/rosemary/proprietary/vendor/res/images/lcd_test_02.png:$(TARGET_COPY_OUT_VENDOR)/res/images/lcd_test_02.png \
-    vendor/redmi/rosemary/proprietary/vendor/res/sound/ringtone.wav:$(TARGET_COPY_OUT_VENDOR)/res/sound/ringtone.wav \
-    vendor/redmi/rosemary/proprietary/vendor/res/sound/testpattern1.wav:$(TARGET_COPY_OUT_VENDOR)/res/sound/testpattern1.wav \
     vendor/redmi/rosemary/proprietary/vendor/thh/ta/020b0000000000000000000000000000.ta:$(TARGET_COPY_OUT_VENDOR)/thh/ta/020b0000000000000000000000000000.ta \
     vendor/redmi/rosemary/proprietary/vendor/thh/ta/020f0000000000000000000000000000.ta:$(TARGET_COPY_OUT_VENDOR)/thh/ta/020f0000000000000000000000000000.ta \
     vendor/redmi/rosemary/proprietary/vendor/thh/ta/05120000000000000000000000000000.ta:$(TARGET_COPY_OUT_VENDOR)/thh/ta/05120000000000000000000000000000.ta \
@@ -3489,16 +2607,9 @@ PRODUCT_COPY_FILES += \
     vendor/redmi/rosemary/proprietary/vendor/xbin/dc_cal:$(TARGET_COPY_OUT_VENDOR)/xbin/dc_cal
 
 PRODUCT_PACKAGES += \
+    libwifi-hal-mtk \
     SoterService \
     ImsService \
-    EmCamera \
-    GoogleNetworkStackResOverlay \
-    GoogleTetheringResOverlay \
-    InProcessTetheringResOverlay \
-    NetworkStackInProcessResOverlay \
-    NetworkStackResOverlay \
-    NotchOverlay \
-    TetheringResOverlay \
     mediatek-common \
     mediatek-framework \
     mediatek-ims-base \
@@ -3509,30 +2620,10 @@ PRODUCT_PACKAGES += \
     mediatek-telephony-common \
     mediatek-wfo-legacy \
     com.fingerprints.extension \
-    android.hardware.biometrics.fingerprint@2.1-service \
-    android.hardware.boot@1.1 \
-    android.hardware.cas@1.2-service \
     android.hardware.gpu@1.0-service \
-    android.hardware.health@2.1 \
     android.hardware.neuralnetworks@1.3-service-mtk-dsp-gpu \
-    android.hardware.wifi.hostapd \
-    android.hardware.wifi@1.0-service \
-    lights-mtk-default \
     manifest \
-    manifest_android.hardware.drm@1.3-service.clearkey \
     manifest_android.hardware.drm@1.3-service.widevine \
-    manifest_vendor.xiaomi.hardware.mfidoca \
     manifest_vendor.xiaomi.hardware.mlipay \
-    manifest_vendor.xiaomi.hardware.mtdservice \
-    manifest_vendor.xiaomi.hardware.tidaservice \
-    manifest_vendor.xiaomi.hardware.vsimapp \
     power-default \
-    vendor.mediatek.hardware.dplanner@2.0-service \
-    vendor.xiaomi.hardware.micharge@1.0 \
-    vendor.xiaomi.hardware.misys@1.0 \
-    vendor.xiaomi.hardware.misys@2.0 \
-    vendor.xiaomi.hardware.misys@3.0 \
-    vibrator-mtk-default \
-    manifest_maltose \
-    manifest_rosemary \
-    manifest_secret
+    vendor.mediatek.hardware.dplanner@2.0-service
