@@ -2616,7 +2616,6 @@ PRODUCT_PACKAGES += \
     com.fingerprints.extension \
     android.hardware.gpu@1.0-service \
     android.hardware.neuralnetworks@1.3-service-mtk-dsp-gpu \
-    manifest \
     manifest_android.hardware.drm@1.3-service.widevine \
     manifest_vendor.xiaomi.hardware.mlipay \
     power-default \
