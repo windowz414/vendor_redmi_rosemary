@@ -863,7 +863,9 @@ PRODUCT_COPY_FILES += \
     vendor/redmi/rosemary/proprietary/vendor/lib/egl/egl.cfg:$(TARGET_COPY_OUT_VENDOR)/lib/egl/egl.cfg \
     vendor/redmi/rosemary/proprietary/vendor/lib/egl/libGLES_mali.so:$(TARGET_COPY_OUT_VENDOR)/lib/egl/libGLES_mali.so \
     vendor/redmi/rosemary/proprietary/vendor/lib/egl/libGLES_meow.so:$(TARGET_COPY_OUT_VENDOR)/lib/egl/libGLES_meow.so \
+    vendor/redmi/rosemary/proprietary/vendor/lib/egl/libMEOW_data.so:$(TARGET_COPY_OUT_VENDOR)/lib/egl/libMEOW_data.so \
     vendor/redmi/rosemary/proprietary/vendor/lib/egl/libMEOW_gift.so:$(TARGET_COPY_OUT_VENDOR)/lib/egl/libMEOW_gift.so \
+    vendor/redmi/rosemary/proprietary/vendor/lib/egl/libMEOW_qt.so:$(TARGET_COPY_OUT_VENDOR)/lib/egl/libMEOW_qt.so \
     vendor/redmi/rosemary/proprietary/vendor/lib/egl/libMEOW_trace.so:$(TARGET_COPY_OUT_VENDOR)/lib/egl/libMEOW_trace.so \
     vendor/redmi/rosemary/proprietary/vendor/lib/gc02m1bsunny_mipi_mono_IdxMgr.so:$(TARGET_COPY_OUT_VENDOR)/lib/gc02m1bsunny_mipi_mono_IdxMgr.so \
     vendor/redmi/rosemary/proprietary/vendor/lib/gc02m1bsunny_mipi_mono_india_IdxMgr.so:$(TARGET_COPY_OUT_VENDOR)/lib/gc02m1bsunny_mipi_mono_india_IdxMgr.so \
@@ -1664,7 +1666,9 @@ PRODUCT_COPY_FILES += \
     vendor/redmi/rosemary/proprietary/vendor/lib64/com.fingerprints.extension@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/com.fingerprints.extension@1.0.so \
     vendor/redmi/rosemary/proprietary/vendor/lib64/egl/libGLES_mali.so:$(TARGET_COPY_OUT_VENDOR)/lib64/egl/libGLES_mali.so \
     vendor/redmi/rosemary/proprietary/vendor/lib64/egl/libGLES_meow.so:$(TARGET_COPY_OUT_VENDOR)/lib64/egl/libGLES_meow.so \
+    vendor/redmi/rosemary/proprietary/vendor/lib64/egl/libMEOW_data.so:$(TARGET_COPY_OUT_VENDOR)/lib64/egl/libMEOW_data.so \
     vendor/redmi/rosemary/proprietary/vendor/lib64/egl/libMEOW_gift.so:$(TARGET_COPY_OUT_VENDOR)/lib64/egl/libMEOW_gift.so \
+    vendor/redmi/rosemary/proprietary/vendor/lib64/egl/libMEOW_qt.so:$(TARGET_COPY_OUT_VENDOR)/lib64/egl/libMEOW_qt.so \
     vendor/redmi/rosemary/proprietary/vendor/lib64/egl/libMEOW_trace.so:$(TARGET_COPY_OUT_VENDOR)/lib64/egl/libMEOW_trace.so \
     vendor/redmi/rosemary/proprietary/vendor/lib64/gc02m1bsunny_mipi_mono_IdxMgr.so:$(TARGET_COPY_OUT_VENDOR)/lib64/gc02m1bsunny_mipi_mono_IdxMgr.so \
     vendor/redmi/rosemary/proprietary/vendor/lib64/gc02m1bsunny_mipi_mono_india_IdxMgr.so:$(TARGET_COPY_OUT_VENDOR)/lib64/gc02m1bsunny_mipi_mono_india_IdxMgr.so \
