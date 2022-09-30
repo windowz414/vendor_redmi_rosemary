@@ -711,7 +711,7 @@ service adbd /apex/com.android.adbd/bin/adbd --root_seclabel=u:r:su:s0
 # Please add custom service below
 
 service thermal_manager /vendor/bin/thermal_manager
-    user root
+    user system
 	group system
     oneshot
 
@@ -732,7 +732,7 @@ service ccci_rpcd /vendor/bin/ccci_rpcd 0
 
 service nvram_daemon /vendor/bin/nvram_daemon
     class main
-    user root
+    user system
     group system
     oneshot
 
@@ -761,7 +761,7 @@ service dualmdlogger /system/bin/dualmdlogger
     oneshot
 
 service factory_no_image /vendor/bin/factory
-    user root
+    user system
     group radio system wifi media gps audio bluetooth wakelock nfc
     capabilities BLOCK_SUSPEND NET_RAW NET_ADMIN SYS_ADMIN SYS_BOOT
 

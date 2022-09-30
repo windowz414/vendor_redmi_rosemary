@@ -20,7 +20,7 @@ service vendor.bip /vendor/bin/bip
     class core
     socket vendor.bip stream 660 root system
     socket bip_socket stream 660 root system
-    user root
+    user system
     group system log inet radio net_admin root
     oneshot
     disabled
